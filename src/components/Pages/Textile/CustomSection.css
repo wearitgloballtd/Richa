@@ -1,0 +1,311 @@
+/* Main Container */
+#fs-container {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../../assets/images/bg-project-01.jpg);
+  /* Adjusted path based on standard structure */
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+/* Specific component styles extracted from main.min.css */
+.media-project-hover {
+  /* Default state: equal width */
+  flex: 1;
+  height: 100%;
+  border-right: 1px solid rgba(242, 242, 242, 0.3);
+  position: relative;
+  /* Smooth transition for the width/flex change */
+  transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1), background 0.5s ease-in-out;
+  overflow: hidden;
+  /* Hide overflow when shrinking */
+}
+
+/* When the container is hovered, we want the non-hovered items to shrink slightly (handled by flex:1 vs flex:3) */
+
+/* The hovered item expands */
+.media-project-hover:hover {
+  flex: 3;
+  /* Grow to take more space */
+  /* background removed to show image */
+}
+
+.media-project-hover .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  /* Slight default dim */
+  z-index: 0;
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+  /* Hidden by default */
+  transform-origin: left;
+  /* Expand from left */
+}
+
+.media-project-hover:hover .bg-overlay {
+  transform: scaleX(1);
+  background: rgba(0, 0, 0, 0.4);
+  /* Semi-transparent dark overlay */
+  backdrop-filter: blur(10px);
+  /* Blur the background image behind this overlay */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari support */
+}
+
+
+/* --- Default Content Styling (Centered Title/Number) --- */
+.media-project-hover .media__body.default-content {
+  text-align: center;
+  padding: 0 50px;
+  position: absolute;
+  /* Center it absolutely */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.media-project-hover .media__number.default-content {
+  position: absolute;
+  font-size: 100px;
+  color: #fff;
+  font-weight: 100;
+  line-height: 1;
+  transition: all 0.3s ease;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Hide Default Content on Hover */
+.media-project-hover:hover .media__body.default-content {
+  opacity: 0;
+  transform: translate(-50%, -60%);
+  /* Move up slightly */
+  pointer-events: none;
+}
+
+.media-project-hover:hover .media__number.default-content {
+  opacity: 0;
+  bottom: -100px;
+}
+
+
+/* --- Hover Content Styling (The Details) --- */
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  opacity: 0;
+  visibility: hidden;
+  color: #fff;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+  /* Handle overflow if text is too long */
+}
+
+/* Reveal container on hover */
+.media-project-hover:hover .hover-content {
+  opacity: 1;
+  visibility: visible;
+  /* Delay container reveal slightly to sync with width expansion */
+  transition: opacity 0.4s ease 0.1s, visibility 0.4s ease 0.1s;
+}
+
+/* Animations */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hover-title,
+.hover-separator,
+.hover-description,
+.hover-points,
+.hover-footer {
+  opacity: 0;
+  /* Default hidden for animation */
+}
+
+.media-project-hover:hover .hover-title {
+  animation: slideUpFade 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.2s;
+}
+
+.media-project-hover:hover .hover-separator {
+  animation: slideUpFade 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.25s;
+  width: 60px;
+  /* Expand width */
+}
+
+.media-project-hover:hover .hover-description {
+  animation: slideUpFade 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.3s;
+}
+
+.media-project-hover:hover .hover-points {
+  animation: slideUpFade 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.4s;
+}
+
+.media-project-hover:hover .hover-footer {
+  animation: slideUpFade 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+/* Element Styling */
+.hover-title {
+  font-family: "FoundersGroteskCondensed", sans-serif;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hover-separator {
+  width: 0;
+  height: 3px;
+  background: #BB2929;
+  margin-bottom: 1.5rem;
+  transition: width 0.6s ease;
+}
+
+.hover-description {
+  line-height: 1.6;
+  color: #f0f0f0;
+  font-weight: 300;
+  font-size: 1.05rem;
+}
+
+/* Custom List Points */
+.hover-points {
+  list-style: none;
+  /* custom bullets */
+  padding: 0;
+}
+
+.hover-points li {
+  margin-bottom: 0.8rem;
+  color: #cccccc;
+  padding-left: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.hover-points li::before {
+  content: "•";
+  /* Fallback */
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #BB2929;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hover-points li:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.hover-points li:hover::before {
+  background-color: #fff;
+  transform: scale(1.5);
+}
+
+.hover-footer {
+  margin-top: 1.5rem;
+  color: #999;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+/* Keep original styling for inner elements of default content */
+.media-project-hover .media__sub-title {
+  color: #BB2929;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.media-project-hover .media__title {
+  margin-bottom: 60px;
+}
+
+.media-project-hover .media__title a {
+  font-size: 40px;
+  color: #fff;
+  line-height: calc(48 / 30);
+  display: block;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.media-project-hover .media__title a:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+
+/* General classes used */
+.title-sub {
+  font-size: 11px;
+  color: #BB2929;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+  .media-project-hover .media__body {
+    padding: 0 20px;
+  }
+
+  .media-project-hover .media__title a {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 991px) {
+  #fs-container {
+    height: auto;
+    display: block;
+  }
+
+  .media-project-hover {
+    width: 100%;
+    height: 700px;
+    border-right: none;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.3);
+  }
+
+  .media-project-hover .media__number {
+    bottom: 0;
+  }
+}

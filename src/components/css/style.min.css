@@ -1,0 +1,196 @@
+/* Minimal CSS for Preloader, Borders, Wave, and Video Background */
+
+/* Container for the wave component */
+.wave-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Preloader */
+.preloader-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 9999;
+}
+
+#preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader-status {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-position.loader {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.preloader-position.loader span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Video Background */
+.hero-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hero-bg.show {
+  opacity: 1;
+}
+
+.hero-bg video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Borders */
+.the-borders {
+  position: absolute;
+  background: #fff;
+  z-index: 100;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.the-borders.show {
+  opacity: 1;
+}
+
+.border-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  transform: translateY(-100%);
+}
+
+.border-top.show {
+  transform: translateY(0);
+}
+
+.border-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  transform: translateY(100%);
+}
+
+.border-bottom.show {
+  transform: translateY(0);
+}
+
+.border-left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  transform: translateX(-100%);
+}
+
+.border-left.show {
+  transform: translateX(0);
+}
+
+.border-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  transform: translateX(100%);
+}
+
+.border-right.show {
+  transform: translateX(0);
+}
+
+/* Wave Canvas */
+#wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+}
+
+#wave.show {
+  opacity: 1;
+}

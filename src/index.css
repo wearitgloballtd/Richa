@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "FoundersGroteskCondensed";
+  src: url("../src/assets/fonts/FoundersGrotesk-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "NueueMontreal";
+  src: url("../src/assets/fonts/NeueMontreal-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OnStageSerial";
+  src: url("../src/assets/fonts/OnStageSerial-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KuraleRegular";
+  src: url("../src/assets/fonts/Bauer\ Grotesk\ OT\ W03\ Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "EireneSansRegular";
+  src: url("../src/assets/fonts/EireneSans-Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "NueueMontreal", sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.wave-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+} */
+
+/* @media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+} */
+
+/* Image slider keyframes - commented out */
+/* @keyframes changeBackgroundImage {
+  0% {
+    background-image: url('src/assets/images/HeroSection/1.jpg');
+  }
+  33.33% {
+    background-image: url('src/assets/images/HeroSection/2.jpeg');
+  }
+  66.66% {
+    background-image: url('src/assets/images/HeroSection/3.png');
+  }
+  100% {
+    background-image: url('src/assets/images/HeroSection/1.jpg');
+  }
+} */
+
+/* Image slider container - commented out */
+/* .hero-background-container {
+  width: 100%;
+  height: 100%;
+  animation: changeBackgroundImage 13s infinite;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
