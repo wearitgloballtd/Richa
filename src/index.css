@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: "FoundersGroteskCondensed";
-  src: url("../src/assets/fonts/FoundersGrotesk-Semibold.ttf");
+  src: url("./assets/fonts/FoundersGrotesk-Semibold.ttf");
 }
 
 @font-face {
   font-family: "NueueMontreal";
-  src: url("../src/assets/fonts/NeueMontreal-Regular.ttf");
+  src: url("./assets/fonts/NeueMontreal-Regular.ttf");
 }
 
 @font-face {
   font-family: "OnStageSerial";
-  src: url("../src/assets/fonts/OnStageSerial-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/OnStageSerial-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: "KuraleRegular";
-  src: url("../src/assets/fonts/Bauer\ Grotesk\ OT\ W03\ Book.ttf") format("truetype");
+  src: url("./assets/fonts/Bauer\ Grotesk\ OT\ W03\ Book.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -31,7 +31,7 @@
 
 @font-face {
   font-family: "EireneSansRegular";
-  src: url("../src/assets/fonts/EireneSans-Regular.otf") format("truetype");
+  src: url("./assets/fonts/EireneSans-Regular.otf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
