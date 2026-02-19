@@ -1,6 +1,3 @@
-import React from "react";
-import truckImage from "../../../assets/images/featureSection/PEB.jpg"; // Placeholder for the truck image
-
 const benefits = [
   {
     id: "01",
@@ -53,9 +50,9 @@ const ConstructionBenefits = () => {
           {/* Truck Image */}
           <div className="w-full mt-4">
             <img
-              src={truckImage}
+              src="https://images.pexels.com/photos/29224552/pexels-photo-29224552.jpeg"
               alt="Heavy Machinery"
-              className="w-full max-w-md lg:max-w-lg object-contain grayscale contrast-125 hover:grayscale-0 transition-all duration-500"
+              className="w-full max-w-md lg:max-w-lg object-contain  contrast-125 hover:grayscale-0 transition-all duration-500"
             />
           </div>
         </div>

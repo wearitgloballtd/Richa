@@ -10,8 +10,7 @@ const slides = [
     title: "Industrial Warehouses",
     description:
       "Industrial warehouses, factories, and manufacturing sheds designed for maximum efficiency and durability.",
-    image:
-      "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://images.pexels.com/photos/221047/pexels-photo-221047.jpeg",
   },
   {
     id: 2,
@@ -37,8 +36,7 @@ const slides = [
     title: "Specialised Buildings",
     description:
       "Specialised buildings like indoor stadiums, auditoriums, and high-rise steel structures engineered for unique requirements.",
-    image:
-      "https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://images.pexels.com/photos/167478/pexels-photo-167478.jpeg",
   },
   {
     id: 5,

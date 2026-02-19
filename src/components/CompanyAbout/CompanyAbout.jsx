@@ -45,7 +45,7 @@ const CompanyAbout = () => {
 
   const cardData = [
     {
-      title: "Multi-decade manufacturing experience",
+      title: "Multi decade manufacturing experience",
       description:
         "We believe technology can dramatically improve the experience of managing health, and when crafted with empathy, intention, and expertise, impact lives at scale.",
       icon: (
@@ -86,7 +86,7 @@ const CompanyAbout = () => {
       ),
     },
     {
-      title: "Engineering-led approach across businesses",
+      title: "Engineering led approach across businesses",
       description:
         "We see a need and we develop a solution. Our proprietary technology is available to integrate with your systems, to license, or to customize to meet your needs.",
       icon: (
@@ -153,7 +153,7 @@ const CompanyAbout = () => {
       ),
     },
     {
-      title: "Process-driven quality and compliance systems",
+      title: "Process driven quality and compliance systems",
       description:
         "We partner with like-minded benefits providers, insurance, and health companies to create custom solutions and technology.",
       icon: (
@@ -215,7 +215,7 @@ const CompanyAbout = () => {
       ),
     },
     {
-      title: "Scalable infrastructure for long-term programs",
+      title: "Scalable infrastructure for long term programs",
       description:
         "Not just technology experts. Health experts. We are able to navigate both stringent regulatory environments and the complexities of technology and data.",
       icon: (
@@ -249,7 +249,7 @@ const CompanyAbout = () => {
       ),
     },
     {
-      title: "Focus on reliability, not short-term volume",
+      title: "Focus on reliability, not short term volume",
       description:
         "Not just technology experts. Health experts. We are able to navigate both stringent regulatory environments and the complexities of technology and data.",
       icon: (
@@ -285,7 +285,11 @@ const CompanyAbout = () => {
   ];
   return (
     <>
-      <div ref={containerRef} data-bgcolor="cyan" className="section w-[1400px] mx-auto flex px-10 py-[20vh] relative">
+      <div
+        ref={containerRef}
+        data-bgcolor="cyan"
+        className="section w-[1400px] mx-auto flex px-10 py-[20vh] relative"
+      >
         <div className="basis-1/2">
           <div ref={leftRef} className="w-full">
             <p className="companyAboutPara w-[37vw] font-medium text-3xl text-[#bb2929] font-EireneSansRegular">
@@ -296,11 +300,9 @@ const CompanyAbout = () => {
                 })}
             </p>
             <h1 className="companyAboutTitle text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight w-[35vw] my-10">
-              {"Consistency Over Claims"
-                .split("")
-                .map((letter, index) => (
-                  <span key={index}>{letter}</span>
-                ))}
+              {"Consistency Over Claims".split("").map((letter, index) => (
+                <span key={index}>{letter}</span>
+              ))}
             </h1>
             {/* <Button Content="our solution" className="py-3 border border-black text-black font-medium px-6"/> */}
           </div>
@@ -314,4 +316,3 @@ const CompanyAbout = () => {
 };
 
 export default CompanyAbout;
-

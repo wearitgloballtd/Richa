@@ -39,7 +39,7 @@ const PEBSustainability = () => {
     <section className="w-full bg-white py-20 px-8 lg:px-20 font-['NeueMontreal'] relative overflow-hidden">
       {/* Background Text "Sustainability" */}
       <div className="absolute top-10 left-1/2 -translate-x-1/2 select-none z-0 w-full text-center overflow-hidden">
-        <h1 className="text-[12vw] lg:text-[10rem] font-bold text-black uppercase tracking-wider opacity-10 whitespace-nowrap">
+        <h1 className="text-[12vw] lg:text-[10rem] font-bold text-black uppercase tracking-wider opacity-5 whitespace-nowrap">
           Sustainability
         </h1>
       </div>
@@ -86,7 +86,7 @@ const PEBSustainability = () => {
           {/* Center Image */}
           <div className="w-full lg:w-1/3 flex justify-center relative">
             {/* Display PNG image directly without background/border */}
-            <div className="relative w-[300px] h-[450px] lg:w-[350px] lg:h-[500px] flex items-center justify-center">
+            <div className="relative w-[300px] h-[450px] lg:w-[500px] lg:h-[550px] flex items-center justify-center">
               <img
                 src={CenterImage}
                 alt="Sustainable Construction"

@@ -8,22 +8,22 @@ const stepsData = [
     id: 1,
     title: "Why Choose Richa Industries?",
     points: [
-      "Integrated end-to-end production for faster turnaround and consistent quality",
+      "Integrated end to end production for faster turnaround and consistent quality",
       "High monthly capacities: 200 tons knitting + 600 tons processing",
       "Customisation expertise from fibre selection to special finishes",
-      "Sustainable, cost-effective solutions with world-class technology",
+      "Sustainable, cost effective solutions with world class technology",
       "Revitalised under new ownership, focused on innovation and client success",
     ],
   },
   {
     id: 2,
     title: "Our Vision",
-    desc: "To constitute a significant portion of the Indian textile economy by delivering premium products and fostering long-term relationships through trust and reliability.",
+    desc: "To constitute a significant portion of the Indian textile economy by delivering premium products and fostering long term relationships through trust and reliability.",
   },
   {
     id: 3,
     title: "Sustainable Manufacturing",
-    desc: "Implementing advanced eco-friendly dyes, waste water management, and energy conservation techniques to minimize our carbon footprint.",
+    desc: "Implementing advanced eco friendly dyes, waste water management, and energy conservation techniques to minimize our carbon footprint.",
   },
   {
     id: 4,

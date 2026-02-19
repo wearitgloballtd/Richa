@@ -13,7 +13,7 @@ const infrastructureFeatures = [
     description:
       "Sprawling production area optimised for large-scale fabrication and assembly, ensuring we can meet high-volume demands without compromising on speed or quality.",
     bullet: "Optimised for large-scale fabrication",
-    image: serviceImg1,
+    src: "https://images.pexels.com/photos/439416/pexels-photo-439416.jpeg",
   },
   {
     id: "02",
@@ -21,7 +21,7 @@ const infrastructureFeatures = [
     description:
       "Dedicated zones for cutting, welding, assembly, painting, and quality control to maintain contamination-free and streamlined workflows throughout the manufacturing process.",
     bullet: "Contamination-free and streamlined workflows",
-    image: serviceImg2,
+    src: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg",
   },
   {
     id: "03",
@@ -29,7 +29,7 @@ const infrastructureFeatures = [
     description:
       "Equipped with advanced utilities, including energy-efficient systems and material handling equipment, reducing our carbon footprint while maximizing operational output.",
     bullet: "Energy-efficient systems and material handling",
-    image: serviceImg3,
+    src: "https://images.pexels.com/photos/12157172/pexels-photo-12157172.jpeg",
   },
   {
     id: "04",
@@ -37,7 +37,7 @@ const infrastructureFeatures = [
     description:
       "In-house engineering, design studios, and testing labs allow for continuous innovation and strict compliance with international standards.",
     bullet: "Innovation and compliance",
-    image: serviceImg1,
+    src: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg",
   },
 ];
 
@@ -104,7 +104,7 @@ const ConstructionServices = () => {
               <div className="w-full h-3/4 overflow-hidden relative border border-white/10">
                 <img
                   key={activeFeature.id}
-                  src={activeFeature.image}
+                  src={activeFeature.src}
                   alt={activeFeature.title}
                   className="w-full h-full object-cover transition-transform duration-700 ease-in-out"
                 />

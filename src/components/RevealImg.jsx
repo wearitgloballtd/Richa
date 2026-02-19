@@ -1,20 +1,21 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useAnimationFrame } from "framer-motion";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 /* VIDEO */
 import videoSource from "../assets/videos/richa_video.mp4";
+
+gsap.registerPlugin(ScrollTrigger);
 
 /* ======================
    MOBILE CHECK
 ====================== */
 const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(
-    window.innerWidth <= 768
-  );
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
-    const resize = () =>
-      setIsMobile(window.innerWidth <= 768);
+    const resize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener("resize", resize);
     return () => window.removeEventListener("resize", resize);
   }, []);
@@ -88,10 +89,38 @@ const imageVariants = {
 ====================== */
 const RevealImg = () => {
   const videoRef = useRef(null);
-  const containerRef = useRef(null);
+  const containerRef = useRef(null); // Used for video container
+  const mainRef = useRef(null); // Used for GSAP context
+
+  const titleText =
+    "Seamless synergy between textile production and structural engineering.";
+
+  useEffect(() => {
+    let cxt = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".revealTitle",
+          start: "top 95%",
+          end: "bottom 60%",
+          scrub: 3,
+          markers: false,
+        },
+      });
+
+      gsap.set(".revealTitle .char", { opacity: 0.1 });
+
+      tl.to(".revealTitle .char", {
+        opacity: 1,
+        stagger: 0.05,
+        ease: "power2.out",
+      });
+    }, mainRef);
+
+    return () => cxt.revert();
+  }, []);
 
   return (
-    <section style={{ width: "100%", overflow: "hidden" }}>
+    <section ref={mainRef} style={{ width: "100%", overflow: "hidden" }}>
       <div
         style={{
           maxWidth: "1440px",
@@ -99,6 +128,20 @@ const RevealImg = () => {
           padding: "120px 40px",
         }}
       >
+        {/* Title Section */}
+        <div className="w-full mb-10">
+          <p className="text-[#BB2929] font-EireneSansRegular text-lg md:text-base tracking-[0.2em] mb-2">
+            Complete Industrial Ecosystem.
+          </p>
+          <h1 className="revealTitle text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight">
+            {titleText.split("").map((char, index) => (
+              <span key={index} className="char">
+                {char}
+              </span>
+            ))}
+          </h1>
+        </div>
+
         {/* VIDEO */}
         <div
           ref={containerRef}

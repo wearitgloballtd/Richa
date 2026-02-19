@@ -1,8 +1,4 @@
-import React from "react";
 import { FaPhoneAlt, FaPlay, FaArrowRight } from "react-icons/fa";
-
-import pebWorker from "../../../assets/images/featureSection/PEB.jpg";
-import concreteWorker from "../../../assets/images/qualityAssurence.png"; // Placeholder for concrete worker
 import profilePic from "../../../assets/images/TeamMembers/bhudev.png";
 
 const ConstructionAbout = () => {
@@ -71,31 +67,32 @@ const ConstructionAbout = () => {
               <div className="flex flex-col">
                 {/* Placeholder Signature using script font if available or italic */}
                 <span className="font-serif italic text-2xl leading-none text-gray-800">
-                  Richa Industries
+                  Richa PEB
                 </span>
-                <span className="text-gray-500 text-xs">
-                  Excellence in Construction
-                </span>
+                <span className="text-gray-500 text-xs">info@richa.in</span>
               </div>
             </div>
           </div>
 
           {/* Video Thumbnail (Bottom Left) */}
           <div className="relative mt-12 w-full max-w-lg aspect-video overflow-hidden rounded-sm group cursor-pointer">
-            <img
-              src={concreteWorker}
+            <video
+              src="https://www.pexels.com/download/video/1197802/"
               alt="Worker smoothing concrete"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              autoPlay
+              loop
+              muted
             />
 
             {/* Play Button Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            {/* <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/50 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#BB2929] pl-1">
                   <FaPlay className="text-sm" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -110,7 +107,7 @@ const ConstructionAbout = () => {
               }} // Angled top-right corner
             >
               <img
-                src={pebWorker}
+                src="https://images.pexels.com/photos/1451416/pexels-photo-1451416.jpeg"
                 alt="Construction Worker"
                 className="w-full h-full object-cover"
               />
@@ -118,7 +115,7 @@ const ConstructionAbout = () => {
           </div>
 
           {/* Bottom Text & Button */}
-          <div className="flex flex-col gap-6 max-w-md ml-auto mt-4">
+          <div className="flex flex-col gap-6 max-w-md ml-auto mt-4 mb-10">
             <p className="text-gray-500 leading-relaxed text-base text-justify !font-EireneSansRegular">
               Equipped with state-of-the-art manufacturing facilities and
               advanced engineering technologies, our operations ensure

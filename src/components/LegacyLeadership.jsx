@@ -1,12 +1,43 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import leftImage from "../assets/images/Leadership/16.jpg";
 import rightImage from "../assets/images/Leadership/17.jpg";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const LegacyLeadership = () => {
+  const containerRef = useRef(null);
+  const titleText = "Stability Today. Scale For Tomorrow.";
+
+  useEffect(() => {
+    let cxt = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".legacyTitle",
+          start: "top 95%",
+          end: "bottom 60%",
+          scrub: 3,
+          markers: false,
+        },
+      });
+
+      gsap.set(".legacyTitle span", { opacity: 0.1 });
+
+      tl.to(".legacyTitle span", {
+        opacity: 1,
+        stagger: 0.1,
+        ease: "power2.out",
+      });
+    }, containerRef);
+
+    return () => cxt.revert();
+  }, []);
+
   return (
-    <section className="w-full bg-white text-black">
+    <section ref={containerRef} className="w-full bg-white text-black">
       {/* Top Heading */}
-      <div className="max-w-[1400px] mx-auto px-10 pt-16 pb-6">
+      <div className="max-w-[1400px] mx-auto px-10  pb-6">
         <p className="text-[3vw] md:text-[2.8vw] !font-EireneSansRegular tracking-tight text-[#bb2929] leading-[0.95]">
           Leadership &amp; Direction
         </p>
@@ -17,11 +48,15 @@ const LegacyLeadership = () => {
 
       {/* Stability & Scale Section */}
       <div className="max-w-[1400px] mx-auto px-10 py-8 md:py-12">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl !font-KuraleRegular tracking-tight text-black mb-6">
-          Stability Today. Scale For Tomorrow.
+        <h2 className="legacyTitle text-4xl md:text-5xl lg:text-6xl !font-KuraleRegular tracking-tight text-black mb-6">
+          {titleText.split("").map((char, index) => (
+            <span key={index}>{char}</span>
+          ))}
         </h2>
         <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8 max-w-4xl font-EireneSansRegular">
-          Under renewed ownership and strategic leadership, Richa Industries is focused on strengthening core operations, improving productivity, and expanding responsibly across both business verticals.
+          Under renewed ownership and strategic leadership, Richa Industries is
+          focused on strengthening core operations, improving productivity, and
+          expanding responsibly across both business verticals.
         </p>
         <div className="mb-6">
           <p className="text-base md:text-lg font-semibold text-gray-800 mb-4 font-EireneSansRegular">
@@ -57,8 +92,7 @@ const LegacyLeadership = () => {
               <div
                 className="absolute inset-0 bg-center bg-cover"
                 style={{
-                  backgroundImage:
-                    `url(${leftImage})`,
+                  backgroundImage: `url(${leftImage})`,
                 }}
               />
               {/* Dark gradient overlay */}
@@ -70,12 +104,12 @@ const LegacyLeadership = () => {
                   Establishing a foundation of success
                 </h3>
                 <button className="group mt-2 inline-flex items-center gap-2 text-sm md:text-base font-medium">
-                  <span className="border-b border-white/70 pb-0.5 group-hover:border-white">
+                  {/* <span className="border-b border-white/70 pb-0.5 group-hover:border-white">
                     Click to Read More
-                  </span>
-                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/70 group-hover:border-white">
+                  </span> */}
+                  {/* <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/70 group-hover:border-white">
                     +
-                  </span>
+                  </span> */}
                 </button>
               </div>
             </div>
@@ -85,8 +119,7 @@ const LegacyLeadership = () => {
               <div
                 className="absolute inset-0 bg-center bg-cover"
                 style={{
-                  backgroundImage:
-                    `url(${rightImage})`,
+                  backgroundImage: `url(${rightImage})`,
                 }}
               />
               {/* Dark gradient overlay */}
@@ -102,24 +135,20 @@ const LegacyLeadership = () => {
                   defines our leadership.
                 </p>
                 <button className="group mt-1 inline-flex items-center gap-2 text-sm md:text-base font-medium">
-                  <span className="border-b border-white/70 pb-0.5 group-hover:border-white">
+                  {/* <span className="border-b border-white/70 pb-0.5 group-hover:border-white">
                     Click to Read More
-                  </span>
-                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/70 group-hover:border-white">
+                  </span> */}
+                  {/* <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/70 group-hover:border-white">
                     +
-                  </span>
+                  </span> */}
                 </button>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
   );
 };
 
 export default LegacyLeadership;
-
-

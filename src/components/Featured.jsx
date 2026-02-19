@@ -1,11 +1,16 @@
 import { motion, useAnimation } from "framer-motion";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import pebImage from "../assets/images/featureSection/PEB.jpg";
 import textileImage from "../assets/images/featureSection/TEXTILE.jpg";
 import SlideButton from "./common/SlideButton";
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Featured() {
+  const containerRef = useRef(null);
   // array to animate two cards
   const cards = [useAnimation(), useAnimation()];
   // receives index and animates that card only
@@ -19,11 +24,43 @@ function Featured() {
       y: "100%",
     });
   };
+
+  useEffect(() => {
+    let cxt = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".featuredTitle",
+          start: "top 95%",
+          end: "bottom 60%",
+          scrub: 3,
+          markers: false,
+        },
+      });
+
+      gsap.set(".featuredTitle .char", { opacity: 0.1 });
+
+      tl.to(".featuredTitle .char", {
+        opacity: 1,
+        stagger: 0.05,
+        ease: "power2.out",
+      });
+    }, containerRef);
+
+    return () => cxt.revert();
+  }, []);
+
   return (
-    <div className="container w-full sm:pt-20 pt-10 bg-white">
+    <div
+      ref={containerRef}
+      className="container w-full sm:pt-20 pt-10 bg-white"
+    >
       <div className="w-full border-b-[2px] border-[#bb2929] pb-5">
-        <h1 className="text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight">
-          Our Businesses
+        <h1 className="featuredTitle text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight">
+          {"Our Businesses".split("").map((char, index) => (
+            <span key={index} className="char">
+              {char}
+            </span>
+          ))}
         </h1>
       </div>
       <div className="py-10 cards w-full flex flex-col md:flex-row gap-10">
@@ -63,7 +100,8 @@ function Featured() {
           className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-full"
         >
           <h1 className="mb-4 flex gap-2 items-center tracking-wide text-black font-EireneSansRegular">
-            <span className="w-2 h-2 bg-[#bb2929] rounded-full"></span> TEXTILE - Textile Industry
+            <span className="w-2 h-2 bg-[#bb2929] rounded-full"></span> TEXTILE
+            - Textile Industry
           </h1>
           <h1 className="absolute flex overflow-hidden text-[#fbeb45] right-1/2 sm:right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl !font-KuraleRegular leading-none tracking-tighter">
             {"TEXTILE".split("").map((item, index) => (

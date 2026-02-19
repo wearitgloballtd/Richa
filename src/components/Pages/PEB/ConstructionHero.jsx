@@ -49,8 +49,9 @@ const ConstructionHero = () => {
 
           {/* Description */}
           <p className="font-['NeueMontreal'] text-gray-200 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
-            We craft unique digital experiences. With more than 7 years of
-            expertise we design and code clean websites.
+            We deliver innovative Pre-Engineered Building (PEB) solutions. With
+            more than 7 years of expertise, we design and develop efficient,
+            high quality structures built for performance and durability.
           </p>
 
           {/* Call to Action Button */}

@@ -5,14 +5,14 @@ import ProcessTimelineSection from "../../common/ProcessTimelineSection";
 const timelineData = [
   {
     subtitle: "WATER CONSERVATION",
-    title: "Low liquor-ratio dyeing",
+    title: "Low liquor ratio dyeing",
     desc: "Implementing advanced dyeing techniques to cut water usage by up to 50%, significantly reducing our freshwater footprint.",
     align: "left",
   },
   {
     subtitle: "ECO-FRIENDLY TREATMENTS",
-    title: "Enzyme-based pre-treatments",
-    desc: "Utilizing enzyme-based pre-treatments and biodegradable auxiliaries to minimize chemical impact and ensure safety.",
+    title: "Enzyme based pre treatments",
+    desc: "Utilizing enzyme based pre treatments and biodegradable auxiliaries to minimize chemical impact and ensure safety.",
     align: "right",
   },
   {
@@ -24,13 +24,13 @@ const timelineData = [
   {
     subtitle: "CERTIFIED COMPLIANCE",
     title: "GOTS & bluesign® approved",
-    desc: "Strict use of GOTS-approved or bluesign®-certified chemicals where applicable, ensuring global safety standards.",
+    desc: "Strict use of GOTS approved or bluesign® certified chemicals where applicable, ensuring global safety standards.",
     align: "right",
   },
   {
     subtitle: "ENERGY EFFICIENCY",
     title: "Machinery with heat recovery",
-    desc: "Deploying energy-efficient machinery equipped with heat recovery systems to maximize energy utilization.",
+    desc: "Deploying energy efficient machinery equipped with heat recovery systems to maximize energy utilization.",
     align: "left",
   },
 ];
@@ -67,7 +67,7 @@ const ScrollTimeline = () => {
             className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-['EireneSansRegular']"
           >
             These efforts reduce our environmental footprint while delivering
-            high-performance, responsibly produced fabrics.
+            high performance, responsibly produced fabrics.
           </motion.p>
         </>
       }
