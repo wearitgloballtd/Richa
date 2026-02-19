@@ -7,24 +7,24 @@ const LegacyLeadership = () => {
     <section className="w-full bg-white text-black">
       {/* Top Heading */}
       <div className="max-w-[1400px] mx-auto px-10 pt-16 pb-6">
-        <p className="text-[3vw] md:text-[2.8vw] font-semibold tracking-tight text-[#bb2929] leading-none">
+        <p className="text-[3vw] md:text-[2.8vw] !font-EireneSansRegular tracking-tight text-[#bb2929] leading-[0.95]">
           Leadership &amp; Direction
         </p>
         <p className="mt-2 text-base md:text-lg text-gray-600">
-        A Renewed Focus on Industrial Growth
+          A Renewed Focus on Industrial Growth
         </p>
       </div>
 
       {/* Stability & Scale Section */}
       <div className="max-w-[1400px] mx-auto px-10 py-8 md:py-12">
-        <h2 className="text-1xl md:text-2xl lg:text-3xl font-bold tracking-tight text-[#bb2929] mb-6">
-          STABILITY TODAY. SCALE FOR TOMORROW.
+        <h2 className="text-4xl md:text-5xl lg:text-6xl !font-KuraleRegular tracking-tight text-black mb-6">
+          Stability Today. Scale For Tomorrow.
         </h2>
-        <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8 max-w-4xl">
+        <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8 max-w-4xl font-EireneSansRegular">
           Under renewed ownership and strategic leadership, Richa Industries is focused on strengthening core operations, improving productivity, and expanding responsibly across both business verticals.
         </p>
         <div className="mb-6">
-          <p className="text-base md:text-lg font-semibold text-gray-800 mb-4">
+          <p className="text-base md:text-lg font-semibold text-gray-800 mb-4 font-EireneSansRegular">
             The group&apos;s roadmap prioritises:
           </p>
           <ol className="space-y-3 max-w-3xl">
@@ -114,7 +114,7 @@ const LegacyLeadership = () => {
           </div>
         </div>
 
-       
+
       </div>
     </section>
   );

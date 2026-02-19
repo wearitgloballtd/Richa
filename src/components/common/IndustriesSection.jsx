@@ -11,13 +11,13 @@ const IndustriesSection = ({
     gridClassName = "grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
 }) => {
     return (
-        <section className="w-full bg-white py-20 px-8 lg:px-20 font-['NeueMontreal'] overflow-hidden">
+        <section className="w-full bg-white py-20 px-8 lg:px-20 font-['EireneSansRegular'] overflow-hidden">
             <div className="max-w-7xl mx-auto text-center mb-16">
                 <motion.h3
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-xl font-bold uppercase tracking-wider mb-3 font-FoundersGroteskCondensed"
+                    className="text-xl  tracking-wider mb-3 font-EireneSansRegular"
                     style={{ color: accentColor }}
                 >
                     {subtitle}
@@ -27,7 +27,7 @@ const IndustriesSection = ({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
-                    className="text-black text-5xl lg:text-7xl font-bold uppercase tracking-tight font-FoundersGroteskCondensed mb-6"
+                    className="text-black text-5xl lg:text-7xl tracking-tight !font-KuraleRegular mb-6"
                 >
                     {title}
                 </motion.h1>
@@ -43,8 +43,27 @@ const IndustriesSection = ({
             </div>
 
             <div className={`max-w-7xl mx-auto relative ${items.length > 4 ? 'px-4 lg:px-0 max-w-[90rem]' : ''}`}>
-                {/* Connecting Line (Dashed) - Hidden on mobile */}
-                <div className="hidden lg:block absolute top-[110px] left-0 w-full h-[2px] border-t-2 border-dashed border-gray-300 -z-0"></div>
+                {/* Connecting Line (Cotton Thread Wave) - Hidden on mobile */}
+                <div className="hidden lg:block absolute top-[100px] left-1/2 -translate-x-1/2 w-screen h-[20px] overflow-hidden z-0 pointer-events-none">
+                    <style>
+                        {`
+                            @keyframes waveMove {
+                                from { background-position-x: 0px; }
+                                to { background-position-x: 100px; }
+                            }
+                        `}
+                    </style>
+                    <div
+                        className="w-full h-full"
+                        style={{
+                            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='20' viewBox='0 0 100 20'%3E%3Cpath d='M 0 10 Q 25 0 50 10 T 100 10' fill='none' stroke='%23991b1b' stroke-width='3' stroke-linecap='round' /%3E%3Cpath d='M 0 10 Q 25 0 50 10 T 100 10' fill='none' stroke='%23bb2929' stroke-width='2.5' stroke-linecap='round' /%3E%3Cpath d='M 0 10 Q 25 0 50 10 T 100 10' fill='none' stroke='white' stroke-width='1' stroke-opacity='0.25' stroke-dasharray='1 2' stroke-linecap='round' /%3E%3C/svg%3E")`,
+                            backgroundSize: '100px 20px',
+                            backgroundRepeat: 'repeat-x',
+                            animation: 'waveMove 4s linear infinite',
+                            filter: 'drop-shadow(0px 4px 3px rgba(0,0,0,0.2))'
+                        }}
+                    />
+                </div>
 
                 <div className={`grid ${gridClassName} gap-8 lg:gap-12 relative z-10`}>
                     {items.map((item, index) => (
@@ -61,7 +80,7 @@ const IndustriesSection = ({
                                 {/* Rotating Outer Dashed Circle */}
                                 <motion.div
                                     animate={{ rotate: 360 }}
-                                    transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+                                    transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
                                     className="absolute inset-0 rounded-full border-[2px] border-dashed"
                                     style={{ borderColor: accentColor }}
                                 ></motion.div>
@@ -108,7 +127,7 @@ const IndustriesSection = ({
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.6 }}
-                    className="text-lg text-gray-500 font-medium italic"
+                    className="text-lg text-gray-500 font-medium italic font-EireneSansRegular"
                 >
                     "{footerText}"
                 </motion.p>

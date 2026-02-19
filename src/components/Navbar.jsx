@@ -58,7 +58,7 @@ function Navbar() {
         { label: "Our History", href: "/about-us", isRoute: true },
         { label: "Leadership Team", href: "#about-leadership", isRoute: false },
         { label: "Mission & Vision", href: "#about-mission", isRoute: false },
-      ]
+      ],
     },
     {
       label: "Textiles",
@@ -69,7 +69,7 @@ function Navbar() {
         { label: "Product Category 2", href: "#products-category2" },
         { label: "Product Category 3", href: "#products-category3" },
         { label: "All Products", href: "#products-all" },
-      ]
+      ],
     },
     {
       label: "PEB",
@@ -80,7 +80,7 @@ function Navbar() {
         { label: "Service 2", href: "#services-2" },
         { label: "Service 3", href: "#services-3" },
         { label: "Custom Solutions", href: "#services-custom" },
-      ]
+      ],
     },
     {
       label: "Sustainability",
@@ -90,12 +90,11 @@ function Navbar() {
         { label: "Automotive", href: "#industries-automotive" },
         { label: "Aerospace", href: "#industries-aerospace" },
         { label: "Healthcare", href: "#industries-healthcare" },
-      ]
+      ],
     },
     { label: "Quality and Safety", href: "#" },
-    { label: "Careers", href: "#" },
+    { label: "Careers", href: "/career", isRoute: true },
     { label: "Contact", href: "#contact" },
-
   ];
 
   const handleNavClick = (href, isRoute = false) => {
@@ -117,10 +116,11 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-[99999] transition-all duration-300 border-b ${isOverHero
-        ? "bg-white backdrop-blur-lg border-black/40 !text-white"
-        : "bg-white shadow-md border-neutral-200 !text-neutral-900"
-        } ${isNavVisible ? "translate-y-0" : "-translate-y-full"}`}
+      className={`fixed top-0 left-0 right-0 z-[99999] transition-all duration-300 border-b ${
+        isOverHero
+          ? "bg-white backdrop-blur-lg border-black/40 !text-white"
+          : "bg-white shadow-md border-neutral-200 !text-neutral-900"
+      } ${isNavVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
@@ -132,8 +132,11 @@ function Navbar() {
                 alt="Richa Industries Limited"
                 className="h-10 sm:h-12 w-auto object-contain cursor-pointer"
               />
-              <span className={`font-OnStageSerial font-bold text-sm sm:text-base md:text-2xl tracking-wide ${isOverHero ? "text-[#BB2929]" : "text-[#BB2929]"
-                }`}>
+              <span
+                className={`font-OnStageSerial font-bold text-sm sm:text-base md:text-2xl tracking-wide ${
+                  isOverHero ? "text-[#BB2929]" : "text-[#BB2929]"
+                }`}
+              >
                 RICHA INDUSTRIES LIMITED
               </span>
             </Link>
@@ -147,16 +150,13 @@ function Navbar() {
                   <Link
                     to={item.href}
                     onClick={() => handleNavClick(item.href, true)}
-                    className={`font-NueueMontreal text-sm sm:text-base font-light relative inline-block transition-colors duration-200 ${isOverHero
-                      ? "text-black hover:text-[]"
-                      : "!text-neutral-900 hover:!text-blue-600"
-                      }`}
+                    className={`font-EireneSansRegular text-sm sm:text-base font-light relative inline-block transition-colors duration-200 ${
+                      isOverHero
+                        ? "text-black hover:text-[#BB2929]"
+                        : "!text-neutral-900 hover:!text-[#BB2929]"
+                    }`}
                   >
                     {item.label}
-                    <span
-                      className={`absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full ${isOverHero ? "bg-white/80" : "bg-blue-600"
-                        }`}
-                    ></span>
                   </Link>
                 ) : (
                   <a
@@ -165,16 +165,13 @@ function Navbar() {
                       e.preventDefault();
                       handleNavClick(item.href, false);
                     }}
-                    className={`font-NueueMontreal text-sm sm:text-base font-light relative inline-block transition-colors duration-200 ${isOverHero
-                      ? "text-black hover:text-[]"
-                      : "!text-neutral-900 hover:!text-blue-600"
-                      }`}
+                    className={`font-NueueMontreal text-sm sm:text-base font-light relative inline-block transition-colors duration-200 ${
+                      isOverHero
+                        ? "text-black hover:text-[#BB2929]"
+                        : "!text-neutral-900 hover:!text-[#BB2929]"
+                    }`}
                   >
                     {item.label}
-                    <span
-                      className={`absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full ${isOverHero ? "bg-white/80" : "bg-blue-600"
-                        }`}
-                    ></span>
                   </a>
                 )}
 
@@ -182,12 +179,14 @@ function Navbar() {
                 {item.dropdown && (
                   <div className="absolute top-full left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
                     <div className="bg-black/95 backdrop-blur-md rounded-lg shadow-xl border border-white/10 overflow-hidden">
-                      {item.dropdown.map((dropdownItem, dropdownIndex) => (
+                      {item.dropdown.map((dropdownItem, dropdownIndex) =>
                         dropdownItem.isRoute ? (
                           <Link
                             key={dropdownIndex}
                             to={dropdownItem.href}
-                            onClick={() => handleNavClick(dropdownItem.href, true)}
+                            onClick={() =>
+                              handleNavClick(dropdownItem.href, true)
+                            }
                             className="block px-4 py-3 text-sm font-NueueMontreal font-light text-white/90 hover:text-white hover:bg-white/10 transition-colors duration-200 border-b border-white/5 last:border-b-0"
                           >
                             {dropdownItem.label}
@@ -204,8 +203,8 @@ function Navbar() {
                           >
                             {dropdownItem.label}
                           </a>
-                        )
-                      ))}
+                        ),
+                      )}
                     </div>
                   </div>
                 )}
@@ -231,10 +230,9 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed top-16 sm:top-20 left-0 right-0 bg-black/95 backdrop-blur-md transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto ${isMobileMenuOpen
-          ? "opacity-100 visible"
-          : "opacity-0 invisible"
-          }`}
+        className={`md:hidden fixed top-16 sm:top-20 left-0 right-0 bg-black/95 backdrop-blur-md transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto ${
+          isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
       >
         <div className="container mx-auto px-4 py-6 space-y-2">
           {navItems.map((item, index) => (
@@ -247,24 +245,28 @@ function Navbar() {
                   >
                     <span>{item.label}</span>
                     <FaChevronDown
-                      className={`w-4 h-4 transition-transform duration-200 ${openMobileDropdown === index ? "rotate-180" : ""
-                        }`}
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        openMobileDropdown === index ? "rotate-180" : ""
+                      }`}
                     />
                   </button>
                   {/* Mobile Dropdown Items */}
                   <div
-                    className={`overflow-hidden transition-all duration-300 ${openMobileDropdown === index
-                      ? "max-h-96 opacity-100"
-                      : "max-h-0 opacity-0"
-                      }`}
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openMobileDropdown === index
+                        ? "max-h-96 opacity-100"
+                        : "max-h-0 opacity-0"
+                    }`}
                   >
                     <div className="pl-4 py-2 space-y-1">
-                      {item.dropdown.map((dropdownItem, dropdownIndex) => (
+                      {item.dropdown.map((dropdownItem, dropdownIndex) =>
                         dropdownItem.isRoute ? (
                           <Link
                             key={dropdownIndex}
                             to={dropdownItem.href}
-                            onClick={() => handleNavClick(dropdownItem.href, true)}
+                            onClick={() =>
+                              handleNavClick(dropdownItem.href, true)
+                            }
                             className="block font-NueueMontreal text-sm font-light text-white/70 hover:text-white transition-colors duration-200 py-2 border-b border-white/5 last:border-b-0"
                           >
                             {dropdownItem.label}
@@ -281,32 +283,30 @@ function Navbar() {
                           >
                             {dropdownItem.label}
                           </a>
-                        )
-                      ))}
+                        ),
+                      )}
                     </div>
                   </div>
                 </>
+              ) : item.isRoute ? (
+                <Link
+                  to={item.href}
+                  onClick={() => handleNavClick(item.href, true)}
+                  className="block font-NueueMontreal text-base font-light text-white/90 hover:text-white transition-colors duration-200 py-3 border-b border-white/10"
+                >
+                  {item.label}
+                </Link>
               ) : (
-                item.isRoute ? (
-                  <Link
-                    to={item.href}
-                    onClick={() => handleNavClick(item.href, true)}
-                    className="block font-NueueMontreal text-base font-light text-white/90 hover:text-white transition-colors duration-200 py-3 border-b border-white/10"
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <a
-                    href={item.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleNavClick(item.href, false);
-                    }}
-                    className="block font-NueueMontreal text-base font-light text-white/90 hover:text-white transition-colors duration-200 py-3 border-b border-white/10"
-                  >
-                    {item.label}
-                  </a>
-                )
+                <a
+                  href={item.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(item.href, false);
+                  }}
+                  className="block font-NueueMontreal text-base font-light text-white/90 hover:text-white transition-colors duration-200 py-3 border-b border-white/10"
+                >
+                  {item.label}
+                </a>
               )}
             </div>
           ))}
@@ -317,4 +317,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

@@ -15,7 +15,7 @@ const CertificationsSection = ({
     onButtonClick
 }) => {
     return (
-        <section className="w-full bg-[#f1f1f1] py-24 px-8 lg:px-20 font-['NeueMontreal'] border-t border-gray-300">
+        <section className="w-full bg-[#f1f1f1] py-24 px-8 lg:px-20 font-['EireneSansRegular'] border-t border-gray-300">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
 
                 {/* Left Side: Image Content */}
@@ -31,7 +31,7 @@ const CertificationsSection = ({
                     </div>
                     {/* Decorative Year/Tag */}
                     <div className="absolute -left-16 lg:-left-20 top-0 hidden lg:flex flex-col items-center gap-4 h-full justify-center">
-                        <span className="text-xs font-bold uppercase tracking-widest -rotate-90 text-gray-400 whitespace-nowrap">
+                        <span className="text-lg font-semibold tracking-wider !font-EireneSansRegular -rotate-90 text-gray-400 whitespace-nowrap">
                             {isoText}
                         </span>
                     </div>
@@ -41,12 +41,12 @@ const CertificationsSection = ({
                 <div className="w-full lg:w-1/2 flex flex-col lg:pl-16">
                     <div className="mb-2 flex items-center gap-3">
                         <div className="w-2 h-2 rounded-full" style={{ backgroundColor: accentColor }}></div>
-                        <h4 className="text-sm font-semibold uppercase tracking-widest font-FoundersGroteskCondensed" style={{ color: accentColor }}>
+                        <h4 className="text-lg tracking-tight !font-KuraleRegular" style={{ color: accentColor }}>
                             {subtitle}
                         </h4>
                     </div>
 
-                    <h1 className="text-5xl lg:text-7xl font-semibold uppercase leading-[0.9] mb-8 font-FoundersGroteskCondensed text-black relative">
+                    <h1 className="text-5xl lg:text-7xl leading-[0.9] mb-8 font-FoundersGroteskCondensed text-black relative">
                         {/* Pin Line */}
                         <div className={`absolute top-[60%] h-[1px] bg-[#333] hidden lg:flex items-center ${pinLineClass}`}>
                             <div className="w-3 h-3 rounded-full border border-[#333] absolute -left-1.5 bg-transparent"></div>

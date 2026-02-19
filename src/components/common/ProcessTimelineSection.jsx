@@ -85,7 +85,7 @@ const ProcessTimelineSection = ({
         <div className="w-full bg-white font-['NeueMontreal']">
             {/* Header Section */}
             {headerContent && (
-                <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-24 pb-12 text-center">
+                <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-24 pb-12 text-center ">
                     {headerContent}
                 </div>
             )}

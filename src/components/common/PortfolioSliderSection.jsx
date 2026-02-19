@@ -38,7 +38,7 @@ const PortfolioSliderSection = ({
                 <div className="mb-20">
                     {typeof subtitle === 'string' ? (
                         <h3
-                            className="text-xl font-bold uppercase tracking-wider mb-2 font-FoundersGroteskCondensed"
+                            className="text-xl tracking-wider mb-2 font-EireneSansRegular"
                             style={{ color: accentColor }}
                         >
                             {subtitle}
@@ -47,12 +47,12 @@ const PortfolioSliderSection = ({
                         subtitle
                     )}
 
-                    <h1 className="text-5xl lg:text-7xl font-bold leading-tight font-FoundersGroteskCondensed mb-6 text-black">
+                    <h1 className="text-5xl lg:text-7xl leading-tight font-KuraleRegular mb-6 text-black ">
                         {title}
                     </h1>
 
                     <div className="flex flex-col lg:flex-row gap-10">
-                        <p className="text-lg text-gray-700 leading-relaxed font-['NeueMontreal'] lg:w-2/3">
+                        <p className="text-lg text-gray-700 leading-relaxed font-['EireneSansRegular'] lg:w-2/3">
                             {description}
                         </p>
                     </div>

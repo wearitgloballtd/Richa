@@ -11,7 +11,7 @@ function About() {
       className="w-full bg-white rounded-t-3xl py-10 sm:py-20"
     >
       <div className="container w-full">
-        <h1 className="sm:text-3xl text-xl text-black font-KuraleRegular sm:leading-normal font-medium mb-10 border-b-[2px] border-[#bb2929] pb-10">
+        <h1 className="text-4xl sm:text-5xl text-black !font-KuraleRegular leading-[1.1] mb-10 border-b-[2px] border-[#bb2929] pb-10 tracking-tight">
           Richa Industries Limited is a company that provides services to the Pre Engineering Building and Textile Industry.
         </h1>
         <div className="md:flex justify-center gap-10">

@@ -121,10 +121,10 @@ const CustomSection = () => {
           {/* Header Section */}
           <div className="w-full bg-white px-8 lg:px-20 pt-20 pb-10">
             <div className="max-w-7xl mx-auto">
-              <h3 className="text-xl font-bold uppercase tracking-wider mb-2 text-[#BB2929] font-FoundersGroteskCondensed">
+              <h3 className="text-xl tracking-tight mb-2 text-[#BB2929] font-['EireneSansRegular']">
                 Quality Engineering
               </h3>
-              <h1 className="text-5xl lg:text-7xl font-semibold leading-tight font-FoundersGroteskCondensed mb-6 text-black">
+              <h1 className="text-5xl lg:text-6xl leading-[0.95] tracking-tight font-KuraleRegular mb-6 text-black">
                 Engineering Quality from Yarn to Fabric
               </h1>
             </div>
@@ -136,10 +136,10 @@ const CustomSection = () => {
 
                 {/* Default Content (Visible when not hovered) */}
                 <div className="media__body default-content">
-                  <h5 className="media__sub-title title-sub font-NueueMontreal">
+                  <h5 className="media__sub-title title-sub font-EireneSansRegular">
                     {item.subtitle}
                   </h5>
-                  <h3 className="media__title font-NueueMontreal">
+                  <h3 className="media__title font-KuraleRegular">
                     <a href="project-grid-full.html">{item.title}</a>
                   </h3>
                 </div>

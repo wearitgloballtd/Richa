@@ -7,6 +7,7 @@ import AboutUs from "./components/Pages/AboutUs/AboutUs";
 import LocomotiveScroll from 'locomotive-scroll';
 import VideoWave from "./components/Pages/Textile/VideoWave";
 import PEB from "./components/Pages/PEB/PEB";
+import CareerPage from "./components/Pages/Career/CareerPage";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/textiles" element={<VideoWave />} />
           <Route path="/peb" element={<PEB />} />
+          <Route path="/career" element={<CareerPage />} />
         </Routes>
         <Footer />
       </div>

@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: "KuraleRegular";
-  src: url("./assets/fonts/Bauer\ Grotesk\ OT\ W03\ Book.ttf") format("truetype");
+  src: url("./assets/fonts/Bauer Grotesk OT W03 Book.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -57,43 +57,41 @@ html {
   padding: 0 !important;
 }
 
-/* html,
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-} */
-
-/* @media screen and (max-width: 480px) {
-  html,
-  body {
-    font-size: 16px;
-  }
-} */
-
-/* Image slider keyframes - commented out */
-/* @keyframes changeBackgroundImage {
+/* Marquee Animations */
+@keyframes marquee {
   0% {
-    background-image: url('src/assets/images/HeroSection/1.jpg');
+    transform: translateX(0);
   }
-  33.33% {
-    background-image: url('src/assets/images/HeroSection/2.jpeg');
-  }
-  66.66% {
-    background-image: url('src/assets/images/HeroSection/3.png');
-  }
-  100% {
-    background-image: url('src/assets/images/HeroSection/1.jpg');
-  }
-} */
 
-/* Image slider container - commented out */
-/* .hero-background-container {
-  width: 100%;
-  height: 100%;
-  animation: changeBackgroundImage 13s infinite;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-} */
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-slower {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee-slower {
+  animation: marquee-slower 35s linear infinite;
+}
+
+/* Initial paused state */
+.paused {
+  animation-play-state: paused;
+}
+
+/* Play on hover */
+.group:hover .group-hover\:running {
+  animation-play-state: running;
+}

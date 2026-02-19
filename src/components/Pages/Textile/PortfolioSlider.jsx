@@ -45,8 +45,7 @@ const PortfolioSlider = () => {
         <PortfolioSliderSection
             subtitle={
                 <div className="flex items-center gap-2 mb-2">
-                    <span className="text-[#BB2929] font-semibold text-sm uppercase tracking-widest font-['NeueMontreal']">Versatile Range</span>
-                    <span className="text-[#BB2929] text-lg">↘</span>
+                    <span className="text-[#BB2929] text-lg tracking-widest font-['EireneSansRegular']">Versatile Range</span>
                 </div>
             }
             title="Our Fabric Portfolio"

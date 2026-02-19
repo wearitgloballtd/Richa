@@ -288,15 +288,15 @@ const CompanyAbout = () => {
       <div ref={containerRef} data-bgcolor="cyan" className="section w-[1400px] mx-auto flex px-10 py-[20vh] relative">
         <div className="basis-1/2">
           <div ref={leftRef} className="w-full">
-            <p className="companyAboutPara w-[37vw] font-medium text-3xl text-black">
+            <p className="companyAboutPara w-[37vw] font-medium text-3xl text-[#bb2929] font-EireneSansRegular">
               {"Why Richa Industries Limited? What Defines the Group"
                 .split("")
                 .map((letter, index) => {
                   return <span key={index}>{letter}</span>;
                 })}
             </p>
-            <h1 className="companyAboutTitle text-[4vw] text-[#bb2929] font-[Machina] w-[35vw] my-10 leading-[1.2]">
-              {"CONSISTENCY OVER CLAIMS"
+            <h1 className="companyAboutTitle text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight w-[35vw] my-10">
+              {"Consistency Over Claims"
                 .split("")
                 .map((letter, index) => (
                   <span key={index}>{letter}</span>

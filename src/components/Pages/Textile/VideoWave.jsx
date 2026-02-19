@@ -197,14 +197,14 @@ const VideoWave = () => {
           {/* Left Content */}
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             <div>
-              <h3 className="text-xl font-bold uppercase tracking-wider mb-2 text-[#BB2929] font-FoundersGroteskCondensed">About Us</h3>
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight font-FoundersGroteskCondensed mb-6 text-black">
+              <h3 className="text-xl font-semibold tracking-wider mb-2 text-[#BB2929] font-EireneSansRegular">About Us</h3>
+              <h1 className="text-5xl lg:text-7xl !font-KuraleRegular mb-6 text-black leading-[0.95] tracking-tight">
                 Textile Division
               </h1>
-              <p className="text-lg text-gray-700 leading-relaxed font-['NeueMontreal']">
+              <p className="text-lg text-gray-700 leading-relaxed font-['EireneSansRegular']">
                 At Richa Industries Limited, our Textile Division is dedicated to producing premium knitted fabrics that meet the highest standards for industrial and commercial applications. We specialise in knitting, dyeing, processing, and finishing textile fabrics, delivering consistent quality, vibrant colours, and superior performance.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mt-4 font-['NeueMontreal']">
+              <p className="text-lg text-gray-700 leading-relaxed mt-4 font-['EireneSansRegular']">
                 Equipped with advanced, world-class machinery and sustainable technologies, our operations ensure efficiency, precision, and environmental responsibility. With a knitting capacity of 200 tons per month and a processing capacity of 600 tons per month, we are positioned to handle high-volume requirements while maintaining excellence in every batch.
               </p>
             </div>
@@ -307,11 +307,11 @@ const VideoWave = () => {
           {/* Header */}
           <div className="flex flex-col lg:flex-row justify-between items-start mb-20 gap-10">
             <div className="max-w-4xl">
-              <h4 className="text-gray-400 uppercase tracking-widest mb-4 font-FoundersGroteskCondensed text-lg">Our Infrastructure</h4>
-              <h2 className="text-5xl lg:text-7xl font-bold mb-8 font-FoundersGroteskCondensed leading-tight">
+              <h4 className="text-gray-400 tracking-widest mb-4 font-EireneSansRegular text-lg">Our Infrastructure</h4>
+              <h2 className="text-5xl lg:text-6xl mb-8 font-KuraleRegular leading-tight">
                 Our State of the Art Infrastructure
               </h2>
-              <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
+              <p className="text-xl text-gray-300 leading-relaxed max-w-2xl font-['EireneSansRegular']">
                 Richa Industries operates a fully integrated textile facility equipped with the latest global technology for seamless production from yarn to finished fabric. This modern setup demonstrates our commitment to quality, scalability, and innovation under renewed ownership.
               </p>
             </div>
@@ -353,8 +353,8 @@ const VideoWave = () => {
                 <div className="w-12 h-12 rounded-full bg-white text-[#4A4453] flex items-center justify-center text-xl mb-6 shadow-md relative z-10">
                   {card.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-4 font-FoundersGroteskCondensed relative z-10">{card.title}</h3>
-                <p className="text-sm text-gray-300 mb-8 leading-relaxed flex-grow relative z-10">
+                <h3 className="text-2xl font-bold mb-4 font-EireneSansRegular relative z-10">{card.title}</h3>
+                <p className="text-lg text-gray-300 mb-8 leading-relaxed flex-grow relative z-10">
                   {card.desc}
                 </p>
               </motion.div>
@@ -362,7 +362,7 @@ const VideoWave = () => {
           </div>
 
           <div className="mt-20 text-center">
-            <p className="text-lg text-white/60 font-medium italic">
+            <p className="text-xl text-white/60 font-medium italic font-['EireneSansRegular']">
               "These features build trust by showcasing our physical capabilities and dedication to superior manufacturing standards."
             </p>
           </div>

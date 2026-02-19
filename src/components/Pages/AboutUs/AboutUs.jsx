@@ -83,10 +83,10 @@ const AboutUs = () => {
             transition={{ duration: 0.8 }}
             className="mb-12"
           >
-            <p className="text-[#BB2929] font-KuraleRegular text-xs md:text-sm font-semibold uppercase tracking-[0.15em] mb-6">
+            <p className="text-[#BB2929] font-EireneSansRegular text-xs md:text-sm font-semibold uppercase tracking-[0.15em] mb-6">
               A Group Built on Manufacturing Discipline and Renewed Vision
             </p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-KuraleRegular text-black leading-tight mb-8">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl !font-KuraleRegular text-black leading-tight mb-8">
               Richa Industries Limited
             </h2>
           </motion.div>
@@ -123,11 +123,11 @@ const AboutUs = () => {
             transition={{ duration: 0.8 }}
             className="mb-16"
           >
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-KuraleRegular text-[#bb2929] leading-tight mb-4">
-              OUR STORY
+            <h2 className="text-5xl md:text-6xl lg:text-7xl !font-KuraleRegular text-black leading-tight mb-4">
+              Our Story
             </h2>
             <div className="w-24 h-1 bg-[#bb2929] mb-8"></div>
-            <p className="text-[#BB2929] font-KuraleRegular text-sm md:text-base font-semibold uppercase tracking-[0.15em]">
+            <p className="text-[#BB2929] font-EireneSansRegular text-sm md:text-base font-semibold uppercase tracking-[0.15em]">
               From Industrial Foundations to Integrated Manufacturing
             </p>
           </motion.div>
@@ -139,8 +139,8 @@ const AboutUs = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h3 className="text-3xl md:text-4xl font-KuraleRegular text-black mb-6 leading-tight">
-                A JOURNEY ROOTED IN EXECUTION
+              <h3 className="text-4xl md:text-5xl lg:text-6xl !font-KuraleRegular text-black mb-6 leading-tight">
+                A Journey Rooted In Execution
               </h3>
             </motion.div>
 
@@ -177,11 +177,11 @@ const AboutUs = () => {
             transition={{ duration: 0.8 }}
             className="mb-16"
           >
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-KuraleRegular text-white leading-tight mb-4">
-              A NEW CHAPTER OF LEADERSHIP
+            <h2 className="text-5xl md:text-6xl lg:text-7xl !font-KuraleRegular text-white leading-tight mb-4">
+              A New Chapter Of Leadership
             </h2>
             <div className="w-24 h-1 bg-[#bb2929] mb-8"></div>
-            <p className="text-[#BB2929] font-KuraleRegular text-sm md:text-base font-semibold uppercase tracking-[0.15em]">
+            <p className="text-[#BB2929] font-EireneSansRegular text-sm md:text-base font-semibold tracking-[0.15em]">
               Revival with Purpose, Not Just Ownership
             </p>
           </motion.div>
@@ -193,8 +193,8 @@ const AboutUs = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h3 className="text-3xl md:text-4xl font-KuraleRegular text-white mb-6 leading-tight">
-                STRENGTHENING WHAT WORKS, BUILDING WHAT'S NEXT
+              <h3 className="text-3xl md:text-4xl !font-KuraleRegular text-white mb-6 leading-tight">
+                Strengthening What Works, Building What's Next
               </h3>
             </motion.div>
 
@@ -267,7 +267,7 @@ const AboutUs = () => {
             <div className="inline-block mb-8">
               <div className="w-32 h-1 bg-[#bb2929] mx-auto"></div>
             </div>
-            <p className="text-2xl md:text-3xl lg:text-4xl font-KuraleRegular text-black leading-[1.4] max-w-3xl mx-auto">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-KuraleRegular text-black leading-[1.4] max-w-3xl mx-auto italic ">
               Building credibility through performance, not promises.
             </p>
           </motion.div>

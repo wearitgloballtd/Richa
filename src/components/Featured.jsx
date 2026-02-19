@@ -22,7 +22,9 @@ function Featured() {
   return (
     <div className="container w-full sm:pt-20 pt-10 bg-white">
       <div className="w-full border-b-[2px] border-[#bb2929] pb-5">
-        <h1 className="text-4xl sm:text-6xl text-black font-KuraleRegular ">Our Businesses</h1>
+        <h1 className="text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight">
+          Our Businesses
+        </h1>
       </div>
       <div className="py-10 cards w-full flex flex-col md:flex-row gap-10">
         <motion.div

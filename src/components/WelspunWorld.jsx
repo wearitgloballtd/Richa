@@ -106,7 +106,7 @@ const WelspunWorld = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-[#BB2929] font-KuraleRegular  text-xs md:text-sm font-semibold uppercase tracking-[0.15em] mb-10 md:mb-10"
+          className="text-[#BB2929] font-KuraleRegular  text-xs md:text-sm font-semibold uppercase tracking-[0.15em] mb-5 md:mb-5"
         >
           A Group Built on Manufacturing Discipline
         </motion.p>
