@@ -74,20 +74,17 @@ function HeroSection() {
       </div>
 
       {/* Full width bottom section */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 w-full flex items-center justify-between border-t-[1px] border-zinc-800/50 py-5 font-NueueMontreal backdrop-blur-sm bg-black/20 px-4 sm:px-8">
+      <div className="absolute bottom-0 left-0 right-0 z-10 w-full flex items-center justify-between border-t-[1px] border-zinc-800/50 py-5 font-EireneSansRegular backdrop-blur-sm bg-black/30 px-4 sm:px-8">
         {[
-          "From Concept to completion, Build for Scale",
-          "Engineered for Excellence",
+          "Renewed Leadership",
+          "30+ Years Innovating in Textiles & Pre-Engineered Buildings",
         ].map((item, index) => (
-          <p
-            key={index}
-            className="text-base font-light leading-none hidden sm:block"
-          >
+          <p key={index} className="text-lg leading-none hidden sm:block">
             {item}
           </p>
         ))}
         <div className="start flex items-center gap-4">
-          <div className="rounded-full border-[1px] font-NueueMontreal border-zinc-500 px-5 py-2 text-sm font-light whitespace-nowrap uppercase">
+          <div className="rounded-full border-[1px] font-EireneSansRegular border-zinc-500 px-5 py-2 text-sm font-light whitespace-nowrap uppercase">
             Explore Our Solutions
           </div>
           <div className="flex h-10 w-10 items-center justify-center rounded-full border-[1px] border-zinc-500">

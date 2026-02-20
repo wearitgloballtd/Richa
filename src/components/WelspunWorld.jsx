@@ -13,95 +13,41 @@ const WelspunWorld = () => {
 
   // SVG Icons for stat cards
   const GlobeIcon = () => (
-    <svg
-      width="36"
-      height="36"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle cx="24" cy="24" r="20" stroke="white" strokeWidth="2.5" />
-      <path
-        d="M4 24h40M24 4c5.5 3.5 10 9.5 10 20s-4.5 16.5-10 20c-5.5-3.5-10-9.5-10-20S18.5 7.5 24 4z"
-        stroke="white"
-        strokeWidth="2"
-      />
-      <path
-        d="M12 8c2 4 4 8 4 12s-2 8-4 12M36 8c-2 4-4 8-4 12s2 8 4 12M12 40c2-4 4-8 4-12s-2-8-4-12M36 40c-2-4-4-8-4-12s2-8 4-12"
-        stroke="white"
-        strokeWidth="1.5"
-        opacity="0.7"
-      />
-      <circle
-        cx="24"
-        cy="24"
-        r="14"
-        stroke="white"
-        strokeWidth="1"
-        opacity="0.4"
-      />
-    </svg>
+    <img
+      src="/reliability.svg"
+      width="42"
+      height="42"
+      alt="Reliable Execution"
+      style={{ filter: "brightness(0) invert(1)" }}
+    />
   );
 
   const TeamIcon = () => (
-    <svg
-      width="36"
-      height="36"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle cx="14" cy="16" r="6" fill="white" />
-      <circle cx="34" cy="16" r="6" fill="white" />
-      <circle cx="24" cy="24" r="7" fill="white" />
-      <path
-        d="M8 32c0-3.5 2.5-6.5 6-6.5M40 32c0-3.5-2.5-6.5-6-6.5M16 34c0-2.5 2.5-5 8-5s8 2.5 8 5"
-        stroke="white"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        fill="none"
-      />
-    </svg>
+    <img
+      src="/team.svg"
+      width="42"
+      height="42"
+      alt="Strong Team"
+      style={{ filter: "brightness(0) invert(1)" }}
+    />
   );
 
   const GraphIcon = () => (
-    <svg
-      width="36"
-      height="36"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="6"
-        y="6"
-        width="36"
-        height="36"
-        rx="2"
-        stroke="white"
-        strokeWidth="2.5"
-      />
-      <path
-        d="M10 34L16 24L22 28L28 14L38 22"
-        stroke="white"
-        strokeWidth="3"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      <circle cx="10" cy="34" r="2.5" fill="white" />
-      <circle cx="16" cy="24" r="2.5" fill="white" />
-      <circle cx="22" cy="28" r="2.5" fill="white" />
-      <circle cx="28" cy="14" r="2.5" fill="white" />
-      <circle cx="38" cy="22" r="2.5" fill="white" />
-    </svg>
+    <img
+      src="/legacy.svg"
+      width="42"
+      height="42"
+      alt="Manufacturing Legacy"
+      style={{ filter: "brightness(0) invert(1)" }}
+    />
   );
 
   const statCards = [
+    ,
     {
-      icon: <GlobeIcon />,
-      label: "We have presence in over",
-      value: "15 Countries",
+      icon: <GraphIcon />,
+      label: "Manufacturing legacy",
+      value: "30+ Years",
     },
     {
       icon: <TeamIcon />,
@@ -109,9 +55,9 @@ const WelspunWorld = () => {
       value: "1000+ Employees",
     },
     {
-      icon: <GraphIcon />,
-      label: "Group revenue",
-      value: "₹1 Billion",
+      icon: <GlobeIcon />,
+      label: "Execution Reliability",
+      value: "99%",
     },
   ];
 
@@ -185,10 +131,10 @@ const WelspunWorld = () => {
             className="flex flex-col"
           >
             <p className="text-base md:text-lg lg:text-xl text-black leading-[1.7] mb-6 font-EireneSansRegular">
-              Richa Industries Limited is an integrated industrial group with
-              strong roots in manufacturing and engineering-led businesses. Our
-              operations are driven by structured processes, controlled quality
-              systems, and a clear focus on execution certainty.
+              Richa Industries Limited is an integrated manufacturing company
+              with strong roots in textiles and engineering. We run our
+              operations with clear processes, strong quality checks, and a real
+              focus on getting things done right and on time.
             </p>
             <div className="text-base md:text-lg lg:text-xl text-[#666666] leading-[1.7] mb-4 font-EireneSansRegular">
               <p className="mb-5">The group operates two core verticals:</p>
@@ -199,7 +145,7 @@ const WelspunWorld = () => {
                     <span className="font-semibold text-black">
                       Richa Textiles
                     </span>{" "}
-                    – Yarn and textile manufacturing
+                    – Knitting, Dyeing, and Finishing of Fabrics
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -244,10 +190,10 @@ const WelspunWorld = () => {
             >
               <div className="flex-shrink-0">{card.icon}</div>
               <div className="flex-1">
-                <p className="text-white text-xs md:text-sm mb-2 opacity-90 font-medium leading-relaxed font-EireneSansRegular">
+                <p className="text-white text-sm md:text-base mb-2 opacity-90 font-medium leading-relaxed font-EireneSansRegular">
                   {card.label}
                 </p>
-                <p className="text-white text-xl md:text-2xl lg:text-3xl font-bold leading-tight">
+                <p className="text-white text-xl md:text-2xl lg:text-3xl leading-tight">
                   {card.value}
                 </p>
               </div>

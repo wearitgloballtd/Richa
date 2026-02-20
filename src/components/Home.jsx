@@ -15,19 +15,14 @@ function Home() {
   return (
     <div className="w-full min-h-screen bg-white text-white">
       <HeroSection />
-      {/* <Marquee /> */}
       <WelspunWorld />
       <Featured />
       <About />
-      {/* <Eyes /> */}
       <CompanyAbout />
       <LegacyLeadership />
       <RevealImg />
-      {/* <SupportSection /> */}
-      {/* <Cards /> */}
     </div>
   );
 }
 
 export default Home;
-
