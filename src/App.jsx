@@ -4,16 +4,18 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import AboutUs from "./components/Pages/AboutUs/AboutUs";
-import LocomotiveScroll from 'locomotive-scroll';
+import LocomotiveScroll from "locomotive-scroll";
 import VideoWave from "./components/Pages/Textile/VideoWave";
 import PEB from "./components/Pages/PEB/PEB";
 import CareerPage from "./components/Pages/Career/CareerPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="w-full min-h-screen bg-white text-white overflow-x-hidden">
         <Navbar />
         <Routes>

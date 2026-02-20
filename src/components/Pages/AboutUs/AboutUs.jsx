@@ -284,7 +284,7 @@ const AboutUs = () => {
               >
                 <p className="text-base md:text-lg text-white/90 italic leading-[1.8] font-EireneSansRegular">
                   The emphasis is on building credibility through performance,
-                  not promises.
+                  not promises. - "Mr. Narendra Kumar Srivastava"
                 </p>
               </motion.div>
             </motion.div>

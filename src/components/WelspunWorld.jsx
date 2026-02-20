@@ -145,9 +145,9 @@ const WelspunWorld = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="0.01"
-      className="w-full bg-white py-20 md:py-10"
+      className="w-full bg-white py-10 md:py-20"
     >
-      <div className="max-w-full mx-auto px-6 md:px-10 lg:px-16 xl:px-20">
+      <div className="container">
         {/* Top Label */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -160,7 +160,7 @@ const WelspunWorld = () => {
         </motion.p>
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 lg:gap-24 mb-20 md:mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 mb-20 md:mb-24">
           {/* Left Side - Headline */}
           <div className="flex flex-col">
             <h1 className="welspunTitle text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight">

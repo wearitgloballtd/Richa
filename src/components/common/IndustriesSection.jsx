@@ -122,12 +122,12 @@ const IndustriesSection = ({
 
               {/* Content */}
               <h3
-                className="text-2xl text-black font-bold uppercase font-FoundersGroteskCondensed mb-3 transition-colors duration-300 group-hover:text-[var(--hover-color)]"
+                className="text-2xl text-black font-bold uppercase font-EireneSansRegular mb-3 transition-colors duration-300 group-hover:text-[var(--hover-color)]"
                 style={{ "--hover-color": accentColor }}
               >
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed px-4">
+              <p className="text-gray-600 text-base leading-relaxed px-4 font-EireneSansRegular">
                 {item.desc}
               </p>
             </motion.div>

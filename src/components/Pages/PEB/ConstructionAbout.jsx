@@ -49,7 +49,7 @@ const ConstructionAbout = () => {
                 <FaPhoneAlt />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold">+91 123 456 7890</span>
+                <span className="text-xl font-bold">+91 97112-69111</span>
                 <span className="text-gray-500 text-sm">Need Help?</span>
               </div>
             </div>
@@ -84,15 +84,6 @@ const ConstructionAbout = () => {
               loop
               muted
             />
-
-            {/* Play Button Overlay */}
-            {/* <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/50 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#BB2929] pl-1">
-                  <FaPlay className="text-sm" />
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
 

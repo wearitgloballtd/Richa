@@ -43,12 +43,12 @@ const ConstructionHero = () => {
               className="text-[#BB2929] text-6xl md:text-7xl lg:text-7xl font-bold font-FoundersGroteskCondensed uppercase leading-[0.8] drop-shadow-lg"
               style={{ WebkitTextStroke: "2px white" }}
             >
-              & Honest Service
+              & Reliable Service
             </h1>
           </div>
 
           {/* Description */}
-          <p className="font-['NeueMontreal'] text-gray-200 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
+          <p className="font-['EireneSansRegular'] text-gray-200 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
             We deliver innovative Pre-Engineered Building (PEB) solutions. With
             more than 7 years of expertise, we design and develop efficient,
             high quality structures built for performance and durability.
@@ -64,10 +64,10 @@ const ConstructionHero = () => {
           style={{ transform: "rotate(-4deg)" }}
         >
           <h1
-            className="text-[10rem] md:text-[18rem] font-bold text-transparent font-FoundersGroteskCondensed uppercase tracking-tighter leading-none"
+            className="text-[10rem] md:text-[18rem] font-bold text-transparent font-FoundersGroteskCondensed uppercase  leading-none"
             style={{ WebkitTextStroke: "2px white" }}
           >
-            R I L'S P E B
+            RICHA P E B
           </h1>
         </div>
       </div>

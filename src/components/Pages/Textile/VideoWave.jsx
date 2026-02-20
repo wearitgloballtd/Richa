@@ -274,7 +274,7 @@ const VideoWave = () => {
                   <GiSewingString className="text-2xl" />
                 </div>
                 <div>
-                  <h4 className="text-xl mb-1 font-FoundersGroteskCondensed">
+                  <h4 className="text-xl mb-1 font-EireneSansRegular">
                     Knitting Capacity
                   </h4>
                   <p className="text-white text-sm">200 Tons / Month</p>
@@ -293,7 +293,7 @@ const VideoWave = () => {
                   <GiFactory className="text-2xl" />
                 </div>
                 <div>
-                  <h4 className="text-xl mb-1 font-FoundersGroteskCondensed">
+                  <h4 className="text-xl mb-1 font-EireneSansRegular">
                     Processing Capacity
                   </h4>
                   <p className="text-white text-sm">600 Tons / Month</p>
@@ -331,7 +331,7 @@ const VideoWave = () => {
             className="flex flex-col items-center cursor-pointer group"
           >
             <FaUsers className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
-            <h3 className="text-4xl font-bold text-[#333] mb-1 font-FoundersGroteskCondensed group-hover:text-[#BB2929] transition-colors">
+            <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
               100+
             </h3>
             <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
@@ -345,7 +345,7 @@ const VideoWave = () => {
             className="flex flex-col items-center cursor-pointer group"
           >
             <FaLeaf className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
-            <h3 className="text-4xl font-bold text-[#333] mb-1 font-FoundersGroteskCondensed group-hover:text-[#BB2929] transition-colors">
+            <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
               Eco
             </h3>
             <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
@@ -359,7 +359,7 @@ const VideoWave = () => {
             className="flex flex-col items-center cursor-pointer group"
           >
             <FaMedal className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
-            <h3 className="text-4xl font-bold text-[#333] mb-1 font-FoundersGroteskCondensed group-hover:text-[#BB2929] transition-colors">
+            <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
               #1
             </h3>
             <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
@@ -373,7 +373,7 @@ const VideoWave = () => {
             className="flex flex-col items-center cursor-pointer group"
           >
             <FaUsers className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
-            <h3 className="text-4xl font-bold text-[#333] mb-1 font-FoundersGroteskCondensed group-hover:text-[#BB2929] transition-colors">
+            <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
               High
             </h3>
             <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
