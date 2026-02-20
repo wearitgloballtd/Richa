@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import aboutUsImage from "../assets/images/AboutUs.jpg";
+import TextileImage from "../assets/images/Textile/textile-deying.png";
 import SlideButton from "./common/SlideButton";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -10,8 +10,24 @@ gsap.registerPlugin(ScrollTrigger);
 function About() {
   const navigate = useNavigate();
   const containerRef = useRef(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const titleText =
-    "Richa Industries Limited is a company that provides services to the Pre Engineering Building and Textile Industry.";
+    "We are manufacturers of knitted fabrics and pre-engineered buildings since 1993..";
+
+  // You can mix both imported files and external URLs here
+  const images = [
+    TextileImage,
+    "https://images.pexels.com/photos/29224626/pexels-photo-29224626.jpeg",
+    // Add more URLs or local image imports as needed
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   useEffect(() => {
     let cxt = gsap.context(() => {
@@ -59,21 +75,27 @@ function About() {
               Our approach:
             </h1>
             <p className="text-base sm:text-xl tracking-wide text-black font-EireneSansRegular">
-              Our approach at Richa Industries Limited is customised to empower
-              the Pre Engineering Building and Textile Industry by providing
-              services to the industry. Also we are a team of professionals who
-              are experts in the field of Pre Engineering Building and Textile
-              Industry.
+              We build long term trust by sticking to discipline in every step.
+              Whether it's producing performance fabrics for apparel or fast
+              build PEB warehouses and factories, we deliver reliable results
+              that last.
             </p>
             <SlideButton onClick={() => navigate("/about-us")} className="mt-4">
-              Read more
+              Know Our Journey
             </SlideButton>
           </div>
-          <img
-            className="w-full rounded-3xl mt-10 md:w-[40vw] md:mt-0"
-            src={aboutUsImage}
-            alt="about us"
-          />
+          <div className="relative w-full rounded-3xl mt-10 md:w-[60vw] md:mt-0 overflow-hidden aspect-[4/3]">
+            {images.map((img, index) => (
+              <img
+                key={index}
+                className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+                  index === currentImageIndex ? "opacity-100" : "opacity-0"
+                }`}
+                src={img}
+                alt={`about us slider element ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

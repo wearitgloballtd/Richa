@@ -85,7 +85,7 @@ const LegacyLeadership = () => {
 
       {/* Split Banner */}
       <div className="relative w-full">
-        <div className="w-full pb-16">
+        <div className="w-full ">
           <div className="relative h-[45vh] md:h-[55vh] w-full overflow-hidden flex flex-col md:flex-row">
             {/* LEFT PANEL */}
             <div className="relative w-full md:w-1/2 h-full overflow-hidden">

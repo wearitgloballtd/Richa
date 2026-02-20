@@ -39,39 +39,37 @@ const CustomSection = () => {
     {
       id: 1,
       src: "https://images.pexels.com/photos/2767689/pexels-photo-2767689.jpeg",
-      // subtitle: "Interior",
       title: "Knitting",
       number: "01",
-      detailsTitle: "Knitting: Building Strong, Flexible Foundations",
+      detailsTitle: "Building Strong, Flexible Foundations",
       description:
-        "Knitting is the core process where we create high quality fabrics by interlacing yarns into interconnected loops, resulting in materials known for their stretch, breathability, and comfort.",
+        "We create high-quality greige knitted fabrics using state-of-the-art circular knitting machines with electronic jacquard and high-speed needles.",
       points: [
-        "We utilise state of the art circular knitting machines equipped with electronic jacquard systems and high-speed needles to produce tubular fabrics seamlessly.",
-        "Automated yarn feeding and dynamic tension control minimise defects and ensure uniform stitch density.",
-        "Our machines support a wide range of fibres, including cotton, polyester, blends, and eco friendly recycled options.",
-        "Advanced sensors provide real-time monitoring, achieving fabrics with exceptional dimensional stability (less than 3% variation post processing).",
+        "Tubular fabrics with uniform stitch density and controlled GSM.",
+        "Specialties: single jersey, interlock, Lycra blends, rib, piqué, structured knits.",
+        "Wide fibre range: cotton, polyester, bamboo blends, recycled yarns.",
+        "Real-time monitoring ensures exceptional dimensional stability (variation <3% post-processing).",
+        "",
       ],
       footer:
-        "These technologies enable us to produce fabrics ideal for apparel, activewear, home textiles, and technical applications.",
+        "Fabrics ready for dyeing — ideal for apparel, activewear, and performance wear.",
     },
     {
       id: 2,
       src: "https://images.pexels.com/photos/6850858/pexels-photo-6850858.jpeg",
-      subtitle: "Architecture",
       title: "Dyeing",
       number: "02",
       detailsTitle: "Dyeing: Vibrant & Lasting Colors",
       description:
-        "Our dyeing process ensures vibrant, long lasting colors while maintaining fabric integrity using eco-friendly dyes.",
+        "We dye knitted fabrics with vibrant, long-lasting colours while keeping the fabric soft and strong — using eco-friendly dyes and low-impact processes.",
       points: [
-        "High pressure high temperature (HPHT) jet dyeing machines.",
-        "Sustainable water management and recycling systems.",
-        "Computer controlled color matching for precision.",
-        "Advanced HTHP dyeing machines designed for low water consumption and enhanced sustainability",
-        "European standard Brazzoli dyeing technology enables high efficiency and superior dyeing results.",
+        "High-pressure high-temperature (HPHT) jet dyeing machines for even penetration and excellent fastness.",
+        "Brazzoli technology for gentle handling and low water use (1:6–1:8 liquor ratio)",
+        "Computer-controlled colour matching with spectrophotometer for exact shade reproduction.",
+        "Water recycling and sustainable effluent treatment to minimize environmental impact",
+        "Consistent results on cotton, polyester blends, Lycra, and bamboo — ready for apparel and activewear.",
       ],
-      footer:
-        "Perfect for fashion and industrial textiles requiring colorfastness.",
+      footer: "Perfect colour that stays true wash after wash.",
     },
     {
       id: 3,
@@ -79,16 +77,18 @@ const CustomSection = () => {
       subtitle: "Architecture",
       title: "Processing",
       number: "03",
-      detailsTitle: "Processing: Enhancing Performance",
+      detailsTitle: "Processing: Enhancing Performance & Feel",
       description:
-        "Textile processing involves treatments that improve the feel, appearance, and durability of the fabric.",
+        "We process knitted fabrics to achieve the perfect hand-feel, dimensional stability, and performance — turning greige rolls into ready-to-cut material.",
       points: [
-        "Compacting and calendering for smooth textural finish.",
-        "Hydro extraction for efficient moisture removal.",
-        "Heat setting for dimensional stability.",
-        "Our machines are engineered to deliver low elongation with a smooth, premium fabric texture",
+        "Compacting and calendaring for smooth, even texture and controlled shrinkage.",
+        "Hydro-extraction to remove excess moisture efficiently before drying.",
+        "Heat-setting for excellent dimensional stability (shrinkage <3–5% after wash).",
+        "Brushing and sueding options for soft, premium touch on fleece or structured knits.",
+        "Precision machines ensure low elongation and consistent width/weight (GSM control)",
       ],
-      footer: "Ensuring fabrics meet global quality standards.",
+      footer:
+        "Fabrics emerge soft, stable, and ready for garment making — with the durability activewear and apparel brands demand.",
     },
     {
       id: 4,
@@ -98,31 +98,34 @@ const CustomSection = () => {
       number: "04",
       detailsTitle: "Finishing: The Final Touch",
       description:
-        "Our finishing touches add value through softeners, enzymes, and functional treatments.",
+        "We give knitted fabrics their final premium feel, look, and performance — adding softness, stability, and functionality that brands love.",
       points: [
-        "Anti microbial and moisture wicking finishes.",
-        "Stenter frames for precise width control.",
-        "Quality inspection at every stage.",
-        "Precision finishing and quality control help deliver defect free fabrics, reducing the need for reprocessing or returns.",
+        "Enzyme washes and softeners for silky hand-feel and natural drape.",
+        "Heat-setting and calendaring for dimensional stability and smooth surface.",
+        "Anti-pilling and anti-microbial treatments for long-lasting wear.",
+        "Stenter frames for precise width control and even shrinkage (target <5%).",
+        "Functional finishes like moisture-wicking or wrinkle-resistant for activewear.",
       ],
-      footer: "Delivering ready to cut fabrics for garment production.",
+      footer:
+        "Every roll is inspected for defects before packing — delivering ready-to-cut fabrics that perform perfectly in garments.",
     },
     {
       id: 5,
       src: QualityAssurence,
-      subtitle: "Architecture",
       title: "Quality Assurance",
       number: "05",
       detailsTitle: "Quality Assurance: Zero Compromise",
       description:
-        "We maintain rigorous quality control protocols to ensure every meter of fabric meets our high standards.",
+        "We maintain rigorous checks at every stage to ensure every meter of fabric meets our high standards — no exceptions.",
       points: [
-        "4 point inspection system.",
-        "In house physical and chemical testing labs.",
-        "Continuous improvement through data analytics.",
-        "Dedicated quality checks at every stage of production guarantee consistency, durability, and premium finish.",
+        "4-point inspection system for defects (holes, barré, stains, uneven dyeing).",
+        "In-house physical & chemical labs test GSM, shrinkage, colour fastness, pilling, stretch recovery, and tear strength.",
+        "Continuous monitoring with data analytics for real-time corrections.",
+        "Final roll audits before packing — guaranteeing consistency and zero returns.",
+        "Compliance with global standards (e.g., ISO 9001, colour fastness ratings 4–5).",
       ],
-      footer: "Committed to excellence in every thread.",
+      footer:
+        "Committed to excellence in every thread — fabrics that perform reliably from factory to customer.",
     },
   ];
 
@@ -137,7 +140,7 @@ const CustomSection = () => {
                 Quality Engineering
               </h3>
               <h1 className="text-5xl lg:text-6xl leading-[0.95] tracking-tight font-KuraleRegular mb-6 text-black">
-                Engineering Quality from Yarn to Fabric
+                Engineered Precision from Yarn to Finished Fabric
               </h1>
             </div>
           </div>

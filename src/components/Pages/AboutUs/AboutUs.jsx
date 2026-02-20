@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import aboutUsVideo from "../../../assets/videos/warehouse2.mp4";
 import aboutUsImage from "../../../assets/images/AboutUs.jpg";
+import RichaLogo from "../../../assets/images/richa logo.png";
 import ownerPhoto from "../../../assets/images/Leadership/Narender_Sir.png";
 
 const AboutUs = () => {
@@ -44,7 +45,7 @@ const AboutUs = () => {
                 duration: 1,
               }}
             >
-              {["About", "Us"].map((item, index) => (
+              {["Don't Just", "Build", "Create"].map((item, index) => (
                 <div key={index} className="masker">
                   <div className="w-fit flex items-center overflow-hidden">
                     {index === 1 && (
@@ -85,12 +86,13 @@ const AboutUs = () => {
             transition={{ duration: 0.8 }}
             className="mb-12"
           >
+            <h2 className="text-5xl md:text-6xl lg:text-7xl !font-KuraleRegular text-black leading-tight mb-4">
+              Who We Are?
+            </h2>
+            <div className="w-24 h-1 bg-[#bb2929] mb-8"></div>
             <p className="text-[#BB2929] font-EireneSansRegular text-lg md:text-lg font-semibold  tracking-[0.15em] mb-6">
               A Group Built on Manufacturing Discipline and Renewed Vision
             </p>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl !font-KuraleRegular text-black leading-tight mb-8">
-              Richa Industries Limited
-            </h2>
           </motion.div>
 
           <motion.div
@@ -101,12 +103,13 @@ const AboutUs = () => {
             className="space-y-6"
           >
             <p className="text-base md:text-lg lg:text-xl text-black leading-[1.8] font-EireneSansRegular">
-              Richa Industries Limited is a diversified manufacturing group
-              shaped by decades of industrial experience and strengthened by a
-              renewed strategic direction. From engineering led structures to
-              precision driven textile manufacturing, the group operates with a
-              clear purpose to create reliable, scalable solutions that support
-              long-term business growth.
+              Richa Industries Limited is a manufacturing company shaped by over
+              30 years of industrial experience and strengthened by renewed
+              strategic leadership. From precision knitted fabrics to
+              engineering-led pre-engineered buildings, we operate with clear
+              processes, strict quality discipline, and a deep commitment to
+              execution. Our purpose is simple: deliver reliable, scalable
+              solutions that support long-term business growth for our partners.
             </p>
             <p className="text-base md:text-lg lg:text-xl text-black leading-[1.8] font-EireneSansRegular">
               What defines Richa is not just what we manufacture, but how we
@@ -138,7 +141,7 @@ const AboutUs = () => {
             </h2>
             <div className="w-24 h-1 bg-[#bb2929] mb-8"></div>
             <p className="text-[#BB2929] font-EireneSansRegular text-lg md:text-lg tracking-[0.15em]">
-              From Industrial Foundations to Integrated Manufacturing
+              How We Built a Dual Strength Manufacturing Company
             </p>
           </motion.div>
 
@@ -149,9 +152,16 @@ const AboutUs = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h3 className="text-4xl md:text-5xl lg:text-6xl !font-KuraleRegular text-black mb-6 leading-tight">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl !font-KuraleRegular text-black mb-20 leading-tight">
                 A Journey Rooted In Execution
               </h3>
+              <div className="w-full h-auto mt-8">
+                <img
+                  src={RichaLogo}
+                  alt="A Journey Rooted In Execution"
+                  className="w-1/2 md:w-2/3 lg:w-1/2 h-auto object-contain ml-8 md:ml-12 lg:ml-16"
+                />
+              </div>
             </motion.div>
 
             <motion.div
@@ -162,18 +172,34 @@ const AboutUs = () => {
               className="space-y-6"
             >
               <p className="text-base md:text-lg text-black leading-[1.8] font-EireneSansRegular">
-                Richa Industries began its journey with a strong foundation in
-                manufacturing and engineering. Over the years, the group
-                developed capabilities across multiple industrial domains,
-                building infrastructure, skills, and systems that enabled it to
-                operate at scale.
+                We started in 1993 in Faridabad with a small but determined
+                focus on quality manufacturing. Early years were about mastering
+                engineering and processes first in industrial structures then
+                expanding into precision textile production.
               </p>
               <p className="text-base md:text-lg text-black leading-[1.8] font-EireneSansRegular">
-                As industries evolved, Richa expanded into specialized verticals
-                such as Textiles and Pre-Engineered Buildings (PEB). Each
-                business was developed with a clear focus on operational
-                efficiency, compliance, and long term relevance rather than
-                short term volume.
+                Over three decades we invested in people, equipment, and
+                systems:
+              </p>
+              <ul className="list-disc pl-5 text-base md:text-lg text-black leading-[1.8] font-EireneSansRegular space-y-2">
+                <li>
+                  Built integrated facilities that allowed textiles and PEB to
+                  share infrastructure and discipline.
+                </li>
+                <li>
+                  Earned trust through consistent on-time delivery and
+                  zero-shortcut quality.
+                </li>
+                <li>
+                  Survived industry changes by staying focused on what works
+                  long term, not quick volume.
+                </li>
+              </ul>
+              <p className="text-base md:text-lg text-black leading-[1.8] font-EireneSansRegular">
+                Today, under renewed leadership, we continue the same core:
+                disciplined execution, reliable output, and real partnerships.
+                From knitted fabrics that perform to PEB buildings that stand
+                strong it's the same mindset since day one.
               </p>
             </motion.div>
           </div>

@@ -1,9 +1,9 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaArrowUpLong } from "react-icons/fa6";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import pebImage from "../assets/images/featureSection/PEB.jpg";
 import textileImage from "../assets/images/featureSection/TEXTILE.jpg";
 import SlideButton from "./common/SlideButton";
 
@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Featured() {
   const containerRef = useRef(null);
+  const navigate = useNavigate();
   // array to animate two cards
   const cards = [useAnimation(), useAnimation()];
   // receives index and animates that card only
@@ -67,11 +68,12 @@ function Featured() {
         <motion.div
           onHoverStart={() => handleHoverStart(0)}
           onHoverEnd={() => handleHoverEnd(0)}
+          onClick={() => navigate("/peb")}
           className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-full"
         >
           <h1 className="mb-4 flex gap-2 items-center tracking-wide text-black font-EireneSansRegular">
             <span className="w-2 h-2 bg-[#bb2929] rounded-full"></span>
-            PEB - Pre Engineering Building
+            PEB - Pre-Engineered Buildings
           </h1>
           <h1 className="absolute text-[#fbeb45] flex overflow-hidden left-1/2 sm:left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl !font-KuraleRegular leading-none tracking-tighter">
             {"PEB".split("").map((item, index) => (
@@ -89,7 +91,7 @@ function Featured() {
           <div className="card w-full h-[300px] flex items-center rounded-xl overflow-hidden">
             <img
               className="w-full h-auto object-cover hover:scale-105 transition-all"
-              src={pebImage}
+              src="https://images.pexels.com/photos/15947587/pexels-photo-15947587.jpeg"
               alt="PEB"
             />
           </div>
@@ -97,11 +99,12 @@ function Featured() {
         <motion.div
           onHoverStart={() => handleHoverStart(1)}
           onHoverEnd={() => handleHoverEnd(1)}
+          onClick={() => navigate("/textiles")}
           className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-full"
         >
           <h1 className="mb-4 flex gap-2 items-center tracking-wide text-black font-EireneSansRegular">
-            <span className="w-2 h-2 bg-[#bb2929] rounded-full"></span> TEXTILE
-            - Textile Industry
+            <span className="w-2 h-2 bg-[#bb2929] rounded-full"></span> TEXTILES
+            - Knitted Fabrics & Processing
           </h1>
           <h1 className="absolute flex overflow-hidden text-[#fbeb45] right-1/2 sm:right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl !font-KuraleRegular leading-none tracking-tighter">
             {"TEXTILE".split("").map((item, index) => (
@@ -119,15 +122,18 @@ function Featured() {
           <div className="card w-full h-[300px] flex items-center rounded-xl overflow-hidden">
             <img
               className="w-full h-auto object-cover hover:scale-105 transition-all"
-              src={textileImage}
+              src="https://images.pexels.com/photos/31850032/pexels-photo-31850032.jpeg"
               alt="TEXTILE"
             />
           </div>
         </motion.div>
       </div>
       <div className="flex justify-center mt-10">
-        <SlideButton className="py-4 tracking-[0.2em] text-sm md:text-base border-[1.5px]">
-          SEE ALL PROJECTS
+        <SlideButton
+          showStartArrow={true}
+          className="py-4 tracking-[0.2em] text-sm md:text-base border-[1.5px]"
+        >
+          CLICK TO EXPLORE
         </SlideButton>
       </div>
     </div>

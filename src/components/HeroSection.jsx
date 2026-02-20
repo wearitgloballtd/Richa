@@ -5,7 +5,7 @@ import heroVideo from "../assets/videos/Untitled design.mp4";
 function HeroSection() {
   // Different text arrays for each image
   const texts = [
-    ["Don't Just", "Build", "Create"], // Image 1
+    ["From Fabrics", "To", "Structures"], // Image 1
   ];
 
   // Use first text array since we're not cycling through images anymore
@@ -62,7 +62,7 @@ function HeroSection() {
                       className="w-[8vw] h-[5vh] sm:h-[6vh] sm:w-[4vw] sm:mt-5 mr-5 rounded-md bg-[#bb2929]"
                     ></motion.div>
                   )}
-                  <h1 className=" font-FoundersGroteskCondensed sm:-mb-[1vw] md:text-[8vw] sm:text-[10vw]  text-[13vw] uppercase whitespace-nowrap leading-none h-full">
+                  <h1 className=" font-EireneSansRegular sm:-mb-[1vw] md:text-[8vw] sm:text-[10vw]  text-[13vw] font-medium whitespace-nowrap leading-none h-full">
                     {item}
                   </h1>
                 </div>

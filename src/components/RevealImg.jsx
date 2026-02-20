@@ -92,8 +92,7 @@ const RevealImg = () => {
   const containerRef = useRef(null); // Used for video container
   const mainRef = useRef(null); // Used for GSAP context
 
-  const titleText =
-    "Seamless synergy between textile production and structural engineering.";
+  const titleText = "One Ecosystem. One Discipline. One Future.";
 
   useEffect(() => {
     let cxt = gsap.context(() => {
@@ -130,8 +129,8 @@ const RevealImg = () => {
       >
         {/* Title Section */}
         <div className="w-full mb-10">
-          <p className="text-[#BB2929] font-EireneSansRegular text-lg md:text-base tracking-[0.2em] mb-2">
-            Complete Industrial Ecosystem.
+          <p className="text-[#BB2929] font-EireneSansRegular text-lg md:text-lg tracking-[0.2em] mb-2">
+            From Fabrics to Structures
           </p>
           <h1 className="revealTitle text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight">
             {titleText.split("").map((char, index) => (

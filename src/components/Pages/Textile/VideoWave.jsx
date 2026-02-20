@@ -217,7 +217,7 @@ const VideoWave = () => {
         {/* Text Overlay */}
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
           <h2 className="text-6xl md:text-8xl font-FoundersGroteskCondensed tracking-wider uppercase text-center drop-shadow-lg mb-2 text-[#BB2929]">
-            RIL's
+            RICHA's
           </h2>
           <h1 className="text-white text-6xl md:text-8xl font-FoundersGroteskCondensed tracking-wider uppercase text-center drop-shadow-lg">
             Textile Division
@@ -240,27 +240,25 @@ const VideoWave = () => {
           {/* Left Content */}
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             <div>
-              <h3 className="text-xl font-semibold tracking-wider mb-2 text-[#BB2929] font-EireneSansRegular">
-                About Us
-              </h3>
-              <h1 className="text-5xl lg:text-7xl !font-KuraleRegular mb-6 text-black leading-[0.95] tracking-tight">
+              <h1 className="text-5xl lg:text-7xl !font-KuraleRegular mb-4 text-black leading-[0.95] tracking-tight">
                 Textile Division
               </h1>
+              <h3 className="text-xl font-semibold tracking-wider mb-6 text-[#BB2929] font-EireneSansRegular">
+                Premium Knitted Fabrics – Made with Precision
+              </h3>
               <p className="text-lg text-gray-700 leading-relaxed font-['EireneSansRegular']">
-                At Richa Industries Limited, our Textile Division is dedicated
-                to producing premium knitted fabrics that meet the highest
-                standards for industrial and commercial applications. We
-                specialise in knitting, dyeing, processing, and finishing
-                textile fabrics, delivering consistent quality, vibrant colours,
-                and superior performance.
+                At Richa Industries, our Textile Division specializes in
+                producing high-quality knitted fabrics for apparel, activewear,
+                and industrial applications. We focus on knitting, dyeing,
+                processing, and finishing — delivering consistent colour,
+                superior performance, and fabrics that meet real market demands.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mt-4 font-['EireneSansRegular']">
-                Equipped with advanced, world-class machinery and sustainable
-                technologies, our operations ensure efficiency, precision, and
-                environmental responsibility. With a knitting capacity of 200
-                tons per month and a processing capacity of 600 tons per month,
-                we are positioned to handle high volume requirements while
-                maintaining excellence in every batch.
+                With advanced machinery and a disciplined approach, we ensure
+                every batch is precise, efficient, and environmentally
+                responsible. Our team handles everything from single jersey and
+                Lycra blends to structured knits and performance fabrics, always
+                with the same commitment quality you can trust.
               </p>
             </div>
 
@@ -299,7 +297,7 @@ const VideoWave = () => {
                   <p className="text-white text-sm">600 Tons / Month</p>
                 </div>
                 <p className="text-xs text-white mt-2">
-                  Sustainable & efficient processing.
+                  Sustainable dyeing & finishing.
                 </p>
               </motion.div>
             </div>
@@ -335,7 +333,7 @@ const VideoWave = () => {
               100+
             </h3>
             <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
-              Clients
+              Trusted Clients
             </p>
           </motion.div>
           <div className="h-16 w-[2px] bg-gray-300 hidden md:block"></div>
@@ -346,10 +344,10 @@ const VideoWave = () => {
           >
             <FaLeaf className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
             <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
-              Eco
+              Eco-Friendly
             </h3>
             <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
-              Sustainable Tech
+              Sustainable Processes
             </p>
           </motion.div>
           <div className="h-16 w-[2px] bg-gray-300 hidden md:block"></div>
@@ -360,10 +358,10 @@ const VideoWave = () => {
           >
             <FaMedal className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
             <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
-              #1
+              Certified
             </h3>
             <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
-              Top Quality
+              Quality Standards
             </p>
           </motion.div>
           <div className="h-16 w-[2px] bg-gray-300 hidden md:block"></div>
@@ -372,7 +370,7 @@ const VideoWave = () => {
             transition={{ type: "spring", stiffness: 300 }}
             className="flex flex-col items-center cursor-pointer group"
           >
-            <FaUsers className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
+            <img src="/high.svg" alt="High" className="w-10 h-10 mb-4" />
             <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
               High
             </h3>
@@ -406,43 +404,45 @@ const VideoWave = () => {
                 Our Infrastructure
               </h4>
               <h2 className="text-5xl lg:text-6xl mb-8 font-KuraleRegular leading-tight">
-                Our State of the Art Infrastructure
+                State-of-the-Art Textile Facility
               </h2>
               <p className="text-xl text-gray-300 leading-relaxed max-w-2xl font-['EireneSansRegular']">
-                Richa Industries operates a fully integrated textile facility
-                equipped with the latest global technology for seamless
-                production from yarn to finished fabric. This modern setup
-                demonstrates our commitment to quality, scalability, and
-                innovation under renewed ownership.
+                Richa Industries operates a fully integrated knitting and
+                processing plant designed for high-quality knitted fabrics. From
+                circular knitting machines to advanced dyeing and finishing
+                lines, everything is set up for precision, consistency, and
+                scalability — exactly what apparel and activewear brands need.
               </p>
             </div>
-            <button className="hidden lg:block bg-[#ffffff1a] hover:bg-[#ffffff33] border border-white/20 text-white px-8 py-4 rounded-lg transition-all backdrop-blur-sm self-start whitespace-nowrap">
-              Learn More
-            </button>
           </div>
 
           {/* Cards Grid */}
+          <div className="mb-10 text-center lg:text-left">
+            <h3 className="text-4xl lg:text-5xl font-KuraleRegular text-white">
+              Our Key Strengths
+            </h3>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: <FaIndustry />,
-                title: "High Volume Production",
-                desc: "Sprawling production area optimised for high-volume throughput",
+                title: "High Volume Knitting",
+                desc: "200+ Tons / Month. Equipped with latest circular knitting machines for single jersey, interlock, Lycra blends, and structured fabrics producing uniform rolls with minimal defects.",
               },
               {
                 icon: <FaLayerGroup />,
-                title: "Dedicated Zones",
-                desc: "Dedicated zones for knitting, dyeing, processing, and finishing to ensure contamination-free workflows",
+                title: "Dedicated Dyeing & Finishing Zones",
+                desc: "600 Tons / Month. Separate zones for dyeing, soft flow processing, and finishing to avoid cross contamination, ensuring vibrant colours, excellent fastness, and soft hand feel every time.",
               },
               {
                 icon: <FaRecycle />,
-                title: "Advanced Utilities",
-                desc: "Advanced utilities with water recycling plants and energy efficient systems",
+                title: "Advanced Utilities & Sustainability",
+                desc: "Water recycling plants + energy efficient systems. We reuse water in dyeing and maintain low impact processes to keep environmental footprint low while delivering consistent fabric quality.",
               },
               {
                 icon: <FaFlask />,
-                title: "Innovation Labs",
-                desc: "In house quality control and R&D labs for continuous innovation",
+                title: "In-House Quality & Innovation Labs",
+                desc: "Continuous testing and development. On site labs test GSM, shrinkage, colour fastness, pilling, and stretch plus R&D for new blends and performance fabrics that meet brand specifications.",
               },
             ].map((card, index) => (
               <motion.div
