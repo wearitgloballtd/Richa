@@ -9,7 +9,7 @@ const PortfolioSlider = () => {
       tag: "Structures",
       title: "Premium Knit Structures",
       description:
-        "Single jersey, interlock, and rib structures designed for versatility and durability.",
+        "Classic single jersey, interlock, and rib structures — soft, breathable, and durable. The perfect base for everyday tees, polos, innerwear, and casual layers. Key Specs: GSM 120–220 | Excellent shape retention | Ready for printing/dyeing.",
       image:
         "https://images.pexels.com/photos/6276068/pexels-photo-6276068.jpeg",
     },
@@ -18,7 +18,7 @@ const PortfolioSlider = () => {
       tag: "Performance",
       title: "Advanced Performance Blends",
       description:
-        "Performance blends (cotton-polyester, cotton-spandex) perfect for activewear and corporate uniforms.",
+        "Cotton-polyester and cotton-spandex blends engineered for movement and comfort. Superior stretch recovery, moisture-wicking, and quick-dry properties make them ideal for sportswear, gym wear, and corporate uniforms. Key Specs: GSM 140–260 | Colour fastness 4–5 | Pilling resistance",
       image:
         "https://images.pexels.com/photos/7717488/pexels-photo-7717488.jpeg",
     },
@@ -27,7 +27,7 @@ const PortfolioSlider = () => {
       tag: "Technical",
       title: "Enhanced Functional Fabrics",
       description:
-        "Technical fabrics engineered with enhanced properties like moisture-wicking, antimicrobial, and flame retardant finishes.",
+        "Piqué, honeycomb, waffle, and pointelle structures for premium texture and visual appeal. Raised surfaces add grip, style, and durability — perfect for polo shirts, outerwear, and fashion casuals. Key Specs: GSM 160–280 | Good stitch definition | Stable after washing",
       image:
         "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
@@ -36,7 +36,7 @@ const PortfolioSlider = () => {
       tag: "Sustainability",
       title: "Eco Friendly Solutions",
       description:
-        "Sustainable options utilizing recycled yarns and low impact dyes for a greener future.",
+        "Recycled polyester, organic cotton, and bamboo blends using low-impact dyes. Soft, breathable, and strong — sustainable fabrics that meet eco standards without sacrificing performance or comfort. Key Specs: GSM 130–250 | Low-impact dyes | Water-efficient processing.",
       image:
         "https://images.pexels.com/photos/3738108/pexels-photo-3738108.jpeg",
     },
@@ -45,7 +45,7 @@ const PortfolioSlider = () => {
       tag: "Customization",
       title: "Tailored Specifications",
       description:
-        "Custom weights, widths, and constructions (GSM 120–300+) availability to meet specific requirements.",
+        "Custom GSM (120–300+), widths, constructions, and finishes (anti-microbial, moisture-wicking, anti-pilling) to match your exact brand needs. Quick sampling and scalable production for private labels. Key Specs: Flexible GSM & width | Custom treatments | Reliable lead times.",
       image: "https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg",
     },
   ];
@@ -60,7 +60,7 @@ const PortfolioSlider = () => {
         </div>
       }
       title="Our Fabric Portfolio"
-      description="We produce a diverse range of knitted fabrics tailored for industrial, commercial, and apparel needs, ensuring versatility and high performance."
+      description="We produce a diverse range of knitted fabrics tailored for apparel, activewear, casual wear, and performance needs all with consistent quality and reliability."
       slides={slides}
       accentColor="#BB2929"
       imageBorderRadius="rounded-[160px]"

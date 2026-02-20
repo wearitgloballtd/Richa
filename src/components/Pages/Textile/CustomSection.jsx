@@ -49,7 +49,6 @@ const CustomSection = () => {
         "Specialties: single jersey, interlock, Lycra blends, rib, piqué, structured knits.",
         "Wide fibre range: cotton, polyester, bamboo blends, recycled yarns.",
         "Real-time monitoring ensures exceptional dimensional stability (variation <3% post-processing).",
-        "",
       ],
       footer:
         "Fabrics ready for dyeing — ideal for apparel, activewear, and performance wear.",

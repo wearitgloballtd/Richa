@@ -6,13 +6,13 @@ import RevealContent from "./RevealContent";
 const stepsData = [
   {
     id: 1,
-    title: "Why Choose Richa Industries?",
+    title: "What Sets Us Apart?",
     points: [
-      "Integrated end to end production for faster turnaround and consistent quality",
-      "High monthly capacities: 200 tons knitting + 600 tons processing",
-      "Customisation expertise from fibre selection to special finishes",
-      "Sustainable, cost effective solutions with world class technology",
-      "Revitalised under new ownership, focused on innovation and client success",
+      "Knitting to finishing in-house — faster turnaround, better quality control.",
+      "200 tons knitting + 600 tons processing per month — we handle volume reliably.",
+      "From fibre to finish — we match your exact GSM, width, blend, and treatment needs.",
+      "Low-water dyeing, enzyme treatments, recycling — performance without waste.",
+      "New ownership drives discipline, innovation, and long-term client success.",
     ],
   },
   {
@@ -133,7 +133,7 @@ const PulseSteps = () => {
                             exit={{ opacity: 0, y: 10 }}
                             className="text-center"
                           >
-                            <h3 className="text-2xl font-bold uppercase font-FoundersGroteskCondensed leading-none text-gray-900 mx-auto max-w-[240px]">
+                            <h3 className="text-2xl font-bold uppercase font-KuraleRegular leading-none text-gray-900 mx-auto max-w-[240px]">
                               {step.title}
                             </h3>
                           </motion.div>
