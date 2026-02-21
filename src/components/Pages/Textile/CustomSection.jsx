@@ -2,6 +2,11 @@ import { useEffect } from "react";
 import $ from "jquery";
 import "./CustomSection.css";
 import QualityAssurence from "../../../assets/images/qualityAssurence.png";
+import KnittedFabric from "../../../assets/images/Textile/knitted-fabric.png";
+import Deying from "../../../assets/images/Textile/deying.jpg";
+import Processing from "../../../assets/images/Textile/processing.jpg";
+import Finishing from "../../../assets/images/Textile/finishing.png";
+import Quality from "../../../assets/images/Textile/quality.png";
 
 const CustomSection = () => {
   useEffect(() => {
@@ -38,7 +43,7 @@ const CustomSection = () => {
   const projectItems = [
     {
       id: 1,
-      src: "https://images.pexels.com/photos/2767689/pexels-photo-2767689.jpeg",
+      src: KnittedFabric,
       title: "Knitting",
       number: "01",
       detailsTitle: "Building Strong, Flexible Foundations",
@@ -55,7 +60,7 @@ const CustomSection = () => {
     },
     {
       id: 2,
-      src: "https://images.pexels.com/photos/6850858/pexels-photo-6850858.jpeg",
+      src: Deying,
       title: "Dyeing",
       number: "02",
       detailsTitle: "Dyeing: Vibrant & Lasting Colors",
@@ -72,8 +77,7 @@ const CustomSection = () => {
     },
     {
       id: 3,
-      src: "https://images.pexels.com/photos/6461091/pexels-photo-6461091.jpeg",
-      subtitle: "Architecture",
+      src: Processing,
       title: "Processing",
       number: "03",
       detailsTitle: "Processing: Enhancing Performance & Feel",
@@ -91,8 +95,7 @@ const CustomSection = () => {
     },
     {
       id: 4,
-      src: "https://images.pexels.com/photos/2767689/pexels-photo-2767689.jpeg",
-      subtitle: "Landscape",
+      src: Finishing,
       title: "Finishing",
       number: "04",
       detailsTitle: "Finishing: The Final Touch",
@@ -110,7 +113,7 @@ const CustomSection = () => {
     },
     {
       id: 5,
-      src: QualityAssurence,
+      src: Quality,
       title: "Quality Assurance",
       number: "05",
       detailsTitle: "Quality Assurance: Zero Compromise",

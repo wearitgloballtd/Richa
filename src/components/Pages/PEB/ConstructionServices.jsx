@@ -13,7 +13,7 @@ const infrastructureFeatures = [
     description:
       "Sprawling production area optimised for large-scale fabrication and assembly, ensuring we can meet high-volume demands without compromising on speed or quality.",
     bullet: "Optimised for large-scale fabrication",
-    src: "https://images.pexels.com/photos/439416/pexels-photo-439416.jpeg",
+    src: "https://images.pexels.com/photos/8972008/pexels-photo-8972008.jpeg",
   },
   {
     id: "02",
@@ -21,7 +21,7 @@ const infrastructureFeatures = [
     description:
       "Dedicated zones for cutting, welding, assembly, painting, and quality control to maintain contamination-free and streamlined workflows throughout the manufacturing process.",
     bullet: "Contamination-free and streamlined workflows",
-    src: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg",
+    src: "https://images.pexels.com/photos/8940226/pexels-photo-8940226.jpeg",
   },
   {
     id: "03",
@@ -29,7 +29,7 @@ const infrastructureFeatures = [
     description:
       "Equipped with advanced utilities, including energy-efficient systems and material handling equipment, reducing our carbon footprint while maximizing operational output.",
     bullet: "Energy-efficient systems and material handling",
-    src: "https://images.pexels.com/photos/12157172/pexels-photo-12157172.jpeg",
+    src: "https://images.pexels.com/photos/29988987/pexels-photo-29988987.jpeg",
   },
   {
     id: "04",
@@ -37,7 +37,7 @@ const infrastructureFeatures = [
     description:
       "In-house engineering, design studios, and testing labs allow for continuous innovation and strict compliance with international standards.",
     bullet: "Innovation and compliance",
-    src: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg",
+    src: "https://images.pexels.com/photos/27102102/pexels-photo-27102102.jpeg",
   },
 ];
 
@@ -48,7 +48,7 @@ const ConstructionServices = () => {
     <section className="relative w-full py-20 px-6 md:px-20 font-['NeueMontreal'] bg-gray-50 overflow-hidden">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 z-0 opacity-10 bg-cover bg-center pointer-events-none"
+        className="absolute inset-0 z-0 opacity-20 bg-cover bg-center pointer-events-none"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
 
@@ -60,7 +60,7 @@ const ConstructionServices = () => {
             <span>Infrastructure</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl !font-KuraleRegular  leading-[0.95] text-black max-w-4xl">
-            Our State of the Art Infrastructure
+            Our State-of-the-Art PEB Manufacturing Facility
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl leading-relaxed !font-EireneSansRegular">
             Richa Industries operates a modern, fully integrated PEB

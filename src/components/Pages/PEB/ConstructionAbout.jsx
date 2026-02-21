@@ -3,7 +3,7 @@ import profilePic from "../../../assets/images/TeamMembers/bhudev.png";
 
 const ConstructionAbout = () => {
   return (
-    <section className="w-full bg-white px-6 md:px-20 font-['NeueMontreal'] text-black overflow-hidden relative z-30">
+    <section className="w-full bg-white px-6 md:px-20 font-['NeueMontreal'] text-black overflow-hidden relative z-30 mb-10">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 relative">
         {/* Left Column Content */}
         <div className="w-full lg:w-1/2 flex flex-col gap-8 z-10">
@@ -19,16 +19,17 @@ const ConstructionAbout = () => {
 
           {/* Description */}
           <p className="text-gray-500 leading-relaxed max-w-lg text-lg !font-EireneSansRegular">
-            At Richa Industries Limited, our Pre-Engineered Buildings (PEB)
-            Division delivers innovative, high performance steel structures
-            tailored for industrial, commercial, and infrastructure needs.
+            At Richa Industries Limited, our PEB Division designs, fabricates,
+            supplies, and erects pre-engineered steel buildings tailored for
+            industrial, commercial, and infrastructure projects.
           </p>
 
           {/* List Items */}
           <div className="flex flex-col gap-4 mt-2">
             {[
-              "Specialised design, fabrication, supply, and erection",
-              "End-to-end solutions: Speed, cost-efficiency, durability",
+              "Specialised design, precision fabrication, and on-site erection",
+              "End-to-end execution: speed, cost-efficiency, durability",
+              "Optimised steel usage and clear-span capabilities for large-scale facilities.",
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-4 h-4 rounded-full border-2 border-[#BB2929] flex items-center justify-center">
@@ -75,7 +76,7 @@ const ConstructionAbout = () => {
           </div>
 
           {/* Video Thumbnail (Bottom Left) */}
-          <div className="relative mt-12 w-full max-w-lg aspect-video overflow-hidden rounded-sm group cursor-pointer">
+          <div className="relative mt-12 w-full max-w-full aspect-video overflow-hidden rounded-2xl group cursor-pointer">
             <video
               src="https://www.pexels.com/download/video/1197802/"
               alt="Worker smoothing concrete"
@@ -98,7 +99,7 @@ const ConstructionAbout = () => {
               }} // Angled top-right corner
             >
               <img
-                src="https://images.pexels.com/photos/1451416/pexels-photo-1451416.jpeg"
+                src="https://images.pexels.com/photos/17728784/pexels-photo-17728784.jpeg"
                 alt="Construction Worker"
                 className="w-full h-full object-cover"
               />
@@ -109,17 +110,16 @@ const ConstructionAbout = () => {
           <div className="flex flex-col gap-6 max-w-md ml-auto mt-4 mb-10">
             <p className="text-gray-500 leading-relaxed text-base text-justify !font-EireneSansRegular">
               Equipped with state-of-the-art manufacturing facilities and
-              advanced engineering technologies, our operations ensure
-              precision, quality, and sustainability. Our PEB plant in Kashipur,
-              Uttarakhand, supports large-scale production, enabling us to meet
-              diverse project demands while upholding excellence in every
+              advanced engineering technologies, our PEB plant in Kashipur,
+              Uttarakhand, supports large-scale production. This enables us to
+              meet diverse project demands while upholding excellence in every
               structure delivered under our renewed ownership.
             </p>
 
-            <button className="bg-[#BB2929] hover:bg-[#9b2222] text-white px-8 py-4 flex items-center justify-between gap-4 uppercase font-bold text-sm tracking-widest transition-all w-full sm:w-auto rounded-sm">
+            {/* <button className="bg-[#BB2929] hover:bg-[#9b2222] text-white px-8 py-4 flex items-center justify-between gap-4 uppercase font-bold text-sm tracking-widest transition-all w-full sm:w-auto rounded-sm">
               <span>DISCOVER PROJECTS</span>
               <FaArrowRight className="text-xs -rotate-45" />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

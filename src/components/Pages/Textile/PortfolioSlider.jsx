@@ -1,6 +1,9 @@
 import React from "react";
 import PortfolioSliderSection from "../../common/PortfolioSliderSection";
-import "./PortfolioSlider.css"; // Keeping CSS for any specific overrides if needed, though we moved most to props
+import "./PortfolioSlider.css";
+import FunctionalFabrics from "../../../assets/images/Textile/knit-fabric-structure.jpeg";
+import Specifications from "../../../assets/images/Textile/Specifications.png";
+import EcoFriendly from "../../../assets/images/Textile/knitted-fabric.png";
 
 const PortfolioSlider = () => {
   const slides = [
@@ -28,8 +31,7 @@ const PortfolioSlider = () => {
       title: "Enhanced Functional Fabrics",
       description:
         "Piqué, honeycomb, waffle, and pointelle structures for premium texture and visual appeal. Raised surfaces add grip, style, and durability — perfect for polo shirts, outerwear, and fashion casuals. Key Specs: GSM 160–280 | Good stitch definition | Stable after washing",
-      image:
-        "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: FunctionalFabrics,
     },
     {
       id: 4,
@@ -37,8 +39,7 @@ const PortfolioSlider = () => {
       title: "Eco Friendly Solutions",
       description:
         "Recycled polyester, organic cotton, and bamboo blends using low-impact dyes. Soft, breathable, and strong — sustainable fabrics that meet eco standards without sacrificing performance or comfort. Key Specs: GSM 130–250 | Low-impact dyes | Water-efficient processing.",
-      image:
-        "https://images.pexels.com/photos/3738108/pexels-photo-3738108.jpeg",
+      image: EcoFriendly,
     },
     {
       id: 5,
@@ -46,7 +47,7 @@ const PortfolioSlider = () => {
       title: "Tailored Specifications",
       description:
         "Custom GSM (120–300+), widths, constructions, and finishes (anti-microbial, moisture-wicking, anti-pilling) to match your exact brand needs. Quick sampling and scalable production for private labels. Key Specs: Flexible GSM & width | Custom treatments | Reliable lead times.",
-      image: "https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg",
+      image: Specifications,
     },
   ];
 

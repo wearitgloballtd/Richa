@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import "../../css/style.min.css";
 import textileVideo from "../../../assets/videos/Textile_Division.mp4";
-import textileImage from "../../../assets/images/featureSection/TEXTILE.jpg";
-import infrastructureBg from "../../../assets/images/textile_process.jpg";
+import textileImage from "../../../assets/images/Textile/textile-division.png";
+import infrastructureBg from "../../../assets/images/Textile/Our-Infrastructure.jpeg";
 import { motion } from "framer-motion";
 import {
   FaEye,
@@ -393,7 +393,7 @@ const VideoWave = () => {
             alt="Infrastructure Background"
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-8 lg:px-20 relative z-10 font-['NeueMontreal']">

@@ -5,6 +5,12 @@ import CareerStats from "./CareerStats";
 import SparkValues from "./SparkValues";
 import WellnessBenefits from "./WellnessBenefits";
 import WhyWorkWithUs from "./WhyWorkWithUs";
+import SportsWear from "../../../assets/images/Textile/sportsWear.png";
+import Growth from "../../../assets/career/growth.jpeg";
+import HandShake from "../../../assets/career/handshake.jpeg";
+import Meeting from "../../../assets/career/meeting.jpeg";
+import Strength from "../../../assets/career/employee-strength.png";
+import richaBuilding from "../../../assets/career/richaBuilding.jpeg";
 
 const CareerPage = () => {
   const [index, setIndex] = useState(0);
@@ -19,21 +25,21 @@ const CareerPage = () => {
 
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop",
+      src: "https://images.pexels.com/photos/6276068/pexels-photo-6276068.jpeg",
       alt: "Team member",
       classname: "w-64 h-80 rounded-2xl object-cover",
       offset: "translate-y-0",
       icon: null,
     },
     {
-      src: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2070&auto=format&fit=crop",
+      src: SportsWear,
       alt: "Office pet",
       classname: "w-60 h-72 rounded-3xl object-cover",
       offset: "translate-y-12",
       icon: null,
     },
     {
-      src: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=2070&auto=format&fit=crop",
+      src: Growth,
       alt: "Gaming break",
       classname: "w-64 h-64 rounded-2xl object-cover",
       offset: "translate-y-4",
@@ -42,34 +48,32 @@ const CareerPage = () => {
       ),
     },
     {
-      src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop",
+      src: Meeting,
       alt: "Nature retreat",
       classname: "w-60 h-80 rounded-t-3xl rounded-b-lg object-cover",
       offset: "translate-y-16",
       icon: null,
     },
     {
-      src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop",
+      src: HandShake,
       alt: "Sunset view",
       classname: "w-64 h-80 rounded-xl object-cover",
       offset: "translate-y-0",
       icon: <FiSun className="text-black text-2xl absolute -top-6 -right-6" />,
     },
     {
-      src: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2070&auto=format&fit=crop",
+      src: Strength,
       alt: "Adventure",
       classname: "w-72 h-96 rounded-2xl object-cover",
       offset: "translate-y-8",
       icon: null,
     },
     {
-      src: "https://images.unsplash.com/photo-1583511655857-d1eb0f9942a6?q=80&w=1887&auto=format&fit=crop",
-      alt: "Pet friendly",
-      classname: "w-60 h-60 rounded-full object-cover",
-      offset: "translate-y-20",
-      icon: (
-        <FiCoffee className="text-black text-2xl absolute -left-10 bottom-0" />
-      ),
+      src: richaBuilding,
+      alt: "Richa Building",
+      classname: "w-64 h-80 rounded-2xl object-cover",
+      offset: "translate-y-8",
+      icon: null,
     },
   ];
 

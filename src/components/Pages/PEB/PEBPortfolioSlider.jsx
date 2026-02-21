@@ -19,7 +19,7 @@ const slides = [
     description:
       "Commercial structures, including showrooms, malls, and multi-level car parks that combine aesthetics with structural integrity.",
     image:
-      "https://images.pexels.com/photos/374023/pexels-photo-374023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/27398530/pexels-photo-27398530.jpeg",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const slides = [
     description:
       "Infrastructure projects such as rail over bridges, metro stations, and hangars built for critical networks.",
     image:
-      "https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/11918704/pexels-photo-11918704.jpeg",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const slides = [
     title: "Specialised Buildings",
     description:
       "Specialised buildings like indoor stadiums, auditoriums, and high-rise steel structures engineered for unique requirements.",
-    image: "https://images.pexels.com/photos/167478/pexels-photo-167478.jpeg",
+    image: "https://images.pexels.com/photos/236709/pexels-photo-236709.jpeg",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const slides = [
     description:
       "Custom designs with clear spans up to large widths, mezzanines, and crane integrations tailored to your specific needs.",
     image:
-      "https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/15947586/pexels-photo-15947586.jpeg",
   },
 ];
 

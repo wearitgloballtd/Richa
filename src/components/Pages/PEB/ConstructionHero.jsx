@@ -43,15 +43,15 @@ const ConstructionHero = () => {
               className="text-[#BB2929] text-6xl md:text-7xl lg:text-7xl font-bold font-FoundersGroteskCondensed uppercase leading-[0.8] drop-shadow-lg"
               style={{ WebkitTextStroke: "2px white" }}
             >
-              & Reliable Service
+              & RELIABLE EXECUTION
             </h1>
           </div>
 
           {/* Description */}
           <p className="font-['EireneSansRegular'] text-gray-200 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
-            We deliver innovative Pre-Engineered Building (PEB) solutions. With
-            more than 7 years of expertise, we design and develop efficient,
-            high quality structures built for performance and durability.
+            We design, fabricate and erect High Performance Pre-Engineered
+            Buildings (PEB) — Engineered for speed, durability and cost
+            efficiency.
           </p>
 
           {/* Call to Action Button */}

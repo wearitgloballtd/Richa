@@ -1,5 +1,7 @@
 import React from "react";
 import IndustriesSection from "../../common/IndustriesSection";
+import HomeTextile from "../../../assets/images/Textile/homeTextile.png";
+import SportsWear from "../../../assets/images/Textile/sportsWear.png";
 
 // Replace these with actual image imports or URLs as needed
 const industries = [
@@ -14,29 +16,26 @@ const industries = [
     id: 2,
     title: "Activewear & Sportswear",
     desc: "Gym wear, leggings, running gear, and performance athleisure.",
-    image:
-      "https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: SportsWear,
   },
   {
     id: 3,
     title: "Workwear & Uniforms",
     desc: "Corporate shirts, industrial uniforms, hospitality attire, and safety wear.",
-    image:
-      "https://images.pexels.com/photos/3826678/pexels-photo-3826678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://images.pexels.com/photos/1682699/pexels-photo-1682699.jpeg",
   },
   {
     id: 4,
     title: "Home Textiles & Technical",
-    desc: "Bedding, towels, upholstery, filtration, and industrial applications.",
-    image:
-      "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    desc: "Bedding, towels, upholstery, filtration, and home textile.",
+    image: HomeTextile,
   },
 ];
 
 const IndustriesWeServe = () => {
   return (
     <IndustriesSection
-      title="Our fabrics power success"
+      title="Our Fabrics Power Success"
       subtitle="Industries We Serve"
       description="Our knitted fabrics deliver consistent quality, comfort, and performance across diverse sectors — helping brands and businesses succeed with reliable materials."
       footerText="We cater to a broad clientele, ensuring our fabrics meet the unique demands of each industry without compromising on quality."

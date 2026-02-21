@@ -48,11 +48,11 @@ const ConstructionBenefits = () => {
           </div>
 
           {/* Truck Image */}
-          <div className="w-full mt-4">
+          <div className="w-full mt-8">
             <img
               src="https://images.pexels.com/photos/29224552/pexels-photo-29224552.jpeg"
               alt="Heavy Machinery"
-              className="w-full max-w-md lg:max-w-lg object-contain  contrast-125 hover:grayscale-0 transition-all duration-500"
+              className="w-full h-[400px] lg:h-[500px] object-cover rounded-2xl contrast-125 hover:grayscale-0 transition-all duration-500"
             />
           </div>
         </div>

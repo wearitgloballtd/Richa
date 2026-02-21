@@ -1,7 +1,7 @@
 import React from "react";
 import IndustriesSection from "../../common/IndustriesSection";
+import Commercial from "../../../assets/PEB/commercial.jpeg";
 
-// Replace these with actual image imports or URLs for PEB context
 const industries = [
   {
     id: 1,
@@ -21,29 +21,26 @@ const industries = [
     id: 3,
     title: "Automotive & Workshops",
     desc: "Automotive and engineering workshops built for precision work.",
-    image:
-      "https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://images.pexels.com/photos/1087083/pexels-photo-1087083.jpeg",
   },
   {
     id: 4,
     title: "Commercial & Retail",
     desc: "Commercial and retail spaces combining functionality with modern aesthetics.",
-    image:
-      "https://images.pexels.com/photos/264502/pexels-photo-264502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: Commercial,
   },
   {
     id: 5,
     title: "Infrastructure & Public",
     desc: "Infrastructure and public projects like airports, railways, and defence facilities.",
-    image:
-      "https://images.pexels.com/photos/7245366/pexels-photo-7245366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://images.pexels.com/photos/6245523/pexels-photo-6245523.jpeg",
   },
 ];
 
 const PEBIndustriesServed = () => {
   return (
     <IndustriesSection
-      title="Supporting diverse sectors"
+      title="Supporting Diverse Sectors"
       subtitle="Industries We Serve"
       description="Our PEB structures support diverse sectors with reliable, scalable solutions."
       footerText="We deliver tailored buildings that meet the specific demands of each industry."

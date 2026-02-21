@@ -10,6 +10,8 @@ import {
   FaRocket,
 } from "react-icons/fa6";
 
+import HandShake from "../../../assets/career/handshake.jpeg";
+
 const WhyWorkWithUs = () => {
   const scrollRef = useRef(null);
 
@@ -75,8 +77,7 @@ const WhyWorkWithUs = () => {
       description:
         "Whenever you’re ready, fill out the form and introduce yourself. It could be the beginning of something exciting with the Richa family.",
       icon: <FaRocket size={48} className="text-[#BB2929]" />,
-      image:
-        "https://images.unsplash.com/photo-1507537297725-24a1c434c67b?q=80&w=2070&auto=format&fit=crop",
+      image: HandShake,
     },
   ];
 

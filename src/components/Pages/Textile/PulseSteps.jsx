@@ -110,7 +110,7 @@ const PulseSteps = () => {
                 return (
                   <div
                     key={step.id}
-                    className={`relative flex flex-col items-center justify-center min-h-[500px] transition-all duration-500 rounded-3xl p-4 md:p-6 group cursor-pointer ${isActive ? "bg-white shadow-xl" : "hover:scale-[1.02]"}`}
+                    className={`relative flex flex-col items-center min-h-[500px] transition-all duration-500 rounded-3xl p-4 md:p-6 group cursor-pointer ${isActive ? "justify-start bg-white shadow-xl" : "justify-center hover:scale-[1.02]"}`}
                     onClick={() => handleDotClick(index)}
                   >
                     {/* Large Background Number - Centered Absolute */}
@@ -122,8 +122,10 @@ const PulseSteps = () => {
                       </span>
                     </div>
 
-                    {/* Interactive Layout - Flex Column Center */}
-                    <div className="relative z-10 w-full h-full flex flex-col items-center justify-center gap-6">
+                    {/* Interactive Layout - Flex Column Top Aligned */}
+                    <div
+                      className={`relative z-10 w-full h-full flex flex-col items-center gap-6 ${isActive ? "justify-start pt-8" : "justify-center"}`}
+                    >
                       {/* Title - Reveals Above */}
                       <AnimatePresence>
                         {isActive && (
