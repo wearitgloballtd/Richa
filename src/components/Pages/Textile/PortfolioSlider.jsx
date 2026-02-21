@@ -2,7 +2,6 @@ import React from "react";
 import PortfolioSliderSection from "../../common/PortfolioSliderSection";
 import "./PortfolioSlider.css";
 import FunctionalFabrics from "../../../assets/images/Textile/knit-fabric-structure.jpeg";
-import Specifications from "../../../assets/images/Textile/Specifications.png";
 import EcoFriendly from "../../../assets/images/Textile/knitted-fabric.png";
 
 const PortfolioSlider = () => {
