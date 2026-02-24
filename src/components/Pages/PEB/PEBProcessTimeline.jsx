@@ -77,7 +77,7 @@ const PEBProcessTimeline = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#BB2929] font-bold uppercase tracking-widest mb-3 font-FoundersGroteskCondensed text-sm"
+            className="text-[#BB2929] font-bold uppercase tracking-widest mb-3 font-FoundersGroteskCondensed text-xs sm:text-sm"
           >
             Project Lifecycle
           </motion.h4>
@@ -86,7 +86,7 @@ const PEBProcessTimeline = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl lg:text-7xl font-KuraleRegular text-black mb-6  leading-[0.95]"
+            className="text-4xl sm:text-5xl lg:text-7xl font-KuraleRegular text-black mb-4 sm:mb-6 leading-[0.95]"
           >
             From Concept to Completion
           </motion.h1>
@@ -95,7 +95,7 @@ const PEBProcessTimeline = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed "
+            className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
           >
             Our streamlined process ensures precision, speed, and quality at
             every stage of your building's creation.
@@ -104,25 +104,27 @@ const PEBProcessTimeline = () => {
       }
       renderItemContent={(item, isLeft) => (
         <>
-          <h4 className="text-sm font-bold uppercase tracking-[0.1em] text-[#BB2929] mb-2 font-['EireneSansRegular']">
+          <h4 className="text-xs sm:text-sm font-bold uppercase tracking-[0.1em] text-[#BB2929] mb-2 font-['EireneSansRegular'] break-words">
             {item.subtitle}
           </h4>
-          <h2 className="text-3xl lg:text-5xl font-bold leading-tight mb-4 font-['EireneSansRegular'] text-black uppercase">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4 font-['EireneSansRegular'] text-black uppercase break-words">
             {item.title}
           </h2>
-          <p className="text-base text-gray-700 font-['EireneSansRegular'] leading-relaxed mb-6">
+          <p
+            className={`text-sm sm:text-base text-gray-700 font-['EireneSansRegular'] leading-relaxed mb-6 ${isLeft ? "lg:ml-auto lg:mr-0" : "lg:mr-auto lg:ml-0"}`}
+          >
             {item.desc}
           </p>
           {/* Bullets */}
           <ul
-            className={`text-sm text-gray-600 space-y-2 mb-6 ${isLeft ? "lg:pl-8" : "lg:pr-8"} list-disc list-inside lg:list-outside marker:text-[#BB2929]`}
+            className={`text-sm sm:text-base text-gray-600 space-y-2 mb-6 ${isLeft ? "lg:pl-8" : "lg:pr-8 mx-auto lg:mx-0"} list-disc list-outside ml-4 sm:ml-5 text-left marker:text-[#BB2929]`}
           >
             {item.bullets.map((bullet, i) => (
               <li key={i}>{bullet}</li>
             ))}
           </ul>
           <p
-            className={`text-sm font-semibold text-gray-800 italic ${isLeft ? "lg:border-r-4 lg:pr-4 lg:border-l-0 border-l-4 pl-4" : "border-l-4 pl-4"} border-[#BB2929]`}
+            className={`text-sm sm:text-base font-semibold text-gray-800 italic ${isLeft ? "lg:border-r-4 lg:pr-4 lg:border-l-0 border-l-4 pl-4 text-left lg:text-right" : "border-l-4 pl-4 text-left"} border-[#BB2929]`}
           >
             {item.footer}
           </p>

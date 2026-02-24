@@ -119,20 +119,14 @@ const RevealImg = () => {
   }, []);
 
   return (
-    <section ref={mainRef} style={{ width: "100%", overflow: "hidden" }}>
-      <div
-        style={{
-          maxWidth: "1440px",
-          margin: "auto",
-          padding: "120px 40px",
-        }}
-      >
+    <section ref={mainRef} className="w-full overflow-hidden">
+      <div className="w-full max-w-[1440px] mx-auto px-5 sm:px-8 md:px-10 py-12 sm:py-16 md:py-[120px]">
         {/* Title Section */}
-        <div className="w-full mb-10">
-          <p className="text-[#BB2929] font-EireneSansRegular text-lg md:text-lg tracking-[0.2em] mb-2">
+        <div className="w-full mb-6 sm:mb-8 md:mb-10 text-center md:text-left flex flex-col items-center md:items-start">
+          <p className="text-[#BB2929] font-EireneSansRegular text-sm sm:text-base md:text-lg tracking-[0.1em] md:tracking-[0.2em] mb-2 sm:mb-3">
             From Fabrics to Structures
           </p>
-          <h1 className="revealTitle text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight">
+          <h1 className="revealTitle text-4xl sm:text-5xl md:text-6xl lg:text-7xl !font-KuraleRegular text-black leading-tight md:leading-[0.95] tracking-tight">
             {titleText.split("").map((char, index) => (
               <span key={index} className="char">
                 {char}
@@ -144,12 +138,7 @@ const RevealImg = () => {
         {/* VIDEO */}
         <div
           ref={containerRef}
-          style={{
-            position: "relative",
-            width: "100%",
-            height: "80vh",
-            overflow: "hidden",
-          }}
+          className="relative w-full h-[40vh] sm:h-[50vh] md:h-[65vh] lg:h-[80vh] overflow-hidden rounded-xl"
         >
           <RevealCover />
 
@@ -165,19 +154,14 @@ const RevealImg = () => {
                 });
               }
             }}
-            style={{
-              position: "absolute",
-              inset: 0,
-            }}
+            className="absolute inset-0"
           >
             <video
               ref={videoRef}
               src={videoSource}
+              className="w-full h-full object-cover"
               style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                border: "3px groove #BB2929 ",
+                border: "3px groove #BB2929",
                 borderRadius: "12px",
               }}
               loop

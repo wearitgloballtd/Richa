@@ -59,33 +59,43 @@ const ConstructionBenefits = () => {
 
         {/* Right Column: Benefits List */}
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
-          {benefits.map((benefit, index) => (
-            <div
-              key={benefit.id}
-              className="flex gap-6 items-start py-4 cursor-default transition-all duration-300"
-              style={{ paddingLeft: `${index * 3}rem` }} // Reduced indent multiplier for 5 items
-            >
-              {/* Number with Hover Effect */}
-              <div className="group relative flex-shrink-0 w-20 h-20 md:w-24 md:h-24 flex items-center justify-center transition-transform duration-300 hover:translate-x-2">
-                {/* Hover Background Square */}
-                <div className="absolute top-4 left-0 w-16 h-16 bg-[#FFE5E5] opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+          {benefits.map((benefit, index) => {
+            // Responsive padding classes for staircase effect on medium screens and up
+            const paddingClasses = [
+              "pl-0",
+              "md:pl-12",
+              "md:pl-24",
+              "md:pl-36",
+              "md:pl-48",
+            ];
 
-                <span className="text-5xl md:text-7xl font-bold font-FoundersGroteskCondensed text-gray-200 group-hover:text-[#BB2929] transition-colors duration-300">
-                  {benefit.id}
-                </span>
-              </div>
+            return (
+              <div
+                key={benefit.id}
+                className={`flex gap-4 md:gap-6 items-start py-4 cursor-default transition-all duration-300 ${paddingClasses[index] || ""}`}
+              >
+                {/* Number with Hover Effect */}
+                <div className="group relative flex-shrink-0 w-16 h-16 md:w-24 md:h-24 flex items-center justify-center transition-transform duration-300 hover:translate-x-2">
+                  {/* Hover Background Square */}
+                  <div className="absolute top-2 left-0 md:top-4 md:left-0 w-12 h-12 md:w-16 md:h-16 bg-[#FFE5E5] opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
 
-              {/* Text Content */}
-              <div className="flex flex-col gap-1 pt-3">
-                <h3 className="text-lg md:text-xl font-bold text-gray-800 uppercase tracking-tight leading-none">
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
-                  {benefit.description}
-                </p>
+                  <span className="text-5xl md:text-7xl font-bold font-FoundersGroteskCondensed text-gray-200 group-hover:text-[#BB2929] transition-colors duration-300">
+                    {benefit.id}
+                  </span>
+                </div>
+
+                {/* Text Content */}
+                <div className="flex flex-col gap-1 pt-1 md:pt-3">
+                  <h3 className="text-[1.1rem] md:text-xl font-bold text-gray-800 uppercase tracking-tight leading-none">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
+                    {benefit.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 

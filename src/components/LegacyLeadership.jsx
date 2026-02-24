@@ -37,8 +37,8 @@ const LegacyLeadership = () => {
   return (
     <section ref={containerRef} className="w-full bg-white text-black">
       {/* Top Heading */}
-      <div className="max-w-[1400px] mx-auto px-10  pb-6">
-        <p className="text-[3vw] md:text-[2.8vw] !font-EireneSansRegular tracking-tight text-[#bb2929] leading-[0.95]">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-10 pb-6">
+        <p className="text-4xl md:text-[2.8vw] !font-EireneSansRegular tracking-tight text-[#bb2929] leading-[0.95]">
           Leadership &amp; Direction
         </p>
         <p className="mt-2 text-base md:text-lg text-gray-600">
@@ -47,7 +47,7 @@ const LegacyLeadership = () => {
       </div>
 
       {/* Stability & Scale Section */}
-      <div className="max-w-[1400px] mx-auto px-10 py-8 md:py-12">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-10 py-8 md:py-12">
         <h2 className="legacyTitle text-4xl md:text-5xl lg:text-6xl !font-KuraleRegular tracking-tight text-black mb-6">
           {titleText.split("").map((char, index) => (
             <span key={index}>{char}</span>
@@ -86,9 +86,9 @@ const LegacyLeadership = () => {
       {/* Split Banner */}
       <div className="relative w-full">
         <div className="w-full ">
-          <div className="relative h-[45vh] md:h-[55vh] w-full overflow-hidden flex flex-col md:flex-row">
+          <div className="relative flex flex-col md:flex-row w-full overflow-hidden">
             {/* LEFT PANEL */}
-            <div className="relative w-full md:w-1/2 h-full overflow-hidden">
+            <div className="relative w-full md:w-1/2 h-[50vh] md:h-[55vh] overflow-hidden">
               <div
                 className="absolute inset-0 bg-center bg-cover"
                 style={{
@@ -99,8 +99,8 @@ const LegacyLeadership = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
 
               {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-end px-8 pb-10 text-white">
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">
+              <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-8 pb-8 md:pb-10 text-white">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 leading-tight">
                   Establishing a foundation of success
                 </h3>
                 <button className="group mt-2 inline-flex items-center gap-2 text-sm md:text-base font-medium">
@@ -115,7 +115,7 @@ const LegacyLeadership = () => {
             </div>
 
             {/* RIGHT PANEL */}
-            <div className="relative w-full md:w-1/2 h-full overflow-hidden">
+            <div className="relative w-full md:w-1/2 h-[50vh] md:h-[55vh] overflow-hidden">
               <div
                 className="absolute inset-0 bg-center bg-cover"
                 style={{
@@ -126,11 +126,11 @@ const LegacyLeadership = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
 
               {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-end px-8 pb-10 text-white">
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">
+              <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-8 pb-8 md:pb-10 text-white">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 leading-tight">
                   Chairman&apos;s vision for the future
                 </h3>
-                <p className="mb-3 max-w-[90%] text-sm md:text-base text-white/90">
+                <p className="mb-3 max-w-[90%] text-base md:text-lg text-white/90">
                   A perspective on growth, innovation, and responsibility that
                   defines our leadership.
                 </p>

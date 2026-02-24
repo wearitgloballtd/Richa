@@ -56,7 +56,7 @@ const ScrollTimeline = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#bb2929] tracking-widest mb-3 font-['EireneSansRegular'] text-lg"
+            className="text-[#bb2929] tracking-widest mb-3 font-['EireneSansRegular'] text-xs sm:text-sm lg:text-lg uppercase font-bold"
           >
             Our Commitment to Sustainable Practices
           </motion.h4>
@@ -65,31 +65,34 @@ const ScrollTimeline = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl lg:text-6xl !font-KuraleRegular text-black mb-6 leading-[0.9] tracking-relaxed"
+            className="text-4xl sm:text-5xl lg:text-6xl !font-KuraleRegular text-black mb-4 sm:mb-6 leading-tight tracking-normal"
           >
-            Prioritising the Planet <br /> Alongside Performance
+            Prioritising the Planet <br className="hidden sm:block" /> Alongside
+            Performance
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-['EireneSansRegular']"
+            className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-['EireneSansRegular'] px-4 sm:px-0"
           >
             These efforts reduce our environmental footprint while delivering
             high performance, responsibly produced fabrics.
           </motion.p>
         </>
       }
-      renderItemContent={(item) => (
+      renderItemContent={(item, isLeft) => (
         <>
-          <h4 className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-4 font-['EireneSansRegular'] !text-[#bb2929]">
+          <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-gray-500 mb-3 sm:mb-4 font-['EireneSansRegular'] !text-[#bb2929] break-words">
             {item.subtitle}
           </h4>
-          <h2 className="text-4xl lg:text-5xl font-normal leading-tight mb-6 font-['EireneSansRegular'] text-black uppercase">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight mb-4 sm:mb-6 font-['EireneSansRegular'] text-black uppercase break-words">
             {item.title}
           </h2>
-          <p className="text-sm lg:text-base text-gray-700 font-['EireneSansRegular'] leading-relaxed max-w-sm ml-auto lg:ml-auto lg:mr-0">
+          <p
+            className={`text-sm sm:text-base lg:text-base text-gray-700 font-['EireneSansRegular'] leading-relaxed max-w-full sm:max-w-sm ${isLeft ? "lg:ml-auto lg:mr-0" : "lg:mr-auto lg:ml-0"}`}
+          >
             {item.desc}
           </p>
         </>

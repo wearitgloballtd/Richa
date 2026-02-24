@@ -106,7 +106,7 @@ const ProcessTimelineSection = ({
     <div className="w-full bg-white font-['NeueMontreal']">
       {/* Header Section */}
       {headerContent && (
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-24 pb-12 text-center ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-16 sm:pt-24 pb-8 sm:pb-12 text-center ">
           {headerContent}
         </div>
       )}
@@ -114,7 +114,7 @@ const ProcessTimelineSection = ({
       {/* Timeline Section */}
       <section
         ref={containerRef}
-        className="relative w-full bg-[#f9f9f9] text-black py-24 overflow-hidden rounded-t-3xl rounded-b-3xl mb-20"
+        className="relative w-full bg-[#f9f9f9] text-black py-16 sm:py-24 overflow-hidden rounded-t-3xl rounded-b-3xl mb-10 sm:mb-20"
         style={{ minHeight: "100vh" }}
       >
         {/* Background Image with Overlay */}
@@ -128,17 +128,17 @@ const ProcessTimelineSection = ({
           <div className="absolute inset-0 bg-gradient-to-b from-[#f9f9f9] via-transparent to-[#f9f9f9]"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto relative z-10 px-6 lg:px-10">
-          {/* Center Line Container (Desktop) */}
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px -ml-[0.5px] h-full bg-gray-300">
+        <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-10">
+          {/* Timeline Line Container (Desktop & Mobile) */}
+          <div className="absolute left-4 sm:left-6 lg:left-1/2 top-0 bottom-0 w-[2px] lg:w-px -ml-[1px] lg:-ml-[0.5px] h-full bg-gray-200 lg:bg-gray-300">
             {/* Animated Progress Line */}
             <div
               ref={lineRef}
               className="w-full absolute top-0 left-0"
               style={{ backgroundColor: accentColor, height: "0%" }}
             >
-              {/* Moving Logo */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-30 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-100">
+              {/* Moving Logo (Desktop Only) */}
+              <div className="hidden lg:flex absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-30 w-12 h-12 bg-white rounded-full items-center justify-center shadow-md border border-gray-100">
                 <img
                   src={richaLogo}
                   alt="Logo"
@@ -148,11 +148,8 @@ const ProcessTimelineSection = ({
             </div>
           </div>
 
-          {/* Mobile Left Line - Fallback for mobile */}
-          <div className="lg:hidden absolute left-6 top-0 bottom-0 w-px h-full bg-gray-200"></div>
-
           {/* Timeline Sections */}
-          <div className="flex flex-col gap-24 lg:gap-48 py-20">
+          <div className="flex flex-col gap-16 sm:gap-24 lg:gap-48 py-10 lg:py-20">
             {data.map((item, index) => {
               const isLeft = item.align
                 ? item.align === "left"
@@ -163,26 +160,19 @@ const ProcessTimelineSection = ({
                   key={index}
                   className={`timeline-section relative flex flex-col lg:flex-row w-full items-start lg:items-center ${isLeft ? "lg:justify-start" : "lg:justify-end"}`}
                 >
-                  {/* Dot on the center line - Desktop */}
+                  {/* Dot on the center line */}
                   <div
-                    className="hidden lg:block absolute left-1/2 -ml-[4px] w-2 h-2 rounded-full bg-gray-300 transition-all duration-300 z-20"
+                    className="absolute left-4 sm:left-6 lg:left-1/2 -ml-[5px] w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 z-20 top-0 mt-6 lg:mt-0 lg:top-1/2 lg:-translate-y-1/2"
                     ref={(el) => (dotRefs.current[index] = el)}
-                    style={{ top: "50%", transform: "translateY(-50%)" }}
                   ></div>
 
-                  {/* Dot - Mobile */}
-                  <div
-                    className="lg:hidden absolute left-6 w-3 h-3 rounded-full z-20 -ml-[5px] mt-2"
-                    style={{ backgroundColor: accentColor }}
-                  ></div>
-
-                  {/* Image Block (Desktop Only) */}
+                  {/* Image Block */}
                   {item.image && (
                     <div
-                      className={`timeline-image-container hidden lg:block absolute top-0 bottom-0 w-[40%] ${isLeft ? "right-0" : "left-0"}`}
+                      className={`timeline-image-container relative w-full h-[250px] sm:h-[350px] mb-8 lg:mb-0 pl-10 sm:pl-12 lg:pl-0 lg:absolute lg:top-0 lg:bottom-0 lg:w-[40%] lg:h-auto ${isLeft ? "lg:right-0" : "lg:left-0"}`}
                     >
                       <div
-                        className="timeline-image-wrapper w-full h-full overflow-hidden rounded-[2rem] shadow-xl"
+                        className="timeline-image-wrapper w-full h-full overflow-hidden rounded-2xl lg:rounded-[2rem] shadow-xl"
                         style={{ clipPath: "inset(0% 0% 100% 0%)" }}
                       >
                         <img
@@ -196,19 +186,21 @@ const ProcessTimelineSection = ({
 
                   {/* Content Block */}
                   <div
-                    className={`timeline-content w-full lg:w-[40%] pl-12 lg:pl-0 ${isLeft ? "lg:text-right lg:pr-24" : "lg:text-left lg:pl-24"}`}
+                    className={`timeline-content w-full lg:w-[40%] pl-10 sm:pl-12 lg:pl-0 ${isLeft ? "lg:text-right lg:pr-12 xl:pr-24" : "lg:text-left lg:pl-12 xl:pl-24"}`}
                   >
                     {renderItemContent ? (
                       renderItemContent(item, isLeft)
                     ) : (
                       <>
-                        <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-4 font-['FoundersGroteskCondensed']">
+                        <h4 className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-4 font-['FoundersGroteskCondensed'] break-words">
                           {item.subtitle}
                         </h4>
-                        <h2 className="text-4xl lg:text-5xl font-normal leading-tight mb-6 font-['FoundersGroteskCondensed'] text-black uppercase">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight mb-4 sm:mb-6 font-['FoundersGroteskCondensed'] text-black uppercase break-words">
                           {item.title}
                         </h2>
-                        <p className="text-sm lg:text-base text-gray-700 font-['NeueMontreal'] leading-relaxed max-w-sm ml-auto mr-auto lg:mx-0">
+                        <p
+                          className={`text-sm sm:text-base text-gray-700 font-['NeueMontreal'] leading-relaxed max-w-sm lg:max-w-md ${isLeft ? "lg:ml-auto lg:mr-0" : "lg:mr-auto lg:ml-0"} mx-auto lg:mx-0`}
+                        >
                           {item.desc}
                         </p>
                       </>

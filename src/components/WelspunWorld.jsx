@@ -177,7 +177,7 @@ const WelspunWorld = () => {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-3 gap-2 md:gap-6">
           {statCards.map((card, index) => (
             <motion.div
               key={index}
@@ -186,14 +186,16 @@ const WelspunWorld = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="bg-[#BB2929] p-5 md:p-6 lg:p-7  flex flex-row items-center gap-4 md:gap-5 rounded-2xl shadow-lg w-full"
+              className="bg-[#BB2929] p-3 md:p-6 lg:p-7 flex flex-col md:flex-row items-center gap-2 md:gap-5 rounded-xl md:rounded-2xl shadow-lg w-full text-center md:text-left justify-center"
             >
-              <div className="flex-shrink-0">{card.icon}</div>
-              <div className="flex-1">
-                <p className="text-white text-sm md:text-base mb-2 opacity-90 font-medium leading-relaxed font-EireneSansRegular">
+              <div className="flex-shrink-0 scale-75 md:scale-100">
+                {card.icon}
+              </div>
+              <div className="flex-1 w-full">
+                <p className="text-white text-[10px] md:text-base mb-1 md:mb-2 opacity-90 font-medium leading-[1.2] md:leading-relaxed font-EireneSansRegular">
                   {card.label}
                 </p>
-                <p className="text-white text-xl md:text-2xl lg:text-3xl leading-tight">
+                <p className="text-white text-xs sm:text-sm md:text-2xl lg:text-3xl leading-tight">
                   {card.value}
                 </p>
               </div>

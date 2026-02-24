@@ -3,10 +3,10 @@ import hookImage from "../../../assets/crane.png";
 
 const ConstructionHero = () => {
   return (
-    <div className="w-full relative bg-white overflow-hidden min-h-[140vh] pb-20 ">
+    <div className="w-full relative bg-white overflow-hidden min-h-[100vh] md:min-h-[140vh] pb-10 md:pb-20">
       {/* Background Section with Multi-point Angled Clip Path */}
       <div
-        className="relative z-20 w-full h-[110vh]"
+        className="relative z-20 w-full h-[80vh] md:h-[110vh]"
         style={{
           // Polygon points: Top-Left, Top-Right, Bottom-Right (Higher), Bottom-Pivot (Low), Bottom-Left (Higher)
           clipPath: "polygon(0 0, 100% 0, 100% 85%, 10% 100%, 0 85%)",
@@ -25,28 +25,25 @@ const ConstructionHero = () => {
         <div className="absolute inset-0 bg-black/40 z-0"></div>
 
         {/* Content Container */}
-        <div className="relative z-10 w-full h-full flex flex-col justify-center px-6 md:px-20 max-w-7xl mx-auto -mt-32">
+        <div className="relative z-10 w-full h-full flex flex-col justify-center px-6 md:px-20 max-w-7xl mx-auto pt-24 md:pt-0 md:-mt-32">
           {/* Vision Label */}
-          <div className="flex items-center gap-4 text-white font-EireneSansRegular uppercase tracking-[0.2em] text-sm font-medium mb-4">
+          <div className="flex items-center gap-4 text-white font-EireneSansRegular uppercase tracking-[0.2em] text-xs md:text-sm font-medium mb-4">
             <span>Our Vision</span>
-            <div className="w-16 h-[1px] bg-white opacity-50"></div>
+            <div className="w-12 md:w-16 h-[1px] bg-white opacity-50"></div>
           </div>
 
           {/* Main Headline */}
-          <div className="flex flex-col mb-8">
-            <h1 className="text-white text-6xl md:text-7xl lg:text-7xl font-bold font-FoundersGroteskCondensed uppercase leading-[0.8] drop-shadow-lg">
+          <div className="flex flex-col mb-6 md:mb-8">
+            <h1 className="text-white text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold font-FoundersGroteskCondensed uppercase leading-[1.1] md:leading-[0.8] drop-shadow-lg">
               Quality Construction
             </h1>
-            <h1
-              className="text-[#BB2929] text-6xl md:text-7xl lg:text-7xl font-bold font-FoundersGroteskCondensed uppercase leading-[0.8] drop-shadow-lg"
-              style={{ WebkitTextStroke: "2px white" }}
-            >
+            <h1 className="text-[#BB2929] text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold font-FoundersGroteskCondensed uppercase leading-[1.1] md:leading-[0.8] drop-shadow-lg mt-1 md:mt-2 text-stroke-mobile md:text-stroke-desktop">
               & RELIABLE EXECUTION
             </h1>
           </div>
 
           {/* Description */}
-          <p className="font-['EireneSansRegular'] text-gray-200 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
+          <p className="font-['EireneSansRegular'] text-gray-200 text-base md:text-lg lg:text-xl max-w-sm md:max-w-lg mb-8 md:mb-10 leading-relaxed font-light">
             We design, fabricate and erect High Performance Pre-Engineered
             Buildings (PEB) Engineered for speed, durability and cost
             efficiency.
@@ -55,47 +52,51 @@ const ConstructionHero = () => {
           {/* Call to Action Button */}
         </div>
 
-        {/* Large Outlined Text Background "CONSTRUCT" */}
+        {/* Large Outlined Text Background "RICHA P E B" */}
         {/* Rotated to match the slope from 25% (100%h) to 100% (85%h) */}
         <div
-          className="absolute bottom-[3%] right-[10%] z-0 select-none opacity-20 pointer-events-none"
+          className="absolute bottom-[5%] md:bottom-[3%] right-[-10%] md:right-[10%] z-0 select-none opacity-20 pointer-events-none"
           style={{ transform: "rotate(-4deg)" }}
         >
-          <h1
-            className="text-[10rem] md:text-[18rem] font-bold text-transparent font-FoundersGroteskCondensed uppercase  leading-none"
-            style={{ WebkitTextStroke: "2px white" }}
-          >
+          <h1 className="text-[6rem] sm:text-[8rem] md:text-[14rem] lg:text-[18rem] font-bold text-transparent font-FoundersGroteskCondensed uppercase leading-none whitespace-nowrap text-stroke-mobile md:text-stroke-desktop">
             RICHA P E B
           </h1>
         </div>
       </div>
 
       {/* Floating Crane Hook Image */}
-      {/* Hanging from the pivot point at 25% left, 100% of the image height (which is 110vh) */}
-      {/* Adjusted position to align exactly with the cut vertex and appear behind */}
-      <div
-        className="absolute left-[10%] z-10 w-24 md:w-40 lg:w-48 origin-top animate-[float_4s_ease-in-out_infinite]"
-        style={{
-          top: "calc(97vh - 50px)", // Align with the bottom tip (110vh) and pull up slightly to tuck wires behind
-          transform: "translateX(-50%)", // Center horizontally on the point
-        }}
-      >
-        <img
-          src={hookImage}
-          alt="Crane Hook"
-          className="w-full h-auto drop-shadow-2xl"
-          style={{ marginTop: "-10%" }} // Pull up slightly so the wire connects
-        />
+      {/* Hanging exactly from the clip-path's lowest vertex (bottom-left at 10%) */}
+      <div className="absolute top-0 left-0 w-full h-[80vh] md:h-[110vh] pointer-events-none z-10">
+        <div
+          className="absolute left-[10%] w-20 sm:w-24 md:w-40 lg:w-48 origin-top animate-[float_4s_ease-in-out_infinite]"
+          style={{
+            top: "calc(100% - 2rem)", // pull up slightly to tuck wires behind
+          }}
+        >
+          <img
+            src={hookImage}
+            alt="Crane Hook"
+            className="w-full h-auto drop-shadow-2xl"
+          />
+        </div>
       </div>
 
       <style jsx>{`
         @keyframes float {
           0%,
           100% {
-            transform: translateX(-50%) translateY(0);
+            transform: translate(-50%, -5%);
           }
           50% {
-            transform: translateX(-50%) translateY(20px);
+            transform: translate(-50%, calc(-5% + 15px));
+          }
+        }
+        .text-stroke-mobile {
+          -webkit-text-stroke: 1px white;
+        }
+        @media (min-width: 768px) {
+          .md\\:text-stroke-desktop {
+            -webkit-text-stroke: 2px white;
           }
         }
       `}</style>

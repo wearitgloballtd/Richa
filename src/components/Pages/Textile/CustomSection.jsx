@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import "./CustomSection.css";
-import QualityAssurence from "../../../assets/images/qualityAssurence.png";
 import KnittedFabric from "../../../assets/images/Textile/knitted-fabric.png";
 import Deying from "../../../assets/images/Textile/deying.jpg";
 import Processing from "../../../assets/images/Textile/processing.jpg";
@@ -10,7 +9,6 @@ import Quality from "../../../assets/images/Textile/quality.png";
 
 const CustomSection = () => {
   useEffect(() => {
-    // Expose jQuery globally as required by some plugins or legacy scripts
     window.$ = $;
     window.jQuery = $;
 
@@ -136,12 +134,12 @@ const CustomSection = () => {
       <div className="page-wrapper">
         <main id="main">
           {/* Header Section */}
-          <div className="w-full bg-white px-8 lg:px-20 pt-20 pb-10">
+          <div className="w-full bg-white px-6 md:px-8 lg:px-20 pt-16 md:pt-20 pb-8 md:pb-10">
             <div className="max-w-7xl mx-auto">
-              <h3 className="text-xl tracking-tight mb-2 text-[#BB2929] font-['EireneSansRegular']">
+              <h3 className="text-lg md:text-xl tracking-tight mb-2 text-[#BB2929] font-['EireneSansRegular']">
                 Quality Engineering
               </h3>
-              <h1 className="text-5xl lg:text-6xl leading-[0.95] tracking-tight font-KuraleRegular mb-6 text-black">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[0.95] tracking-tight font-KuraleRegular mb-4 md:mb-6 text-black">
                 Engineered Precision from Yarn to Finished Fabric
               </h1>
             </div>
@@ -163,15 +161,17 @@ const CustomSection = () => {
 
                 {/* Hover Content (Hidden by default, visible on hover) */}
                 <div className="hover-content">
-                  <h3 className="hover-title text-4xl">
+                  <h3 className="hover-title text-2xl md:text-3xl lg:text-4xl">
                     {item.detailsTitle || item.title}
                   </h3>
                   <div className="hover-separator"></div>
 
-                  <p className="hover-description mb-6">{item.description}</p>
+                  <p className="hover-description text-sm md:text-base mb-4 md:mb-6">
+                    {item.description}
+                  </p>
 
                   {item.points && (
-                    <ul className="hover-points mb-4 text-lg font-light">
+                    <ul className="hover-points mb-4 text-sm md:text-base lg:text-lg font-light">
                       {item.points.map((point, idx) => (
                         <li key={idx} className="leading-relaxed">
                           {point}
@@ -180,7 +180,7 @@ const CustomSection = () => {
                     </ul>
                   )}
                   {item.footer && (
-                    <p className="hover-footer text-base italic">
+                    <p className="hover-footer text-xs md:text-sm lg:text-base italic">
                       {item.footer}
                     </p>
                   )}

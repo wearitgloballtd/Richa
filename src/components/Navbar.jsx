@@ -12,35 +12,42 @@ function Navbar() {
   const lastScrollY = useRef(0);
 
   useEffect(() => {
-    // Only check hero state on home page
-    if (location.pathname !== "/") {
-      setIsOverHero(false);
-      return;
-    }
-
-    const heroEl = document.getElementById("hero-section");
-    if (!heroEl) return;
+    // Reset nav visibility and scroll position tracker on route change
+    setIsNavVisible(true);
+    lastScrollY.current = window.scrollY;
 
     const updateState = () => {
-      const rect = heroEl.getBoundingClientRect();
-      const heroTop = window.scrollY + rect.top;
-      const heroBottom = heroTop + rect.height;
-      const navHeight = document.querySelector("nav")?.offsetHeight || 0;
       const currentScroll = window.scrollY;
-      // Stay in "over hero" state until navbar fully clears the hero
-      setIsOverHero(currentScroll + navHeight < heroBottom);
-      // Hide nav when scrolling up, show when scrolling down
+
+      // Handle navbar hide/show on scroll for all pages
       const scrollingDown = currentScroll > lastScrollY.current;
-      // Always show near top to avoid jitter
       const nearTop = currentScroll < 10;
-      // Show while scrolling up (or near top), hide while scrolling down
       setIsNavVisible(!scrollingDown || nearTop);
+
+      // Update last scroll immediately
       lastScrollY.current = currentScroll;
+
+      // Handle over-hero state only on home page
+      if (location.pathname === "/") {
+        const heroEl = document.getElementById("hero-section");
+        if (heroEl) {
+          const rect = heroEl.getBoundingClientRect();
+          const heroTop = window.scrollY + rect.top;
+          const heroBottom = heroTop + rect.height;
+          const navHeight = document.querySelector("nav")?.offsetHeight || 0;
+          setIsOverHero(currentScroll + navHeight < heroBottom);
+        } else {
+          setIsOverHero(false);
+        }
+      } else {
+        setIsOverHero(false);
+      }
     };
 
     updateState();
     window.addEventListener("scroll", updateState, { passive: true });
     window.addEventListener("resize", updateState);
+
     return () => {
       window.removeEventListener("scroll", updateState);
       window.removeEventListener("resize", updateState);
@@ -215,7 +222,7 @@ function Navbar() {
           {/* Mobile Menu Button */}
           <button
             className="md:hidden focus:outline-none"
-            style={{ color: isOverHero ? "white" : "black" }}
+            style={{ color: "black" }}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >

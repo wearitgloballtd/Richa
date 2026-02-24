@@ -1,11 +1,12 @@
 /* Main Container */
 #fs-container {
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../../../assets/images/textile_process.jpg);
   /* Adjusted path based on standard structure */
   display: flex;
+  flex-direction: column;
   transition: all 0.5s ease;
 }
 
@@ -13,8 +14,9 @@
 .media-project-hover {
   /* Default state: equal width */
   flex: 1;
-  height: 100%;
-  border-right: 1px solid rgba(242, 242, 242, 0.3);
+  min-height: 550px;
+  width: 100%;
+  border-bottom: 1px solid rgba(242, 242, 242, 0.3);
   position: relative;
   /* Smooth transition for the width/flex change */
   transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1), background 0.5s ease-in-out;
@@ -22,13 +24,10 @@
   /* Hide overflow when shrinking */
 }
 
-/* When the container is hovered, we want the non-hovered items to shrink slightly (handled by flex:1 vs flex:3) */
-
 /* The hovered item expands */
 .media-project-hover:hover {
-  flex: 3;
-  /* Grow to take more space */
-  /* background removed to show image */
+  flex: 1.5;
+  /* Grow to take more space minimally on mobile */
 }
 
 .media-project-hover .bg-overlay {
@@ -37,33 +36,42 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
-  /* Slight default dim */
+  background: rgba(0, 0, 0, 0.6);
+  /* Slightly darker default on mobile for better text visibility */
   z-index: 0;
   transition: all 0.3s ease;
-  transform: scaleX(0);
-  /* Hidden by default */
-  transform-origin: left;
-  /* Expand from left */
+  transform: scaleY(0);
+  /* Hidden by default, expand from top */
+  transform-origin: top;
+}
+
+@media (min-width: 992px) {
+  .media-project-hover .bg-overlay {
+    background: rgba(0, 0, 0, 0.2);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
 }
 
 .media-project-hover:hover .bg-overlay {
-  transform: scaleX(1);
-  background: rgba(0, 0, 0, 0.4);
-  /* Semi-transparent dark overlay */
+  transform: scaleY(1);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
-  /* Blur the background image behind this overlay */
   -webkit-backdrop-filter: blur(10px);
-  /* Safari support */
 }
 
+@media (min-width: 992px) {
+  .media-project-hover:hover .bg-overlay {
+    transform: scaleX(1);
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
 
 /* --- Default Content Styling (Centered Title/Number) --- */
 .media-project-hover .media__body.default-content {
   text-align: center;
-  padding: 0 50px;
+  padding: 0 20px;
   position: absolute;
-  /* Center it absolutely */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -74,12 +82,12 @@
 
 .media-project-hover .media__number.default-content {
   position: absolute;
-  font-size: 100px;
+  font-size: 60px;
   color: #fff;
   font-weight: 100;
   line-height: 1;
   transition: all 0.3s ease;
-  bottom: -50px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -89,15 +97,13 @@
 .media-project-hover:hover .media__body.default-content {
   opacity: 0;
   transform: translate(-50%, -60%);
-  /* Move up slightly */
   pointer-events: none;
 }
 
 .media-project-hover:hover .media__number.default-content {
   opacity: 0;
-  bottom: -100px;
+  bottom: -20px;
 }
-
 
 /* --- Hover Content Styling (The Details) --- */
 .hover-content {
@@ -106,23 +112,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 30px 20px;
   opacity: 0;
   visibility: hidden;
   color: #fff;
   z-index: 10;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   overflow-y: auto;
-  /* Handle overflow if text is too long */
 }
 
-/* Reveal container on hover */
+.hover-content::before,
+.hover-content::after {
+  content: "";
+  margin: auto;
+}
+
 .media-project-hover:hover .hover-content {
   opacity: 1;
   visibility: visible;
-  /* Delay container reveal slightly to sync with width expansion */
   transition: opacity 0.4s ease 0.1s, visibility 0.4s ease 0.1s;
 }
 
@@ -145,7 +154,6 @@
 .hover-points,
 .hover-footer {
   opacity: 0;
-  /* Default hidden for animation */
 }
 
 .media-project-hover:hover .hover-title {
@@ -157,7 +165,6 @@
   animation: slideUpFade 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   animation-delay: 0.25s;
   width: 60px;
-  /* Expand width */
 }
 
 .media-project-hover:hover .hover-description {
@@ -188,7 +195,7 @@
   width: 0;
   height: 3px;
   background: #BB2929;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   transition: width 0.6s ease;
 }
 
@@ -196,35 +203,31 @@
   line-height: 1.6;
   color: #f0f0f0;
   font-weight: 300;
-  font-size: 1.05rem;
 }
 
 /* Custom List Points */
 .hover-points {
   list-style: none;
-  /* custom bullets */
   padding: 0;
 }
 
 .hover-points li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
   color: #cccccc;
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
   position: relative;
   transition: all 0.3s ease;
   cursor: default;
 }
 
 .hover-points li::before {
-  content: "•";
-  /* Fallback */
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   background-color: #BB2929;
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 8px;
   border-radius: 50%;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -240,7 +243,7 @@
 }
 
 .hover-footer {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   color: #999;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1rem;
@@ -249,19 +252,19 @@
 /* Keep original styling for inner elements of default content */
 .media-project-hover .media__sub-title {
   color: #BB2929;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .media-project-hover .media__title {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .media-project-hover .media__title a {
-  font-size: 40px;
+  font-size: 28px;
   color: #fff;
-  line-height: calc(48 / 30);
+  line-height: 1.25;
   display: block;
   transition: all 0.5s ease;
   text-decoration: none;
@@ -280,32 +283,92 @@
   font-weight: 400;
 }
 
-/* Responsive Styles */
-@media (max-width: 1199px) {
-  .media-project-hover .media__body {
-    padding: 0 20px;
+/* Responsive Styles - Tablet Upwards */
+@media (min-width: 768px) {
+  .media-project-hover {
+    min-height: 500px;
   }
-
   .media-project-hover .media__title a {
-    font-size: 24px;
-    line-height: 1.25;
+    font-size: 32px;
   }
 }
 
-@media (max-width: 991px) {
+/* Responsive Styles - Desktop Upwards */
+@media (min-width: 992px) {
   #fs-container {
-    height: auto;
-    display: block;
+    height: 100vh;
+    flex-direction: row;
   }
 
   .media-project-hover {
-    width: 100%;
-    height: 700px;
+    height: 100%;
+    min-height: auto;
+    width: auto;
+    border-bottom: none;
+    border-right: 1px solid rgba(242, 242, 242, 0.3);
+  }
+  
+  .media-project-hover:last-child {
     border-right: none;
-    border-bottom: 1px solid rgba(242, 242, 242, 0.3);
   }
 
-  .media-project-hover .media__number {
-    bottom: 0;
+  .media-project-hover:hover {
+    flex: 3;
+  }
+
+  .media-project-hover .media__body.default-content {
+    padding: 0 50px;
+  }
+
+  .media-project-hover .media__number.default-content {
+    font-size: 100px;
+    bottom: -50px;
+  }
+
+  .media-project-hover:hover .media__number.default-content {
+    bottom: -100px;
+  }
+
+  .hover-content {
+    padding: 40px;
+  }
+
+  .hover-separator {
+    margin-bottom: 1.5rem;
+  }
+
+  .hover-points li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+  }
+
+  .hover-points li::before {
+    width: 6px;
+    height: 6px;
+    top: 10px;
+  }
+
+  .hover-footer {
+    margin-top: 1.5rem;
+  }
+
+  .media-project-hover .media__sub-title {
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+
+  .media-project-hover .media__title {
+    margin-bottom: 60px;
+  }
+
+  .media-project-hover .media__title a {
+    font-size: 40px;
+    line-height: calc(48 / 30);
+  }
+}
+
+@media (min-width: 1200px) {
+  .media-project-hover .media__title a {
+    font-size: 40px;
   }
 }

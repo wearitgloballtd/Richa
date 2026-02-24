@@ -102,21 +102,44 @@ const PulseSteps = () => {
         </div>
 
         {/* Content */}
-        <section className="relative z-10 w-full py-32">
-          <div className="max-w-[1400px] mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <section className="relative z-10 w-full py-16 md:py-32">
+          <div className="max-w-[1400px] mx-auto px-4 md:px-6">
+            {/* Mobile Swipe Indicator */}
+            <div className="md:hidden flex items-center justify-end mb-4 text-white/90 text-sm font-EireneSansRegular animate-pulse pr-2">
+              <span>Swipe to know more</span>
+              <svg
+                className="w-5 h-5 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+
+            <div
+              className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 overflow-x-auto pb-8 md:pb-0 snap-x snap-mandatory scroll-smooth hide-scrollbar"
+              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            >
+              <style>{`.hide-scrollbar::-webkit-scrollbar { display: none; }`}</style>
               {stepsData.map((step, index) => {
                 const isActive = activeDots.includes(index);
                 return (
                   <div
                     key={step.id}
-                    className={`relative flex flex-col items-center min-h-[500px] transition-all duration-500 rounded-3xl p-4 md:p-6 group cursor-pointer ${isActive ? "justify-start bg-white shadow-xl" : "justify-center hover:scale-[1.02]"}`}
+                    className={`relative shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-center flex flex-col items-center min-h-[380px] md:min-h-[500px] transition-all duration-500 rounded-3xl p-4 md:p-6 group cursor-pointer ${isActive ? "justify-start bg-white shadow-xl" : "justify-center hover:scale-[1.02]"}`}
                     onClick={() => handleDotClick(index)}
                   >
                     {/* Large Background Number - Centered Absolute */}
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden rounded-3xl z-0">
                       <span
-                        className={`text-[12rem] lg:text-[14rem] font-semibold leading-none font-EireneSansRegular transition-all duration-500 ${isActive ? "text-gray-100 scale-110" : "text-gray-200"}`}
+                        className={`text-[8rem] md:text-[12rem] lg:text-[14rem] font-semibold leading-none font-EireneSansRegular transition-all duration-500 ${isActive ? "text-gray-100 scale-110" : "text-gray-200"}`}
                       >
                         {step.id}
                       </span>
@@ -124,7 +147,7 @@ const PulseSteps = () => {
 
                     {/* Interactive Layout - Flex Column Top Aligned */}
                     <div
-                      className={`relative z-10 w-full h-full flex flex-col items-center gap-6 ${isActive ? "justify-start pt-8" : "justify-center"}`}
+                      className={`relative z-10 w-full h-full flex flex-col items-center gap-4 md:gap-6 ${isActive ? "justify-start pt-6 md:pt-8" : "justify-center"}`}
                     >
                       {/* Title - Reveals Above */}
                       <AnimatePresence>
@@ -135,7 +158,7 @@ const PulseSteps = () => {
                             exit={{ opacity: 0, y: 10 }}
                             className="text-center"
                           >
-                            <h3 className="text-2xl font-bold uppercase font-KuraleRegular leading-none text-gray-900 mx-auto max-w-[240px]">
+                            <h3 className="text-xl md:text-2xl font-bold uppercase font-KuraleRegular leading-none text-gray-900 mx-auto max-w-[200px] md:max-w-[240px]">
                               {step.title}
                             </h3>
                           </motion.div>
@@ -160,16 +183,16 @@ const PulseSteps = () => {
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
-                            className="text-center"
+                            className="text-center w-full"
                           >
                             {step.points ? (
-                              <ul className="text-left space-y-2 text-sm max-w-[260px] mx-auto text-gray-600 bg-white/50 backdrop-blur-sm p-4 rounded-xl border border-gray-100">
+                              <ul className="text-left space-y-2 text-xs md:text-sm max-w-[260px] mx-auto text-gray-600 bg-white/70 backdrop-blur-sm p-3 md:p-4 rounded-xl border border-gray-100 shadow-sm">
                                 {step.points.map((p, i) => (
                                   <li
                                     key={i}
                                     className="flex gap-2 leading-relaxed"
                                   >
-                                    <span className="text-blue-500 font-bold shrink-0 mt-[2px]">
+                                    <span className="text-[#bb2929] font-bold shrink-0 mt-[2px]">
                                       ›
                                     </span>
                                     {p}
@@ -177,7 +200,7 @@ const PulseSteps = () => {
                                 ))}
                               </ul>
                             ) : (
-                              <p className="text-gray-600 text-sm leading-relaxed max-w-[240px] mx-auto font-medium">
+                              <p className="text-gray-600 text-xs md:text-sm leading-relaxed max-w-[240px] mx-auto font-medium bg-white/70 backdrop-blur-sm p-3 md:p-4 rounded-xl border border-gray-100 shadow-sm">
                                 {step.desc}
                               </p>
                             )}

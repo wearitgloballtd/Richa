@@ -215,11 +215,11 @@ const VideoWave = () => {
         </div>
 
         {/* Text Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
-          <h2 className="text-6xl md:text-8xl font-FoundersGroteskCondensed tracking-wider uppercase text-center drop-shadow-lg mb-2 text-[#BB2929]">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none px-4">
+          <h2 className="text-5xl sm:text-6xl md:text-8xl font-FoundersGroteskCondensed tracking-wider uppercase text-center drop-shadow-lg mb-2 text-[#BB2929]">
             RICHA's
           </h2>
-          <h1 className="text-white text-6xl md:text-8xl font-FoundersGroteskCondensed tracking-wider uppercase text-center drop-shadow-lg">
+          <h1 className="text-white text-5xl sm:text-6xl md:text-8xl font-FoundersGroteskCondensed tracking-wider uppercase text-center drop-shadow-lg">
             Textile Division
           </h1>
         </div>
@@ -235,25 +235,43 @@ const VideoWave = () => {
       </div>
 
       {/* Textile Division Section */}
-      <div className="w-full bg-white py-20 px-8 lg:px-20 relative font-['NeueMontreal']">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+      <div className="w-full bg-white py-12 md:py-20 px-4 sm:px-8 lg:px-20 relative font-['NeueMontreal']">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
           {/* Left Content */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-8">
+          <div className="w-full lg:w-1/2 flex flex-col gap-6 md:gap-8">
             <div>
-              <h1 className="text-5xl lg:text-7xl !font-KuraleRegular mb-4 text-black leading-[0.95] tracking-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl !font-KuraleRegular mb-4 text-black leading-[1.1] md:leading-[0.95] tracking-tight">
                 Textile Division
               </h1>
-              <h3 className="text-xl font-semibold tracking-wider mb-6 text-[#BB2929] font-EireneSansRegular">
+              <h3 className="text-lg sm:text-xl font-semibold tracking-wider mb-4 md:mb-6 text-[#BB2929] font-EireneSansRegular">
                 Premium Knitted Fabrics – Made with Precision
               </h3>
-              <p className="text-lg text-gray-700 leading-relaxed font-['EireneSansRegular']">
+
+              {/* Mobile Image */}
+              <div className="block lg:hidden w-full relative mb-6">
+                <div
+                  className="aspect-square w-full max-w-[500px] mx-auto relative overflow-hidden"
+                  style={{
+                    clipPath:
+                      "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
+                  }}
+                >
+                  <img
+                    src={textileImage}
+                    alt="Textile Division"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-['EireneSansRegular']">
                 At Richa Industries, our Textile Division specializes in
                 producing high-quality knitted fabrics for apparel, activewear,
                 and industrial applications. We focus on knitting, dyeing,
                 processing, and finishing which delivers consistent colour,
                 superior performance, and fabrics that meet real market demands.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mt-4 font-['EireneSansRegular']">
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mt-4 font-['EireneSansRegular']">
                 With advanced machinery and a disciplined approach, we ensure
                 every batch is precise, efficient, and environmentally
                 responsible. Our team handles everything from single jersey and
@@ -262,22 +280,24 @@ const VideoWave = () => {
               </p>
             </div>
 
-            <div className="flex gap-6 mt-4">
+            <div className="flex flex-row gap-3 sm:gap-6 mt-2 md:mt-4">
               {/* Card 1 */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-[#BB2929] text-white p-6 rounded-xl flex flex-col gap-4 w-1/2 shadow-lg"
+                className="bg-[#BB2929] text-white p-4 sm:p-6 rounded-xl flex flex-col gap-3 sm:gap-4 w-1/2 shadow-lg"
               >
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                  <GiSewingString className="text-2xl" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center">
+                  <GiSewingString className="text-xl sm:text-2xl" />
                 </div>
                 <div>
-                  <h4 className="text-xl mb-1 font-EireneSansRegular">
+                  <h4 className="text-base sm:text-xl mb-1 font-EireneSansRegular">
                     Knitting Capacity
                   </h4>
-                  <p className="text-white text-sm">200 Tons / Month</p>
+                  <p className="text-white text-xs sm:text-sm">
+                    200 Tons / Month
+                  </p>
                 </div>
-                <p className="text-xs text-white mt-2">
+                <p className="text-[10px] sm:text-xs text-white mt-auto">
                   High volume production with precision.
                 </p>
               </motion.div>
@@ -285,26 +305,28 @@ const VideoWave = () => {
               {/* Card 2 */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-[#BB2929] text-[white] p-6 rounded-xl flex flex-col gap-4 w-1/2 shadow-lg"
+                className="bg-[#BB2929] text-[white] p-4 sm:p-6 rounded-xl flex flex-col gap-3 sm:gap-4 w-1/2 shadow-lg"
               >
-                <div className="w-12 h-12 bg-[#443C42]/10 rounded-full flex items-center justify-center">
-                  <GiFactory className="text-2xl" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#443C42]/10 rounded-full flex items-center justify-center">
+                  <GiFactory className="text-xl sm:text-2xl" />
                 </div>
                 <div>
-                  <h4 className="text-xl mb-1 font-EireneSansRegular">
+                  <h4 className="text-base sm:text-xl mb-1 font-EireneSansRegular">
                     Processing Capacity
                   </h4>
-                  <p className="text-white text-sm">600 Tons / Month</p>
+                  <p className="text-white text-xs sm:text-sm">
+                    600 Tons / Month
+                  </p>
                 </div>
-                <p className="text-xs text-white mt-2">
+                <p className="text-[10px] sm:text-xs text-white mt-auto">
                   Sustainable dyeing & finishing.
                 </p>
               </motion.div>
             </div>
           </div>
 
-          {/* Right Image */}
-          <div className="w-full lg:w-1/2 relative">
+          {/* Right Image (Desktop) */}
+          <div className="hidden lg:block w-full lg:w-1/2 relative mt-8 lg:mt-0">
             <div
               className="aspect-square w-full max-w-[500px] mx-auto relative overflow-hidden"
               style={{
@@ -322,60 +344,76 @@ const VideoWave = () => {
         </div>
 
         {/* Stats Bar */}
-        <div className="max-w-7xl mx-auto mt-20 bg-[#f5f5f5] rounded-3xl p-10 flex flex-wrap justify-between gap-8 items-center">
+        <div className="max-w-7xl mx-auto mt-12 md:mt-20 bg-[#f5f5f5] rounded-3xl p-3 sm:p-6 md:p-10 flex flex-row justify-between lg:justify-between items-center text-center gap-1 sm:gap-4 lg:gap-8">
           <motion.div
             whileHover={{ scale: 1.1, color: "#BB2929" }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="flex flex-col items-center cursor-pointer group"
+            className="flex flex-col items-center cursor-pointer group flex-1"
           >
-            <FaUsers className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
-            <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
+            <FaUsers className="text-2xl sm:text-4xl text-[#333] mb-2 sm:mb-4 group-hover:text-[#BB2929] transition-colors" />
+            <h3 className="text-sm sm:text-2xl md:text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
               100+
             </h3>
-            <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
-              Trusted Clients
+            <p className="text-[9px] sm:text-xs md:text-base text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors leading-tight">
+              Trusted
+              <br className="block md:hidden" /> Clients
             </p>
           </motion.div>
-          <div className="h-16 w-[2px] bg-gray-300 hidden md:block"></div>
+
+          <div className="h-6 md:h-16 w-[1px] md:w-[2px] bg-gray-300"></div>
+
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="flex flex-col items-center cursor-pointer group"
+            className="flex flex-col items-center cursor-pointer group flex-1"
           >
-            <FaLeaf className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
-            <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
-              Eco-Friendly
+            <FaLeaf className="text-2xl sm:text-4xl text-[#333] mb-2 sm:mb-4 group-hover:text-[#BB2929] transition-colors" />
+            <h3 className="text-sm sm:text-2xl md:text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors leading-tight">
+              Eco
+              <br className="block sm:hidden" />
+              Friendly
             </h3>
-            <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
-              Sustainable Processes
+            <p className="text-[9px] sm:text-xs md:text-base text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors leading-tight mt-1 sm:mt-0">
+              Sustainable
+              <br className="block md:hidden" /> Processes
             </p>
           </motion.div>
-          <div className="h-16 w-[2px] bg-gray-300 hidden md:block"></div>
+
+          <div className="h-6 md:h-16 w-[1px] md:w-[2px] bg-gray-300"></div>
+
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="flex flex-col items-center cursor-pointer group"
+            className="flex flex-col items-center cursor-pointer group flex-1"
           >
-            <FaMedal className="text-4xl text-[#333] mb-4 group-hover:text-[#BB2929] transition-colors" />
-            <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
+            <FaMedal className="text-2xl sm:text-4xl text-[#333] mb-2 sm:mb-4 group-hover:text-[#BB2929] transition-colors" />
+            <h3 className="text-sm sm:text-2xl md:text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
               Certified
             </h3>
-            <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
-              Quality Standards
+            <p className="text-[9px] sm:text-xs md:text-base text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors leading-tight">
+              Quality
+              <br className="block md:hidden" /> Standards
             </p>
           </motion.div>
-          <div className="h-16 w-[2px] bg-gray-300 hidden md:block"></div>
+
+          <div className="h-6 md:h-16 w-[1px] md:w-[2px] bg-gray-300"></div>
+
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="flex flex-col items-center cursor-pointer group"
+            className="flex flex-col items-center cursor-pointer group flex-1"
           >
-            <img src="/high.svg" alt="High" className="w-10 h-10 mb-4" />
-            <h3 className="text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
+            <img
+              src="/high.svg"
+              alt="High"
+              className="w-6 h-6 sm:w-10 sm:h-10 mb-2 sm:mb-4 mx-auto"
+            />
+            <h3 className="text-sm sm:text-2xl md:text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors">
               High
             </h3>
-            <p className="text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors">
-              Volume Capable
+            <p className="text-[9px] sm:text-xs md:text-base text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors leading-tight">
+              Volume
+              <br className="block md:hidden" /> Capable
             </p>
           </motion.div>
         </div>
@@ -383,8 +421,8 @@ const VideoWave = () => {
 
       {/* Infrastructure Section */}
       <div
-        className="w-full relative bg-[#4A4453] text-white py-32 -mt-20 z-0 mb-4"
-        style={{ clipPath: "polygon(0 10%, 100% 0, 100% 100%, 0 100%)" }}
+        className="w-full relative bg-[#4A4453] text-white py-20 lg:py-32 -mt-10 lg:-mt-20 z-0 mb-4"
+        style={{ clipPath: "polygon(0 5%, 100% 0, 100% 100%, 0 100%)" }}
       >
         {/* Background Overlay */}
         <div className="absolute inset-0 z-0 pointer-events-none">
@@ -396,17 +434,17 @@ const VideoWave = () => {
           <div className="absolute inset-0 bg-black/30"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-8 lg:px-20 relative z-10 font-['NeueMontreal']">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-20 relative z-10 font-['NeueMontreal'] mt-10 md:mt-0">
           {/* Header */}
-          <div className="flex flex-col lg:flex-row justify-between items-start mb-20 gap-10">
-            <div className="max-w-4xl">
-              <h4 className="text-gray-400 tracking-widest mb-4 font-EireneSansRegular text-lg">
+          <div className="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-20 gap-6 lg:gap-10">
+            <div className="max-w-4xl text-center lg:text-left mx-auto lg:mx-0">
+              <h4 className="text-gray-400 tracking-widest mb-4 font-EireneSansRegular text-base sm:text-lg">
                 Our Infrastructure
               </h4>
-              <h2 className="text-5xl lg:text-6xl mb-8 font-KuraleRegular leading-tight">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl mb-6 lg:mb-8 font-KuraleRegular leading-tight">
                 State-of-the-Art Textile Facility
               </h2>
-              <p className="text-xl text-gray-300 leading-relaxed max-w-2xl font-['EireneSansRegular']">
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl font-['EireneSansRegular'] mx-auto lg:mx-0">
                 Richa Industries operates a fully integrated knitting and
                 processing plant designed for high-quality knitted fabrics. From
                 circular knitting machines to advanced dyeing and finishing
@@ -418,55 +456,55 @@ const VideoWave = () => {
           </div>
 
           {/* Cards Grid */}
-          <div className="mb-10 text-center lg:text-left">
-            <h3 className="text-4xl lg:text-5xl font-KuraleRegular text-white">
+          <div className="mb-8 lg:mb-10 text-center lg:text-left">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-KuraleRegular text-white">
               Our Key Strengths
             </h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {[
               {
                 icon: <FaIndustry />,
                 title: "High Volume Knitting",
-                desc: "200+ Tons / Month. Equipped with latest circular knitting machines for single jersey, interlock, Lycra blends, and structured fabrics producing uniform rolls with minimal defects.",
+                desc: "200+ Tons/Month. Latest circular knitting machines for single jersey, interlock, Lycra blends, producing uniform rolls.",
               },
               {
                 icon: <FaLayerGroup />,
-                title: "Dedicated Dyeing & Finishing Zones",
-                desc: "600 Tons / Month. Separate zones for dyeing, soft flow processing, and finishing to avoid cross contamination, ensuring vibrant colours, excellent fastness, and soft hand feel every time.",
+                title: "Dyeing & Finishing",
+                desc: "600 Tons/Month. Separate zones for dyeing to avoid contamination, ensuring vibrant colours and soft hand feel.",
               },
               {
                 icon: <FaRecycle />,
-                title: "Advanced Utilities & Sustainability",
-                desc: "Water recycling plants + energy efficient systems. We reuse water in dyeing and maintain low impact processes to keep environmental footprint low while delivering consistent fabric quality.",
+                title: "Sustainability",
+                desc: "Water recycling + energy efficient. Low impact processes to keep environmental footprint low with consistent quality.",
               },
               {
                 icon: <FaFlask />,
-                title: "In-House Quality & Innovation Labs",
-                desc: "Continuous testing and development. On site labs test GSM, shrinkage, colour fastness, pilling, and stretch plus R&D for new blends and performance fabrics that meet brand specifications.",
+                title: "Innovation Labs",
+                desc: "Continuous testing. On site labs test GSM, shrinkage, colour fastness plus R&D for new blends.",
               },
             ].map((card, index) => (
               <motion.div
                 key={index}
                 initial="initial"
                 whileHover="hover"
-                className={`relative p-8 rounded-2xl border ${index === 0 ? "bg-white/10 border-transparent shadow-xl" : "border-white/20 hover:bg-white/5"} transition-all duration-300 flex flex-col h-full group overflow-hidden`}
+                className={`relative p-3 sm:p-8 rounded-xl sm:rounded-2xl border ${index === 0 ? "bg-white/10 border-transparent shadow-xl" : "border-white/20 hover:bg-white/5"} transition-all duration-300 flex flex-col h-full group overflow-hidden`}
               >
-                <div className="w-12 h-12 rounded-full bg-white text-[#4A4453] flex items-center justify-center text-xl mb-6 shadow-md relative z-10">
+                <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-white text-[#4A4453] flex items-center justify-center text-sm sm:text-xl mb-3 sm:mb-6 shadow-md relative z-10">
                   {card.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-4 font-EireneSansRegular relative z-10">
+                <h3 className="text-sm sm:text-2xl font-bold mb-2 sm:mb-4 font-EireneSansRegular relative z-10 leading-tight">
                   {card.title}
                 </h3>
-                <p className="text-lg text-gray-300 mb-8 leading-relaxed flex-grow relative z-10">
+                <p className="text-[10px] sm:text-lg text-gray-300 mb-2 sm:mb-8 leading-snug sm:leading-relaxed flex-grow relative z-10">
                   {card.desc}
                 </p>
               </motion.div>
             ))}
           </div>
 
-          <div className="mt-20 text-center">
-            <p className="text-xl text-white/60 font-medium italic font-['EireneSansRegular']">
+          <div className="mt-12 lg:mt-20 text-center px-4">
+            <p className="text-lg sm:text-xl text-white/60 font-medium italic font-['EireneSansRegular']">
               "These features build trust by showcasing our physical
               capabilities and dedication to superior manufacturing standards."
             </p>

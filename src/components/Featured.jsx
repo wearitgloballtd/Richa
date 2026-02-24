@@ -53,10 +53,10 @@ function Featured() {
   return (
     <div
       ref={containerRef}
-      className="container w-full sm:pt-20 pt-10 bg-white"
+      className="container w-full sm:pt-20 pt-10 bg-white overflow-hidden"
     >
       <div className="w-full border-b-[2px] border-[#bb2929] pb-5">
-        <h1 className="featuredTitle text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight">
+        <h1 className="featuredTitle text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl !font-KuraleRegular text-black leading-[0.95] tracking-tight">
           {"Our Businesses".split("").map((char, index) => (
             <span key={index} className="char">
               {char}
@@ -71,11 +71,11 @@ function Featured() {
           onClick={() => navigate("/peb")}
           className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-full"
         >
-          <h1 className="mb-4 flex gap-2 items-center tracking-wide text-black font-EireneSansRegular">
-            <span className="w-2 h-2 bg-[#bb2929] rounded-full"></span>
+          <h1 className="mb-2 sm:mb-4 flex gap-2 items-center tracking-wide text-black text-sm sm:text-base font-EireneSansRegular">
+            <span className="w-2 h-2 bg-[#bb2929] rounded-full flex-shrink-0"></span>
             PEB - Pre-Engineered Buildings
           </h1>
-          <h1 className="absolute text-[#fbeb45] flex overflow-hidden left-1/2 sm:left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl !font-KuraleRegular leading-none tracking-tighter">
+          <h1 className="absolute text-[#fbeb45] flex overflow-hidden left-1/2 sm:left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-6xl md:text-7xl lg:text-8xl !font-KuraleRegular leading-none tracking-tighter">
             {"PEB".split("").map((item, index) => (
               <motion.span
                 initial={{ y: "100%" }}
@@ -88,9 +88,9 @@ function Featured() {
               </motion.span>
             ))}
           </h1>
-          <div className="card w-full h-[300px] flex items-center rounded-xl overflow-hidden">
+          <div className="card w-full h-[200px] sm:h-[250px] md:h-[300px] flex items-center rounded-xl overflow-hidden">
             <img
-              className="w-full h-auto object-cover hover:scale-105 transition-all"
+              className="w-full h-full object-cover hover:scale-105 transition-all"
               src="https://images.pexels.com/photos/15947587/pexels-photo-15947587.jpeg"
               alt="PEB"
             />
@@ -102,11 +102,11 @@ function Featured() {
           onClick={() => navigate("/textiles")}
           className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-full"
         >
-          <h1 className="mb-4 flex gap-2 items-center tracking-wide text-black font-EireneSansRegular">
-            <span className="w-2 h-2 bg-[#bb2929] rounded-full"></span> TEXTILES
-            - Knitted Fabrics & Processing
+          <h1 className="mb-2 sm:mb-4 flex gap-2 items-center tracking-wide text-black text-sm sm:text-base font-EireneSansRegular">
+            <span className="w-2 h-2 bg-[#bb2929] rounded-full flex-shrink-0"></span>{" "}
+            TEXTILES - Knitted Fabrics & Processing
           </h1>
-          <h1 className="absolute flex overflow-hidden text-[#fbeb45] right-1/2 sm:right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl !font-KuraleRegular leading-none tracking-tighter">
+          <h1 className="absolute flex overflow-hidden text-[#fbeb45] right-1/2 sm:right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-6xl md:text-7xl lg:text-8xl !font-KuraleRegular leading-none tracking-tighter">
             {"TEXTILE".split("").map((item, index) => (
               <motion.span
                 initial={{ y: "100%" }}
@@ -119,9 +119,9 @@ function Featured() {
               </motion.span>
             ))}
           </h1>
-          <div className="card w-full h-[300px] flex items-center rounded-xl overflow-hidden">
+          <div className="card w-full h-[200px] sm:h-[250px] md:h-[300px] flex items-center rounded-xl overflow-hidden">
             <img
-              className="w-full h-auto object-cover hover:scale-105 transition-all"
+              className="w-full h-full object-cover hover:scale-105 transition-all"
               src="https://images.pexels.com/photos/31850032/pexels-photo-31850032.jpeg"
               alt="TEXTILE"
             />
