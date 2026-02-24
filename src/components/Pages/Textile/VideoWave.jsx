@@ -250,7 +250,7 @@ const VideoWave = () => {
                 At Richa Industries, our Textile Division specializes in
                 producing high-quality knitted fabrics for apparel, activewear,
                 and industrial applications. We focus on knitting, dyeing,
-                processing, and finishing — delivering consistent colour,
+                processing, and finishing which delivers consistent colour,
                 superior performance, and fabrics that meet real market demands.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mt-4 font-['EireneSansRegular']">
@@ -411,7 +411,8 @@ const VideoWave = () => {
                 processing plant designed for high-quality knitted fabrics. From
                 circular knitting machines to advanced dyeing and finishing
                 lines, everything is set up for precision, consistency, and
-                scalability — exactly what apparel and activewear brands need.
+                scalability which gives exactly what apparel and activewear
+                brands need.
               </p>
             </div>
           </div>

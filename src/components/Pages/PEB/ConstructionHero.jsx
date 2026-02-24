@@ -1,5 +1,3 @@
-import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 import videoBg from "../../../assets/videos/peb-background.mov";
 import hookImage from "../../../assets/crane.png";
 
@@ -50,7 +48,7 @@ const ConstructionHero = () => {
           {/* Description */}
           <p className="font-['EireneSansRegular'] text-gray-200 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
             We design, fabricate and erect High Performance Pre-Engineered
-            Buildings (PEB) — Engineered for speed, durability and cost
+            Buildings (PEB) Engineered for speed, durability and cost
             efficiency.
           </p>
 

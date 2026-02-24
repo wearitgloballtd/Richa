@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProcessTimelineSection from "../../common/ProcessTimelineSection";
+import designing from "../../../assets/PEB/designing.jpeg";
+import Fabrication from "../../../assets/PEB/fabrication.jpeg";
+import cladding from "../../../assets/PEB/cladding.jpeg";
+import Erection from "../../../assets/PEB/erection.jpeg";
 
 const timelineData = [
   {
@@ -15,6 +19,7 @@ const timelineData = [
     ],
     footer:
       "This phase ensures efficient, economical designs that accelerate project timelines.",
+    image: designing,
   },
   {
     title: "Fabrication",
@@ -28,6 +33,7 @@ const timelineData = [
     ],
     footer:
       "These processes deliver components with superior strength, minimal waste, and ready-for-site assembly.",
+    image: Fabrication,
   },
   {
     title: "Cladding & Accessories",
@@ -41,6 +47,7 @@ const timelineData = [
     ],
     footer:
       "This results in buildings that are functional, energy-efficient, and visually appealing.",
+    image: cladding,
   },
   {
     title: "Erection",
@@ -54,6 +61,7 @@ const timelineData = [
     ],
     footer:
       "Our approach achieves 30-50% faster completion compared to conventional methods.",
+    image: Erection,
   },
 ];
 
@@ -78,9 +86,9 @@ const PEBProcessTimeline = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl lg:text-7xl font-FoundersGroteskCondensed text-black mb-6  leading-[0.95]"
+            className="text-4xl lg:text-7xl font-KuraleRegular text-black mb-6  leading-[0.95]"
           >
-            From Concept to <br /> Completion
+            From Concept to Completion
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -96,13 +104,13 @@ const PEBProcessTimeline = () => {
       }
       renderItemContent={(item, isLeft) => (
         <>
-          <h4 className="text-sm font-bold uppercase tracking-[0.1em] text-[#BB2929] mb-2 font-['FoundersGroteskCondensed']">
+          <h4 className="text-sm font-bold uppercase tracking-[0.1em] text-[#BB2929] mb-2 font-['EireneSansRegular']">
             {item.subtitle}
           </h4>
-          <h2 className="text-3xl lg:text-5xl font-bold leading-tight mb-4 font-['FoundersGroteskCondensed'] text-black uppercase">
+          <h2 className="text-3xl lg:text-5xl font-bold leading-tight mb-4 font-['EireneSansRegular'] text-black uppercase">
             {item.title}
           </h2>
-          <p className="text-base text-gray-700 font-['NeueMontreal'] leading-relaxed mb-6">
+          <p className="text-base text-gray-700 font-['EireneSansRegular'] leading-relaxed mb-6">
             {item.desc}
           </p>
           {/* Bullets */}

@@ -138,12 +138,12 @@ const WhyWorkWithUs = () => {
                   alt={card.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors duration-300"></div>
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-300"></div>
               </div>
 
-              <div className="relative z-10 mb-8 transform scale-125">
+              {/* <div className="relative z-10 mb-8 transform scale-125">
                 {card.icon}
-              </div>
+              </div> */}
 
               <h3 className="relative z-10 text-2xl md:text-3xl font-semibold mb-6 text-white font-FoundersGroteskCondensed tracking-wide">
                 {card.title}

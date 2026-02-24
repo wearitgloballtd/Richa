@@ -76,6 +76,25 @@ const ProcessTimelineSection = ({
           },
         });
       }
+
+      // Image Reveal animation syncing exactly with the scrolling line
+      const imageWrapper = section.querySelector(".timeline-image-wrapper");
+      if (imageWrapper) {
+        gsap.fromTo(
+          imageWrapper,
+          { clipPath: "inset(0% 0% 100% 0%)" },
+          {
+            clipPath: "inset(0% 0% 0% 0%)",
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 55%",
+              end: "bottom 55%",
+              scrub: 0,
+            },
+          },
+        );
+      }
     });
 
     return () => {
@@ -135,7 +154,9 @@ const ProcessTimelineSection = ({
           {/* Timeline Sections */}
           <div className="flex flex-col gap-24 lg:gap-48 py-20">
             {data.map((item, index) => {
-              const isLeft = index % 2 === 0;
+              const isLeft = item.align
+                ? item.align === "left"
+                : index % 2 === 0;
 
               return (
                 <div
@@ -154,6 +175,24 @@ const ProcessTimelineSection = ({
                     className="lg:hidden absolute left-6 w-3 h-3 rounded-full z-20 -ml-[5px] mt-2"
                     style={{ backgroundColor: accentColor }}
                   ></div>
+
+                  {/* Image Block (Desktop Only) */}
+                  {item.image && (
+                    <div
+                      className={`timeline-image-container hidden lg:block absolute top-0 bottom-0 w-[40%] ${isLeft ? "right-0" : "left-0"}`}
+                    >
+                      <div
+                        className="timeline-image-wrapper w-full h-full overflow-hidden rounded-[2rem] shadow-xl"
+                        style={{ clipPath: "inset(0% 0% 100% 0%)" }}
+                      >
+                        <img
+                          src={item.image}
+                          alt={item.title || "Timeline image"}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                  )}
 
                   {/* Content Block */}
                   <div

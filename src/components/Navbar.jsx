@@ -94,7 +94,7 @@ function Navbar() {
     // },
     // { label: "Quality and Safety", href: "#" },
     { label: "Careers", href: "/career", isRoute: true },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "/contact-us", isRoute: true },
   ];
 
   const handleNavClick = (href, isRoute = false) => {

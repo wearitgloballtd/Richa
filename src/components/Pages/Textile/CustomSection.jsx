@@ -56,7 +56,7 @@ const CustomSection = () => {
         "Real-time monitoring ensures exceptional dimensional stability (variation <3% post-processing).",
       ],
       footer:
-        "Fabrics ready for dyeing — ideal for apparel, activewear, and performance wear.",
+        "Fabrics ready for dyeing ideal for apparel, activewear, and performance wear.",
     },
     {
       id: 2,
@@ -71,7 +71,7 @@ const CustomSection = () => {
         "Brazzoli technology for gentle handling and low water use (1:6–1:8 liquor ratio)",
         "Computer-controlled colour matching with spectrophotometer for exact shade reproduction.",
         "Water recycling and sustainable effluent treatment to minimize environmental impact",
-        "Consistent results on cotton, polyester blends, Lycra, and bamboo — ready for apparel and activewear.",
+        "Consistent results on cotton, polyester blends, Lycra, and bamboo ready for apparel and activewear.",
       ],
       footer: "Perfect colour that stays true wash after wash.",
     },
@@ -82,7 +82,7 @@ const CustomSection = () => {
       number: "03",
       detailsTitle: "Processing: Enhancing Performance & Feel",
       description:
-        "We process knitted fabrics to achieve the perfect hand-feel, dimensional stability, and performance — turning greige rolls into ready-to-cut material.",
+        "We process knitted fabrics to achieve the perfect hand-feel, dimensional stability, and performance turning greige rolls into ready-to-cut material.",
       points: [
         "Compacting and calendaring for smooth, even texture and controlled shrinkage.",
         "Hydro-extraction to remove excess moisture efficiently before drying.",
@@ -91,7 +91,7 @@ const CustomSection = () => {
         "Precision machines ensure low elongation and consistent width/weight (GSM control)",
       ],
       footer:
-        "Fabrics emerge soft, stable, and ready for garment making — with the durability activewear and apparel brands demand.",
+        "Fabrics emerge soft, stable, and ready for garment making with the durability activewear and apparel brands demand.",
     },
     {
       id: 4,
@@ -100,7 +100,7 @@ const CustomSection = () => {
       number: "04",
       detailsTitle: "Finishing: The Final Touch",
       description:
-        "We give knitted fabrics their final premium feel, look, and performance — adding softness, stability, and functionality that brands love.",
+        "We give knitted fabrics their final premium feel, look, and performance adding softness, stability, and functionality that brands love.",
       points: [
         "Enzyme washes and softeners for silky hand-feel and natural drape.",
         "Heat-setting and calendaring for dimensional stability and smooth surface.",
@@ -109,7 +109,7 @@ const CustomSection = () => {
         "Functional finishes like moisture-wicking or wrinkle-resistant for activewear.",
       ],
       footer:
-        "Every roll is inspected for defects before packing — delivering ready-to-cut fabrics that perform perfectly in garments.",
+        "Every roll is inspected for defects before packing delivering ready-to-cut fabrics that perform perfectly in garments.",
     },
     {
       id: 5,
@@ -118,16 +118,16 @@ const CustomSection = () => {
       number: "05",
       detailsTitle: "Quality Assurance: Zero Compromise",
       description:
-        "We maintain rigorous checks at every stage to ensure every meter of fabric meets our high standards — no exceptions.",
+        "We maintain rigorous checks at every stage to ensure every meter of fabric meets our high standards no exceptions.",
       points: [
         "4-point inspection system for defects (holes, barré, stains, uneven dyeing).",
         "In-house physical & chemical labs test GSM, shrinkage, colour fastness, pilling, stretch recovery, and tear strength.",
         "Continuous monitoring with data analytics for real-time corrections.",
-        "Final roll audits before packing — guaranteeing consistency and zero returns.",
+        "Final roll audits before packing guaranteeing consistency and zero returns.",
         "Compliance with global standards (e.g., ISO 9001, colour fastness ratings 4–5).",
       ],
       footer:
-        "Committed to excellence in every thread — fabrics that perform reliably from factory to customer.",
+        "Committed to excellence in every thread  fabrics that perform reliably from factory to customer.",
     },
   ];
 

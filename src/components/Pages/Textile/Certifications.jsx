@@ -14,7 +14,8 @@ const Certifications = () => {
         "Dimensional stability, pilling, and tensile strength checks",
         "Full traceability from raw yarn to finished roll",
       ]}
-      footerText="We hold ISO 9001:2015 certification and comply with global environmental and safety norms, ensuring consistent, reliable output for demanding clients."
+      footerText="We hold ISO 9001:2015 certification and comply with global environmental and safety norms, ensuring consistent, 
+      reliable output for demanding clients."
       accentColor="#BB2929"
       pinLineClass="-left-[180px] w-[180px]"
       buttonText="View Certification"

@@ -267,12 +267,12 @@ const AboutUs = () => {
                 Strengthening What Works, Building What's Next
               </h3>
               <p className="text-base md:text-lg text-white leading-[1.8] font-EireneSansRegular">
-                The acquisition of Richa Industries under new ownership marked a
-                strategic revival rather than a simple transition. Backed by
-                experienced industrial leadership, the group entered a new phase
-                focused on restoring operational strength, improving
-                productivity, and repositioning Richa as a future-ready
-                manufacturing enterprise.
+                The acquisition of Richa Industries under new ownership of
+                <b> Mr. Narendra Kumar Srivastava</b> marked a strategic revival
+                rather than a simple transition. Backed by experienced
+                industrial leadership, the group entered a new phase focused on
+                restoring operational strength, improving productivity, and
+                repositioning Richa as a future-ready manufacturing enterprise.
               </p>
               <p className="text-base md:text-lg text-white leading-[1.8] font-EireneSansRegular mb-8">
                 This renewed leadership brings a disciplined approach to:

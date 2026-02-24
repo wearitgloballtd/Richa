@@ -115,7 +115,7 @@ const CompanyAbout = () => {
     {
       title: "Engineering led approach across businesses",
       description:
-        "We see a need and deliver a solution. From knitting, dyeing and finishing fabrics to designing, fabricating and erecting PEB structures – our engineering and processes integrate seamlessly.",
+        "We see a need and deliver a solution. From knitting, dyeing and finishing fabrics to designing, fabricating and erecting PEB structures. Our engineering and processes integrate seamlessly.",
       icon: (
         <img
           src="/engineering.svg"
@@ -151,7 +151,7 @@ const CompanyAbout = () => {
     {
       title: "Reliable Long Term Partner",
       description:
-        "One company. Two verticals. Disciplined focus.We choose clients who want consistent quality and long-term support. We build real relationships – delivering reliable fabrics and PEB year after year.",
+        "One company. Two verticals. Disciplined focus. We choose clients who want consistent quality and long-term support. We build real relationships delivering reliable fabrics and PEB year after year.",
       icon: (
         <img
           src="/agreement.svg"

@@ -11,8 +11,18 @@ const PortfolioSlider = () => {
       id: 1,
       tag: "Structures",
       title: "Premium Knit Structures",
-      description:
-        "Classic single jersey, interlock, and rib structures — soft, breathable, and durable. The perfect base for everyday tees, polos, innerwear, and casual layers. Key Specs: GSM 120–220 | Excellent shape retention | Ready for printing/dyeing.",
+      description: (
+        <>
+          Classic single jersey, interlock, and rib structures which are soft,
+          breathable, and durable. The perfect base for everyday tees, polos,
+          innerwear, and casual layers.
+          <br />
+          <strong>
+            Key Specs: GSM 120–220 | Excellent shape retention | Ready for
+            printing/dyeing.
+          </strong>
+        </>
+      ),
       image:
         "https://images.pexels.com/photos/6276068/pexels-photo-6276068.jpeg",
     },
@@ -20,8 +30,18 @@ const PortfolioSlider = () => {
       id: 2,
       tag: "Performance",
       title: "Advanced Performance Blends",
-      description:
-        "Cotton-polyester and cotton-spandex blends engineered for movement and comfort. Superior stretch recovery, moisture-wicking, and quick-dry properties make them ideal for sportswear, gym wear, and corporate uniforms. Key Specs: GSM 140–260 | Colour fastness 4–5 | Pilling resistance",
+      description: (
+        <>
+          Cotton-polyester and cotton-spandex blends engineered for movement and
+          comfort. Superior stretch recovery, moisture-wicking, and quick-dry
+          properties make them ideal for sportswear, gym wear, and corporate
+          uniforms.
+          <br />
+          <strong>
+            Key Specs: GSM 140–260 | Colour fastness 4–5 | Pilling resistance
+          </strong>
+        </>
+      ),
       image:
         "https://images.pexels.com/photos/7717488/pexels-photo-7717488.jpeg",
     },
@@ -29,24 +49,56 @@ const PortfolioSlider = () => {
       id: 3,
       tag: "Technical",
       title: "Enhanced Functional Fabrics",
-      description:
-        "Piqué, honeycomb, waffle, and pointelle structures for premium texture and visual appeal. Raised surfaces add grip, style, and durability — perfect for polo shirts, outerwear, and fashion casuals. Key Specs: GSM 160–280 | Good stitch definition | Stable after washing",
+      description: (
+        <>
+          Piqué, honeycomb, waffle, and pointelle structures for premium texture
+          and visual appeal. Raised surfaces add grip, style, and durability
+          which is perfect for perfect for polo T-shirts, Outerwear, and fashion
+          casuals.
+          <br />
+          <strong>
+            Key Specs: GSM 160–280 | Good stitch definition | Stable after
+            washing
+          </strong>
+        </>
+      ),
       image: FunctionalFabrics,
     },
     {
       id: 4,
       tag: "Sustainability",
       title: "Eco Friendly Solutions",
-      description:
-        "Recycled polyester, organic cotton, and bamboo blends using low-impact dyes. Soft, breathable, and strong — sustainable fabrics that meet eco standards without sacrificing performance or comfort. Key Specs: GSM 130–250 | Low-impact dyes | Water-efficient processing.",
+      description: (
+        <>
+          Recycled polyester, organic cotton, and bamboo blends using low-impact
+          dyes. Soft, breathable, and strong sustainable fabrics that meet eco
+          standards without sacrificing performance or comfort.
+          <br />
+          <strong>
+            Key Specs: GSM 130–250 | Low-impact dyes | Water-efficient
+            processing.
+          </strong>
+        </>
+      ),
       image: EcoFriendly,
     },
     {
       id: 5,
       tag: "Customization",
       title: "Tailored Specifications",
-      description:
-        "Custom GSM (120–300+), widths, constructions, and finishes (anti-microbial, moisture-wicking, anti-pilling) to match your exact brand needs. Quick sampling and scalable production for private labels. Key Specs: Flexible GSM & width | Custom treatments | Reliable lead times.",
+      description: (
+        <>
+          Custom GSM (120–300+), widths, constructions, and finishes
+          (anti-microbial, moisture-wicking, anti-pilling) to match your exact
+          brand needs. Quick sampling and scalable production for private
+          labels.
+          <br />
+          <strong>
+            Key Specs: Flexible GSM & width | Custom treatments | Reliable lead
+            times.
+          </strong>
+        </>
+      ),
       image: Specifications,
     },
   ];

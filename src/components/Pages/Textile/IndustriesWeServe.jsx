@@ -3,7 +3,6 @@ import IndustriesSection from "../../common/IndustriesSection";
 import HomeTextile from "../../../assets/images/Textile/homeTextile.png";
 import SportsWear from "../../../assets/images/Textile/sportsWear.png";
 
-// Replace these with actual image imports or URLs as needed
 const industries = [
   {
     id: 1,
@@ -37,7 +36,7 @@ const IndustriesWeServe = () => {
     <IndustriesSection
       title="Our Fabrics Power Success"
       subtitle="Industries We Serve"
-      description="Our knitted fabrics deliver consistent quality, comfort, and performance across diverse sectors — helping brands and businesses succeed with reliable materials."
+      description="Our knitted fabrics deliver consistent quality, comfort, and performance across diverse sectors helping brands and businesses succeed with reliable materials."
       footerText="We cater to a broad clientele, ensuring our fabrics meet the unique demands of each industry without compromising on quality."
       accentColor="#BB2929"
       items={industries}

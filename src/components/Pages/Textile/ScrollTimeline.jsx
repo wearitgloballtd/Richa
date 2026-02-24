@@ -1,37 +1,47 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProcessTimelineSection from "../../common/ProcessTimelineSection";
+import Deying from "../../../assets/images/Textile/deying.jpg";
+import cooling from "../../../assets/images/Textile/cooling.jpeg";
+import Enzyme from "../../../assets/images/Textile/enzyme.jpeg";
+import wasteManagement from "../../../assets/images/Textile/waste-management.jpeg";
 
 const timelineData = [
   {
     subtitle: "WATER CONSERVATION",
     title: "Low liquor ratio dyeing",
-    desc: "We use advanced jet machines with low liquor ratios (1:6–1:8), cutting water usage by up to 50% — saving freshwater without affecting colour uniformity.",
+    desc: "We use advanced jet machines with low liquor ratios (1:6–1:8), cutting water usage by up to 50% saving freshwater without affecting colour uniformity.",
     align: "left",
+    image: Deying,
   },
   {
     subtitle: "ECO-FRIENDLY TREATMENTS",
     title: "Enzyme based pre treatments",
-    desc: "We use bio-enzymes for scouring and softening instead of harsh chemicals — lowering environmental load and ensuring safer, softer fabrics.",
+    desc: "We use bio-enzymes for scouring and softening instead of harsh chemicals  lowering environmental load and ensuring safer, softer fabrics.",
     align: "right",
+    image: Enzyme,
   },
   {
     subtitle: "WASTE MANAGEMENT",
     title: "Wastewater treatment & recycling",
     desc: "On-site effluent treatment plants (ETP) recycle process water, achieving near-zero discharge of harmful effluents to meet compliance norms.",
     align: "left",
+    image: wasteManagement,
   },
   {
     subtitle: "CERTIFIED COMPLIANCE",
     title: "OEKO-TEX & ISO standards",
-    desc: "We select low-impact dyes and auxiliaries compliant with OEKO-TEX and ISO 14001 — ensuring fabrics are skin-safe and eco-responsible.",
+    desc: "We select low-impact dyes and auxiliaries compliant with OEKO-TEX and ISO 14001 ensuring fabrics are skin-safe and eco-responsible.",
     align: "right",
+    image:
+      "https://images.pexels.com/photos/12324202/pexels-photo-12324202.jpeg",
   },
   {
     subtitle: "ENERGY EFFICIENCY",
     title: "Machinery with heat recovery",
-    desc: "Our dyeing and finishing lines feature heat recovery systems and efficient motors — reducing energy consumption while keeping production consistent.",
+    desc: "Our dyeing and finishing lines feature heat recovery systems and efficient motors  reducing energy consumption while keeping production consistent.",
     align: "left",
+    image: cooling,
   },
 ];
 

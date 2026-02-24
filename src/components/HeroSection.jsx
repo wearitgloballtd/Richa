@@ -62,7 +62,7 @@ function HeroSection() {
                       className="w-[8vw] h-[5vh] sm:h-[6vh] sm:w-[4vw] sm:mt-5 mr-5 rounded-md bg-[#bb2929]"
                     ></motion.div>
                   )}
-                  <h1 className=" font-EireneSansRegular sm:-mb-[1vw] md:text-[8vw] sm:text-[10vw]  text-[13vw] font-medium whitespace-nowrap leading-none h-full">
+                  <h1 className=" font-FoundersGroteskCondensed sm:-mb-[1vw] md:text-[8vw] sm:text-[10vw]  text-[13vw] whitespace-nowrap leading-none h-full uppercase">
                     {item}
                   </h1>
                 </div>
