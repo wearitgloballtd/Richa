@@ -76,9 +76,9 @@ function About() {
             </h1>
             <p className="text-base sm:text-xl tracking-wide text-black font-EireneSansRegular">
               We build long term trust by sticking to discipline in every step.
-              Whether it's producing performance fabrics for apparel or fast
-              build PEB warehouses and factories, we deliver reliable results
-              that last.
+              Whether it's producing high quality knitted fabrics for apparel or
+              fast build sustainable Industrial Sheds, PEB structure for
+              warehouses and factories, we deliver reliable results that last.
             </p>
             <SlideButton onClick={() => navigate("/about-us")} className="mt-4">
               Know Our Journey

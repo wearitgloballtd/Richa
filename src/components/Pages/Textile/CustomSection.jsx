@@ -46,7 +46,7 @@ const CustomSection = () => {
       number: "01",
       detailsTitle: "Building Strong, Flexible Foundations",
       description:
-        "We create high-quality greige knitted fabrics using state-of-the-art circular knitting machines with electronic jacquard and high-speed needles.",
+        "We create high-quality greige knitted fabrics using advanced circular knitting machines with electronic jacquard and high-speed needles.",
       points: [
         "Tubular fabrics with uniform stitch density and controlled GSM.",
         "Specialties: single jersey, interlock, Lycra blends, rib, piqué, structured knits.",
@@ -63,7 +63,7 @@ const CustomSection = () => {
       number: "02",
       detailsTitle: "Dyeing: Vibrant & Lasting Colors",
       description:
-        "We dye knitted fabrics with vibrant, long-lasting colours while keeping the fabric soft and strong — using eco-friendly dyes and low-impact processes.",
+        "We dye the fabric with vibrant, long-lasting colours while keeping the fabric soft and strong — using eco-friendly dyes and low-impact processes.",
       points: [
         "High-pressure high-temperature (HPHT) jet dyeing machines for even penetration and excellent fastness.",
         "Brazzoli technology for gentle handling and low water use (1:6–1:8 liquor ratio)",
@@ -80,7 +80,7 @@ const CustomSection = () => {
       number: "03",
       detailsTitle: "Processing: Enhancing Performance & Feel",
       description:
-        "We process knitted fabrics to achieve the perfect hand-feel, dimensional stability, and performance turning greige rolls into ready-to-cut material.",
+        "After Dyeing we process the knit fabric to achieve the perfect hand feel, dimensional stability, and performance turning greige rolls into ready-to-cut material.",
       points: [
         "Compacting and calendaring for smooth, even texture and controlled shrinkage.",
         "Hydro-extraction to remove excess moisture efficiently before drying.",

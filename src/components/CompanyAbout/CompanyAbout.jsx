@@ -127,7 +127,7 @@ const CompanyAbout = () => {
     {
       title: "Process driven quality and compliance systems",
       description:
-        "Strict checks from start to finish. Trustworthy fabrics and durable PEB. We team up with people who value real reliability – just like us.",
+        "Strict checks from start to finish. Trustworthy fabrics and durable steel structure projects. We team up with people who value real reliability – just like us.",
       icon: (
         <img
           src="/compilance.svg"
@@ -151,7 +151,7 @@ const CompanyAbout = () => {
     {
       title: "Reliable Long Term Partner",
       description:
-        "One company. Two verticals. Disciplined focus. We choose clients who want consistent quality and long-term support. We build real relationships delivering reliable fabrics and PEB year after year.",
+        "One manufacturing company. Two verticals. Disciplined focus.We choose clients who want consistent quality and long-term support. We build real relationships – delivering reliable knit fabrics and steel buildings year after year.",
       icon: (
         <img
           src="/agreement.svg"

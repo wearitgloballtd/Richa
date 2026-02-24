@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/src/assets/images/richa logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="color-scheme" content="dark" />
   <!-- Primary Meta Tags -->
   <title>Richa Industries Limited</title>
@@ -13,21 +14,89 @@
     content="Richa Industries Limited is a company that provides services to the Pre Engineering Building and Textile Industry." />
   <meta name="author" content="Richa Industries Limited" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dc-ochi.vercel.app/" />
-  <meta property="og:title" content="DC Ochi" />
-  <meta property="og:description"
-    content="A modern landing page design for an agency website built with React.js and other modern technologies with cool interactive animations." />
-  <meta property="og:image" content="/banner.png" />
+  <!-- Website Schema for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Richa Industries Limited",
+      "url": "https://richa.in/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://richa.in/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://dc-ochi.vercel.app/" />
-  <meta property="twitter:title" content="DC Ochi" />
-  <meta property="twitter:description"
-    content="A modern landing page design for an agency website built with React.js and other modern technologies with cool interactive animations." />
-  <meta property="twitter:image" content="/banner.png" />
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "name": "Richa Industries Limited",
+      "url": "https://richa.in/",
+      "logo": "https://richa-eight.vercel.app/assets/richa%20logo-DhkSn1gJ.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 9711269111",
+        "contactType": "technical support",
+        "contactOption": "TollFree",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "Hindi"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/richaindustriesltd/",
+        "https://www.instagram.com/richaindustries.ltd",
+        "https://www.youtube.com/@RichaIndustriesLimited",
+        "https://www.linkedin.com/company/richa-industries-limited/"
+      ]
+    }
+  </script>
+
+  <!-- Local Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Manufacturer",
+      "name": "Richa Industries Limited",
+      "image": "https://richa-eight.vercel.app/assets/richa%20logo-DhkSn1gJ.png",
+      "@id": "",
+      "url": "https://richa.in/",
+      "telephone": "+91 9711269111",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot No-29, DLF Industrial Area , Phase-II , Faridabad-121013, Haryana India.",
+        "addressLocality": "Faridabad",
+        "postalCode": "121013",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.465358,
+        "longitude": 77.311549
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:30",
+        "closes": "06:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/richaindustriesltd/",
+        "https://www.instagram.com/richaindustries.ltd",
+        "https://www.youtube.com/@RichaIndustriesLimited",
+        "https://www.linkedin.com/company/richa-industries-limited/"
+      ]
+    }
+  </script>
 </head>
 
 <body>

@@ -19,7 +19,7 @@ const industries = [
   },
   {
     id: 3,
-    title: "Workwear & Uniforms",
+    title: "Workwear Uniforms",
     desc: "Corporate shirts, industrial uniforms, hospitality attire, and safety wear.",
     image: "https://images.pexels.com/photos/1682699/pexels-photo-1682699.jpeg",
   },

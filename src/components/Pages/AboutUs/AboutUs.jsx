@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import SEO from "../../SEO";
 import aboutUsVideo from "../../../assets/videos/warehouse2.mp4";
 import aboutUsImage from "../../../assets/images/AboutUs.jpg";
 import RichaLogo from "../../../assets/images/richa logo.png";
@@ -13,6 +14,16 @@ const AboutUs = () => {
 
   return (
     <div id="about-us-page" className="w-full bg-white">
+      <SEO
+        title="Know More About Richa Industries Limited"
+        description="Richa Industries is strategically revived under the new ownership of Mr. Narendra Kumar Srivastava, marking a new phase of growth and leadership."
+        keywords="Richa Industries Limited, Richa Industries."
+        href="https://richa.in/about-us/"
+        alternateHref="https://richa.in/about-us/"
+        hreflang="en-IN"
+        image="https://richa-eight.vercel.app/assets/richa%20logo-DhkSn1gJ.png"
+        facebookUrl="https://www.facebook.com/richaindustriesltd/"
+      />
       {/* Hero Section */}
       <section
         id="about-hero"

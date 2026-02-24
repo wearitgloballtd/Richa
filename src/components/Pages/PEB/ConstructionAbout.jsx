@@ -14,14 +14,26 @@ const ConstructionAbout = () => {
 
           {/* Main Heading */}
           <h2 className="text-5xl md:text-6xl !font-KuraleRegular leading-[0.95] max-w-xl">
-            High Performance Steel Structures
+            High Performance Steel Structures Buildings
           </h2>
 
           {/* Description */}
           <p className="text-gray-500 leading-relaxed max-w-lg text-lg !font-EireneSansRegular">
-            At Richa Industries Limited, our PEB Division designs, fabricates,
-            supplies, and erects pre-engineered steel buildings tailored for
-            industrial, commercial, and infrastructure projects.
+            Richa Industries operates a fully integrated PEB building
+            manufacturer where design, fabrication, finishing and dispatch are
+            all handled in one place. This setup improves coordination, reduces
+            turnaround time and ensures consistent quality.
+          </p>
+
+          <p className="text-gray-500 leading-relaxed max-w-lg text-lg !font-EireneSansRegular">
+            Our infrastructure is supported by the experienced team of engineers
+            and technicians, and equipped with modern CNC machines, robotic
+            welding systems, beam drilling machines and high-capacity
+            fabrication equipment. This allows us to handle complex and large
+            steel structures with accuracy and efficiency. Whether it’s an
+            industrial shed or any customized steel structure we provide timely
+            and cost effective PEB solutions across India. Some of our aspects
+            are:
           </p>
 
           {/* List Items */}
@@ -109,7 +121,7 @@ const ConstructionAbout = () => {
           {/* Bottom Text & Button */}
           <div className="flex flex-col gap-6 max-w-md ml-auto mt-4 mb-10">
             <p className="text-gray-500 leading-relaxed text-base text-justify !font-EireneSansRegular">
-              Equipped with state-of-the-art manufacturing facilities and
+              Equipped with modern advanced manufacturing facilities and
               advanced engineering technologies, our PEB plant in Kashipur,
               Uttarakhand, supports large-scale production. This enables us to
               meet diverse project demands while upholding excellence in every

@@ -4,6 +4,7 @@ import textileVideo from "../../../assets/videos/Textile_Division.mp4";
 import textileImage from "../../../assets/images/Textile/textile-division.png";
 import infrastructureBg from "../../../assets/images/Textile/Our-Infrastructure.jpeg";
 import { motion } from "framer-motion";
+import SEO from "../../SEO";
 import {
   FaEye,
   FaRocket,
@@ -184,6 +185,16 @@ const VideoWave = () => {
 
   return (
     <div className="w-full overflow-x-hidden">
+      <SEO
+        title="Trusted & Reliable knitted Fabric Manufacturers in Delhi NCR"
+        description="Richa Industries is the trusted knitted fabric manufacturer in India. Our knit fabric structure include pique, single jersey, interlock etc. Call @ 9711269111"
+        keywords="Knitted Fabric Manufacturers, knitted fabric manufacturers in india, Knit fabric, knitted company, knitted fabric suppliers, knitted Fabric Manufacturers in Delhi"
+        href="https://richa.in/textiles"
+        alternateHref="https://richa.in/textiles"
+        hreflang="en-IN"
+        image="https://richa-eight.vercel.app/assets/richa%20logo-DhkSn1gJ.png"
+        facebookUrl="https://www.facebook.com/richaindustriesltd/"
+      />
       <div
         className="wave-container relative w-full h-screen overflow-hidden"
         style={{ margin: 0, padding: 0 }}
@@ -244,7 +255,7 @@ const VideoWave = () => {
                 Textile Division
               </h1>
               <h3 className="text-lg sm:text-xl font-semibold tracking-wider mb-4 md:mb-6 text-[#BB2929] font-EireneSansRegular">
-                Premium Knitted Fabrics – Made with Precision
+                Premium Knit Fabrics – Made with Precision
               </h3>
 
               {/* Mobile Image */}
@@ -265,18 +276,20 @@ const VideoWave = () => {
               </div>
 
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-['EireneSansRegular']">
-                At Richa Industries, our Textile Division specializes in
-                producing high-quality knitted fabrics for apparel, activewear,
-                and industrial applications. We focus on knitting, dyeing,
-                processing, and finishing which delivers consistent colour,
-                superior performance, and fabrics that meet real market demands.
+                At Richa Industries, Our textile division is a leading knitted
+                fabric manufacturer specializing in a wide variety of fabrics
+                for apparel, activewear, sportswear and home textiles. With
+                advanced capabilities in knitting, dyeing, processing and
+                finishing, we ensure consistent colour, superior performance and
+                fabrics that meet real market demands.
               </p>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mt-4 font-['EireneSansRegular']">
                 With advanced machinery and a disciplined approach, we ensure
                 every batch is precise, efficient, and environmentally
-                responsible. Our team handles everything from single jersey and
-                Lycra blends to structured knits and performance fabrics, always
-                with the same commitment quality you can trust.
+                responsible. Our expertise covers knit structures like single
+                jersey, interlock and rib, manufactured in 100% cotton, cotton
+                spandex, polyester and specialized blends, ensuring precision,
+                durability and reliable quality standards.
               </p>
             </div>
 
@@ -371,7 +384,7 @@ const VideoWave = () => {
             <h3 className="text-sm sm:text-2xl md:text-4xl font-bold text-[#333] mb-1 font-EireneSansRegular group-hover:text-[#BB2929] transition-colors leading-tight">
               Eco
               <br className="block sm:hidden" />
-              Friendly
+              -Friendly
             </h3>
             <p className="text-[9px] sm:text-xs md:text-base text-gray-500 font-medium group-hover:text-[#BB2929] transition-colors leading-tight mt-1 sm:mt-0">
               Sustainable
@@ -442,7 +455,7 @@ const VideoWave = () => {
                 Our Infrastructure
               </h4>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl mb-6 lg:mb-8 font-KuraleRegular leading-tight">
-                State-of-the-Art Textile Facility
+                High Quality Knitted Fabric Supplier
               </h2>
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl font-['EireneSansRegular'] mx-auto lg:mx-0">
                 Richa Industries operates a fully integrated knitting and

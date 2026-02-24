@@ -35,18 +35,20 @@ const ConstructionHero = () => {
           {/* Main Headline */}
           <div className="flex flex-col mb-6 md:mb-8">
             <h1 className="text-white text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold font-FoundersGroteskCondensed uppercase leading-[1.1] md:leading-[0.8] drop-shadow-lg">
-              Quality Construction
+              Fast Delivery
             </h1>
             <h1 className="text-[#BB2929] text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold font-FoundersGroteskCondensed uppercase leading-[1.1] md:leading-[0.8] drop-shadow-lg mt-1 md:mt-2 text-stroke-mobile md:text-stroke-desktop">
-              & RELIABLE EXECUTION
+              & Sustainable PEB Manufacturer
             </h1>
           </div>
 
           {/* Description */}
           <p className="font-['EireneSansRegular'] text-gray-200 text-base md:text-lg lg:text-xl max-w-sm md:max-w-lg mb-8 md:mb-10 leading-relaxed font-light">
-            We design, fabricate and erect High Performance Pre-Engineered
-            Buildings (PEB) Engineered for speed, durability and cost
-            efficiency.
+            Since 1993 Richa Industries has been the leading PEB manufacturer in
+            India with a straightforward mission: to make high quality,
+            sustainable and affordable steel structure buildings. We design and
+            fabricate high performance steel frame structure buildings for
+            warehouses, factories and commercial buildings.
           </p>
 
           {/* Call to Action Button */}

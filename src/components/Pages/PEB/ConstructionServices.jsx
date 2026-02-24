@@ -60,12 +60,12 @@ const ConstructionServices = () => {
             <span>Infrastructure</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl !font-KuraleRegular  leading-[0.95] text-black max-w-4xl">
-            Our State-of-the-Art PEB Manufacturing Facility
+            Pre Engineered Building Manufacturer & Supplier
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl leading-relaxed !font-EireneSansRegular">
-            Richa Industries operates a modern, fully integrated PEB
-            manufacturing facility designed for efficient, high-quality
-            production of steel building components.
+            Richa Industries operates a modern, fully integrated PEB structure
+            manufacturer, designed for efficient, high-quality production of
+            steel building components.
           </p>
         </div>
 

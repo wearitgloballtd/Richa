@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiCoffee, FiHeart, FiSun } from "react-icons/fi"; // Using Feather icons for a clean look
+import SEO from "../../SEO";
 import CareerStats from "./CareerStats";
 import SparkValues from "./SparkValues";
 import WellnessBenefits from "./WellnessBenefits";
@@ -79,6 +80,16 @@ const CareerPage = () => {
 
   return (
     <div className="w-full min-h-screen bg-white text-black py-20 flex flex-col justify-center overflow-hidden">
+      <SEO
+        title="Career at Richa Industries Limited"
+        description="Click to explore the job openings at Richa Industries Limited. Come and Grow with Us. we share knowledge & cheer when someone nails a deadline"
+        keywords="Richa Industries Limited, Richa Industries career"
+        href="https://richa.in/career/"
+        alternateHref="https://richa.in/career/"
+        hreflang="en-IN"
+        image="https://richa-eight.vercel.app/assets/richa%20logo-DhkSn1gJ.png"
+        facebookUrl="https://www.facebook.com/richaindustriesltd/"
+      />
       {/* Title Section */}
       <div className="container mx-auto px-4 text-center mb-20 mt-16">
         <h1 className="text-6xl md:text-6xl text-[#0a192f] leading-relaxed !font-KuraleRegular tracking-relaxed">
