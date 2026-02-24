@@ -85,7 +85,7 @@ const PortfolioSlider = () => {
     {
       id: 5,
       tag: "Customization",
-      title: "Tailored Specifications",
+      title: "Customized Specifications",
       description: (
         <>
           Custom GSM (120–300+), widths, constructions, and finishes

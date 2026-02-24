@@ -2,6 +2,7 @@ import React from "react";
 import IndustriesSection from "../../common/IndustriesSection";
 import HomeTextile from "../../../assets/images/Textile/homeTextile.png";
 import SportsWear from "../../../assets/images/Textile/sportsWear.png";
+import Uniforms from "../../../assets/images/Textile/uniform.jpeg";
 
 const industries = [
   {
@@ -21,7 +22,7 @@ const industries = [
     id: 3,
     title: "Workwear Uniforms",
     desc: "Corporate shirts, industrial uniforms, hospitality attire, and safety wear.",
-    image: "https://images.pexels.com/photos/1682699/pexels-photo-1682699.jpeg",
+    image: Uniforms,
   },
   {
     id: 4,
@@ -36,7 +37,7 @@ const IndustriesWeServe = () => {
     <IndustriesSection
       title="Our Fabrics Power Success"
       subtitle="Industries We Serve"
-      description="Our knitted fabrics deliver consistent quality, comfort, and performance across diverse sectors helping brands and businesses succeed with reliable materials."
+      description="As the Knitted Company, Richa Industries deliver consistent quality, comfort, and performance across diverse sectors, helping brands and businesses succeed with reliable materials."
       footerText="We cater to a broad clientele, ensuring our fabrics meet the unique demands of each industry without compromising on quality."
       accentColor="#BB2929"
       items={industries}
