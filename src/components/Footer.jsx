@@ -42,7 +42,7 @@ function Footer() {
                   Corporate Office
                 </h4>
                 <p className="text-sm font-NueueMontreal text-zinc-800 leading-relaxed">
-                  Plot No-29, DLF Industrial Area , Phase-II , Faridabad-121013,
+                  Plot No-29, DLF Industrial Area , Phase-II , Faridabad-121003,
                   Haryana India.
                 </p>
               </div>

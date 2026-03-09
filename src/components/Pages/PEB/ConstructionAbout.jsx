@@ -123,7 +123,7 @@ const ConstructionAbout = () => {
             <p className="text-gray-500 leading-relaxed text-base text-justify !font-EireneSansRegular">
               Equipped with modern advanced manufacturing facilities and
               advanced engineering technologies, our PEB plant in Kashipur,
-              Uttarakhand, supports large-scale production. This enables us to
+              Uttarakhand supports large-scale production. This enables us to
               meet diverse project demands while upholding excellence in every
               structure delivered under our renewed ownership.
             </p>

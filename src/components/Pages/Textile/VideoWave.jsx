@@ -254,9 +254,9 @@ const VideoWave = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-7xl !font-KuraleRegular mb-4 text-black leading-[1.1] md:leading-[0.95] tracking-tight">
                 Textile Division
               </h1>
-              <h3 className="text-lg sm:text-xl font-semibold tracking-wider mb-4 md:mb-6 text-[#BB2929] font-EireneSansRegular">
+              <h2 className="text-lg sm:text-xl font-semibold tracking-wider mb-4 md:mb-6 text-[#BB2929] font-EireneSansRegular">
                 Premium Knit Fabrics – Made with Precision
-              </h3>
+              </h2>
 
               {/* Mobile Image */}
               <div className="block lg:hidden w-full relative mb-6">
@@ -455,7 +455,7 @@ const VideoWave = () => {
                 Our Infrastructure
               </h4>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl mb-6 lg:mb-8 font-KuraleRegular leading-tight">
-                High Quality Knitted Fabric Supplier
+                High Quality Knitted Fabric Manufacturer
               </h2>
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl font-['EireneSansRegular'] mx-auto lg:mx-0">
                 Richa Industries operates a fully integrated knitting and

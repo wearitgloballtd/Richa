@@ -68,7 +68,7 @@ const ConstructionHero = () => {
 
       {/* Floating Crane Hook Image */}
       {/* Hanging exactly from the clip-path's lowest vertex (bottom-left at 10%) */}
-      <div className="absolute top-0 left-0 w-full h-[80vh] md:h-[110vh] pointer-events-none z-10">
+      <div className="absolute top-0 left-0 w-full h-[80vh] md:h-[93vh] pointer-events-none z-10">
         <div
           className="absolute left-[10%] w-20 sm:w-24 md:w-40 lg:w-48 origin-top animate-[float_4s_ease-in-out_infinite]"
           style={{
